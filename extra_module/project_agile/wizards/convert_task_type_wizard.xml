@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# Copyright 2020 MathBenTech <info@mathben.tech>
+# License AGPLv3.0 or later (https://www.gnu.org/licenses/agpl-3.0.en.html).
+-->
+
+<odoo>
+    <act_window id="launch_convert_project_task_type2_wizard"
+                name="Convert task type"
+                src_model="project.task"
+                res_model="project.task.convert_type2_wizard"
+                view_mode="form"
+                target="new"
+                key2="client_action_multi"/>
+
+    <record id="project_convert_task_type2_action_window" model="ir.actions.act_window">
+        <field name="name">Project Task Type Convert</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">project.task.type2</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <record id="project_convert_task_type2_wizard" model="ir.ui.view">
+        <field name="name">convert_project_task_type2_wizard</field>
+        <field name="model">project.task.convert_type2_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Project Task Type Convert">
+                <group>
+                    <p>An error will occur if a task is converted to a sub-task. Need to respect hierarchy.
+                    </p>
+                </group>
+                <group>
+                    <field name="task_ids" widget="many2many_tags"/>
+                    <field name="type_id"/>
+                </group>
+                <footer>
+                    <button string="Convert task type" name="convert_project_task_type2" type="object"
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

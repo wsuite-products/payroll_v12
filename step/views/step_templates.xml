@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- step assets  -->
+        <template id="step_assets" name="Step Results assets">
+            <script src="/web/static/lib/nvd3/d3.v3.js"></script>
+            <script src="/web/static/lib/nvd3/nv.d3.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/services/session.js"></script>
+            <script type="text/javascript" src="/step/static/src/js/step_result.js"/>
+            <script type="text/javascript" src="/step/static/src/js/step.js"/>
+            <script type="text/javascript" src="/step/static/src/js/tour_test_step.js"></script>
+            <script type="text/javascript" src="/web/static/src/js/fields/field_utils.js"></script>
+
+            <t t-call="web._assets_frontend_helpers"/>
+            <link href="/web/static/lib/nvd3/nv.d3.css" rel="stylesheet" type="text/css"></link>
+            <t t-call="web._assets_bootstrap"/>
+            <link rel="stylesheet" type="text/less" href="/web/static/src/scss/fonts.scss"/>
+            <!-- Some helper classes (like mt- mb-) are required for step templates  -->
+            <link rel="stylesheet" type="text/less" href="/web_editor/static/src/scss/web_editor.common.scss"/>
+            <link href="/step/static/src/css/step_print.css" rel="stylesheet" type="text/css"/>
+            <link href="/step/static/src/css/step_result.css" rel="stylesheet" type="text/css"></link>
+        </template>
+
+        <!-- Forbidden error messages-->
+        <template id="403">
+            <t t-call="step.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1 class="mt32">403: Forbidden</h1>
+                        <p>The page you were looking for could not be authorized.</p>
+                        <p>Maybe you were looking for
+                            <a t-attf-href="/web#view_type=form&amp;model=step.step&amp;id=#{step.id}&amp;action=step.action_step_form">
+                                this page
+                            </a>
+                            ?
+                        </p>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- "Thank you" message when the step is completed -->
+        <template id="sfinished" name="Step Finished">
+            <t t-call="step.layout">
+                <div class="wrap">
+                    <div class="container">
+                        <t t-call="step.back"/>
+                        <div class="jumbotron mt32">
+                            <h1>Thank you!</h1>
+                            <div t-field="step.thank_you_message" class="oe_no_empty"/>
+                            <div t-if='step.quizz_mode'>You scored
+                                <t t-esc="user_input.quizz_score"/>
+                                points.
+                            </div>
+                            <div>If you wish, you can <a role="button"
+                                                         t-att-href="'/step/print/%s/%s' % (slug(step), token)"
+                                                         class="btn btn-secondary">Review your answers</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Message when the step is not open  -->
+        <template id="notopen" name="Step not open">
+            <t t-call="step.layout">
+                <div class="wrap">
+                    <div class="container">
+                        <div class="jumbotron mt32">
+                            <h1>Not open</h1>
+                            <p>This step is not open. Thank you for your interest!</p>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Message when a login is required  -->
+        <template id="auth_required" name="Login required for this step">
+            <t t-call="step.layout">
+                <div class="wrap">
+                    <div class="container">
+                        <div class="jumbotron mt32">
+                            <h1>Login required</h1>
+                            <p>This step is open only to registered people. Please <a
+                                    t-attf-href="/web/login?redirect=%2Fstep%2Fstart%2F#{ slug(step) }%2F#{token}">log
+                                in</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Message when the step has no pages  -->
+        <template id="nopages" name="Step has no pages">
+            <t t-call="step.layout">
+                <div class="wrap">
+                    <div class="container">
+                        <t t-call="step.back"/>
+                        <div class="jumbotron mt32">
+                            <h1>Not ready</h1>
+                            <p>This step has no pages by now!</p>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Back Button to redirect in form view of step -->
+        <template id="back" name="Back">
+            <div groups="website.group_website_publisher" t-ignore="true" class="float-right">
+                <a role="button"
+                   t-attf-href="/web#view_type=form&amp;model=step.step&amp;id=#{step.id}&amp;action=step.action_step_form"
+                   class="btn btn-secondary">Back to Step
+                </a>
+                <a role="button"
+                   t-attf-href="/web#view_type=form&amp;model=crm.lead&amp;id=#{request.session.lead_id}&amp;action=crm.crm_lead_opportunities_tree_view"
+                   class="btn btn-secondary">Back to CRM Lead
+                </a>
+            </div>
+        </template>
+
+        <!-- new layout for step -->
+        <template id="step.layout" name="Step Layout">
+            <t t-call="web.layout">
+                <t t-set="head">
+                    <t t-call-assets="web.assets_common"/>
+                    <t t-call-assets="step.step_assets"/>
+                </t>
+                <body>
+                    <header>
+                        <div>
+                            <title>Odoo</title>
+                        </div>
+                        <div class="text-center">
+                            <img t-attf-src="/web/binary/company_logo" alt="Logo"/>
+                        </div>
+                    </header>
+                    <div id="wrap" class="oe_structure oe_empty"/>
+                    <main>
+                        <t t-raw="0"/>
+                    </main>
+                </body>
+                <xpath expr="//footer" position="replace">
+                    <div class="container mt16 mb8">
+                        <div class="float-right" t-ignore="true" t-if="not editable">
+                            Create a <a target="_blank" href="https://www.odoo.com/page/website-builder">free website
+                        </a> with
+                            <a target="_blank" class="badge badge-danger"
+                               href="https://www.odoo.com/page/website-builder">Odoo
+                            </a>
+                        </div>
+                        <div class="float-left text-muted" itemscope="itemscope"
+                             itemtype="https://schema.org/Organization">
+                            Copyright &amp;copy;
+                            <span t-field="res_company.name" itemprop="name">Company name</span>
+                        </div>
+                    </div>
+                </xpath>
+            </t>
+        </template>
+
+        <!-- First page of a step -->
+        <template id="step_init" name="Step">
+            <t t-call="step.layout">
+                <div class="wrap">
+                    <div class="oe_structure" id="oe_structure_step_init_1"/>
+                    <div class="container">
+                        <t t-call="step.back"/>
+                        <div class='jumbotron mt32'>
+                            <h1 t-field='step.title'/>
+                            <div t-field='step.description' class="oe_no_empty"/>
+                            <a role="button" class="btn btn-primary btn-lg"
+                               t-att-href="'/step/fill/%s/%s' % (slug(step), token)">
+                                Start Step
+                            </a>
+                        </div>
+                    </div>
+                    <div class="oe_structure" id="oe_structure_step_init_2"/>
+                </div>
+            </t>
+        </template>
+
+        <!-- A step -->
+        <template id="step" name="Step">
+            <t t-call="step.layout">
+                <div class="wrap">
+                    <div class="oe_structure" id="oe_structure_step_step_1"/>
+                    <div class="container">
+                        <t t-call="step.back"/>
+                        <t t-call="step.page"/>
+                    </div>
+                    <div class="oe_structure" id="oe_structure_step_step_2"/>
+                </div>
+            </t>
+        </template>
+
+        <!-- A page -->
+        <template id="page" name="Page">
+            <div class="o_page_header">
+                <p class="float-right">Page
+                    <span t-raw='page_nr + 1'/>
+                    of
+                    <span t-raw="len(step.page_ids)"/>
+                </p>
+                <h1 t-field='page.title'/>
+                <div t-field='page.description' class="oe_no_empty"/>
+            </div>
+
+            <form role="form" method="post" class="js_stepform" t-att-name="'%s_%s' % (step.id, page.id)"
+                  t-att-action="'/step/fill/%s/%s' % (slug(step), token)"
+                  t-att-data-prefill="'/step/prefill/%s/%s/%s' % (slug(step), token, slug(page))"
+                  t-att-data-validate="'/step/validate/%s' % (slug(step))"
+                  t-att-data-submit="'/step/submit/%s' % (slug(step))">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <input type="hidden" name="page_id" t-att-value="page.id"/>
+                <input type="hidden" name="token" t-att-value="token"/>
+                <t t-foreach='page.question_ids' t-as='question'>
+                    <t t-set="prefix" t-value="'%s_%s_%s' % (step.id, page.id, question.id)"/>
+                    <div class="js_question-wrapper" t-att-id="prefix">
+                        <h2>
+                            <span t-field='question.question'/>
+                            <span t-if="question.constr_mandatory" class="text-danger">*</span>
+                        </h2>
+                        <div t-field='question.description' class="text-muted oe_no_empty"/>
+                        <t t-if="question.type == 'free_text'">
+                            <t t-call="step.free_text"/>
+                        </t>
+                        <t t-if="question.type == 'textbox'">
+                            <t t-call="step.textbox"/>
+                        </t>
+                        <t t-if="question.type == 'numerical_box'">
+                            <t t-call="step.numerical_box"/>
+                        </t>
+                        <t t-if="question.type == 'date'">
+                            <t t-call="step.date"/>
+                        </t>
+                        <t t-if="question.type == 'simple_choice'">
+                            <t t-call="step.simple_choice"/>
+                        </t>
+                        <t t-if="question.type == 'multiple_choice'">
+                            <t t-call="step.multiple_choice"/>
+                        </t>
+                        <t t-if="question.type == 'matrix'">
+                            <t t-call="step.matrix"/>
+                        </t>
+                        <t t-if="question.type == 'upload_file'">
+                            <t t-call="step.upload_file"/>
+                        </t>
+                        <t t-if="question.type in ['main_business_objective', 'why_communication',
+                         'main_objective_of_communication', 'budget', 'target_audience', 'multiple_text_area',
+                         'multiple_file_upload', 'summary_popup', 'textarea_collapsible', 'divider',
+                         'component_group', 'paragraph', 'header', 'audience_brief', 'prequote', 'iframeViewer', 'country_state_city', 'content_cluster','audience_custom', 'frequency_custom', 'feedback']">
+                            <t t-call="step.generic_json_data"/>
+                        </t>
+                        <t t-if="question.type == 'email'">
+                            <t t-call="step.email"/>
+                        </t>
+                        <t t-if="question.type == 'url'">
+                            <t t-call="step.url"/>
+                        </t>
+                        <div class="js_errzone alert alert-danger" style="display:none;" role="alert"></div>
+                    </div>
+                </t>
+                <div class="text-center mt16 mb16">
+                    <button t-if="step.users_can_go_back and page_nr > 0" type="submit" class="btn btn-secondary"
+                            name="button_submit" value="previous">Previous page
+                    </button>
+                    <button t-if="not last" type="submit" class="btn btn-primary" name="button_submit" value="next">Next
+                        page
+                    </button>
+                    <button t-if="last" type="submit" class="btn btn-primary" name="button_submit" value="finish">Submit
+                        step
+                    </button>
+                </div>
+            </form>
+
+            <!-- Modal used to display error message, i.c.o. ajax error -->
+            <div role="dialog" class="modal fade" id="AJAXErrorModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <header class="modal-header">
+                            <h4 class="modal-title">A problem has occured</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&amp;times;
+                            </button>
+                        </header>
+                        <main class="modal-body">
+                            <p>Something went wrong while contacting step server. <strong class="text-danger">Your
+                                answers have probably not been recorded.
+                            </strong> Try refreshing.
+                            </p>
+                        </main>
+                        <footer class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </template>
+
+        <!-- Question widgets -->
+        <template id="free_text" name="Free text box">
+            <textarea class="form-control" rows="3" t-att-name="prefix"></textarea>
+        </template>
+
+        <template id="textbox" name="Text box">
+            <input type="text" class="form-control" t-att-name="prefix"/>
+        </template>
+
+        <template id="numerical_box" name="Numerical box">
+            <input type="number" step="any" class="form-control" t-att-name="prefix"/>
+        </template>
+
+        <template id="date" name="Date box">
+            <div class="form-group">
+                <div class="input-group date" t-attf-id="datetimepicker_#{question.id}" data-target-input="nearest"
+                     t-att-data-mindate="question.validation_min_date"
+                     t-att-data-maxdate="question.validation_max_date">
+                    <input type="text" class="form-control datetimepicker-input"
+                           t-attf-data-target="#datetimepicker_#{question.id}" t-att-name="prefix"/>
+                    <div class="input-group-append" t-attf-data-target="#datetimepicker_#{question.id}"
+                         data-toggle="datetimepicker">
+                        <div class="input-group-text">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="simple_choice" name="Simple choice">
+            <div t-if="question.display_mode == 'dropdown' and token" class="js_drop row">
+                <div class="col-lg-12">
+                    <select class="form-control" t-att-name="prefix">
+                        <option disabled="1" selected="1" value="">Choose...</option>
+                        <t t-foreach='question.labels_ids' t-as='label'>
+                            <option t-att-value='label.id'>
+                                <t t-esc='label.value'/>
+                            </option>
+                        </t>
+                        <t t-if='question.comments_allowed and question.comment_count_as_answer'>
+                            <option class="js_other_option" value="-1">
+                                <span t-esc="question.comments_message"/>
+                            </option>
+                        </t>
+                    </select>
+                </div>
+                <div t-if='question.comments_allowed and question.comment_count_as_answer' class="col-lg-6">
+                    <input type="text" class="form-control" t-att-name="'%s_%s' % (prefix, 'comment')"
+                           data-oe-step-othert="1"/>
+                </div>
+                <div t-if='question.comments_allowed and not question.comment_count_as_answer' class="col-lg-12 mt16">
+                    <span t-field="question.comments_message"/>
+                    <input type="text" class="form-control" t-att-name="'%s_%s' % (prefix, 'comment')"/>
+                </div>
+            </div>
+            <div t-if="question.display_mode == 'columns' or not token" class="row js_radio">
+                <div t-foreach='question.labels_ids' t-as='label' t-attf-class="col-lg-#{question.column_nb}">
+                    <label t-att-class="' bg-success ' if quizz_correction and label.quizz_mark > 0.0 else None">
+                        <input type="radio" t-att-name="prefix" t-att-value='label.id'/>
+                        <span t-field='label.value'/>
+                    </label>
+                </div>
+                <div t-if='question.comments_allowed and question.comment_count_as_answer'
+                     class="js_comments col-lg-12">
+                    <label>
+                        <input type="radio" t-att-name="prefix" value="-1"/>
+                        <span t-field="question.comments_message"/>
+                    </label>
+                    <input type="text" class="form-control" t-att-name="'%s_%s' % (prefix, 'comment')"/>
+                </div>
+                <div t-if='question.comments_allowed and not question.comment_count_as_answer' class="col-lg-12">
+                    <span t-field="question.comments_message"/>
+                    <input type="text" class="form-control" t-att-name="'%s_%s' % (prefix, 'comment')"
+                           data-oe-step-othert="1"/>
+                </div>
+            </div>
+        </template>
+
+        <template id="generic_json_data" name="Main Business Objective">
+            <textarea class="form-control" rows="5" t-att-name="prefix"></textarea>
+        </template>
+
+        <template id="multiple_choice" name="Multiple choice">
+            <div class="row">
+                <div t-foreach='question.labels_ids' t-as='label' t-attf-class="col-lg-#{question.column_nb}">
+                    <label t-att-class="' bg-success ' if quizz_correction and label.quizz_mark > 0.0 else None">
+                        <input type="checkbox" t-att-name="'%s_%s' % (prefix, label.id)" t-att-value='label.id'/>
+                        <span t-field='label.value'/>
+                    </label>
+                </div>
+                <div t-if='question.comments_allowed and question.comment_count_as_answer'
+                     class="js_ck_comments col-lg-12">
+                    <label>
+                        <input type="checkbox" t-att-name="'%s_%s' % (prefix, -1)" value="-1"/>
+                        <span t-field="question.comments_message"/>
+                    </label>
+                    <input type="text" class="form-control" t-att-name="'%s_%s' % (prefix, 'comment')"/>
+                </div>
+                <div t-if='question.comments_allowed and not question.comment_count_as_answer' class="col-lg-12">
+                    <span t-field="question.comments_message"/>
+                    <input type="text" class="form-control" t-att-name="'%s_%s' % (prefix, 'comment')"
+                           data-oe-step-othert="1"/>
+                </div>
+            </div>
+        </template>
+
+        <template id="matrix" name="Matrix">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th t-foreach="question.labels_ids" t-as="col_label">
+                            <span t-field="col_label.value"/>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="question.labels_ids_2" t-as="row_label">
+                        <th>
+                            <span t-field="row_label.value"/>
+                        </th>
+                        <td t-foreach="question.labels_ids" t-as="col_label">
+                            <input t-if="question.matrix_subtype == 'simple'" type="radio"
+                                   t-att-name="'%s_%s' % (prefix, row_label.id)" t-att-value='col_label.id'/>
+                            <input t-if="question.matrix_subtype == 'multiple'" type="checkbox"
+                                   t-att-name="'%s_%s_%s' % (prefix, row_label.id, col_label.id)"
+                                   t-att-value='col_label.id'/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div t-if='question.comments_allowed'>
+                <span t-field="question.comments_message"/>
+                <input type="text" class="form-control" t-att-name="'%s_%s' % (prefix, 'comment')"/>
+            </div>
+        </template>
+
+
+        <template id="upload_file" name="Upload file">
+            <div class="input-file-container">
+
+                <t t-if="user_input_line_upload_file">
+                    <t t-foreach="user_input_line_upload_file" t-as="upload_file"
+                       t-if="upload_file.question_id.id == question.id">
+                        <t t-if="upload_file.file_type == 'pdf'">
+                            <a width="100px" height="100px"
+                               t-att-href="'data:application/pdf;base64,%s' % to_text(upload_file.file)"
+                               target="_blank">Upload File
+                            </a>
+                        </t>
+                        <t t-if="upload_file.file_type == 'image'">
+                            <img width="100px" style="height: 100px;" class="img-thumbnail"
+                                 t-att-src="'data:image/*;base64,%s' % to_text(upload_file.file)"/>
+                        </t>
+                    </t>
+                </t>
+                <t t-else="">
+                    <div class="file-field">
+                        <input class="input-file" id="my-file" type="file" accept="image/*,application/pdf"
+                               t-att-name="prefix"/>
+                    </div>
+                    <br/>
+                </t>
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                $(".img-thumbnail").click(function(){
+                if ( $(this).height() == 240) {
+                console.log('test small image');
+                $(this).animate({
+                opacity: '0.8',
+                height: '100px',
+                width: '100px',
+                }, "slow");
+                } else {
+                $(this).animate({
+                opacity: '0.8',
+                height: '250px',
+                width: '250px',
+                }, "slow");
+                }
+                });
+                });
+            </script>
+        </template>
+
+        <template id="email" name="Email">
+            <input type="text" class="form-control" t-att-name="prefix"/>
+        </template>
+
+        <template id="url" name="URL">
+            <input type="text" class="form-control" t-att-name="prefix"/>
+        </template>
+
+        <!-- Printable view of a step (all pages) -->
+<template id="step_print" name="Step">
+<t t-call="step.layout">
+    <div class="wrap">
+        <div class="container">
+            <t t-call="step.back"/>
+            <div class='jumbotron mt32'>
+                <h1>
+                    <span t-field='step.title'/>
+                </h1>
+                <t t-if="step.description">
+                    <div t-field='step.description' class="oe_no_empty"/>
+                </t>
+            </div>
+            <div role="form" class="js_stepform" t-att-name="'%s' % (step.id)"
+                 t-att-data-prefill="'/step/prefill/%s/%s' % (slug(step), token)">
+                <t t-foreach="step.page_ids" t-as="page">
+                    <div class="o_page_header">
+                        <h1 t-field='page.title'/>
+                        <t t-if="page.description">
+                            <div t-field='page.description' class="oe_no_empty"/>
+                        </t>
+                    </div>
+                    <t t-foreach='page.question_ids' t-as='question'>
+                        <t t-set="prefix" t-value="'%s_%s_%s' % (step.id, page.id, question.id)"/>
+                        <div class="js_question-wrapper" t-att-id="prefix">
+                            <h2>
+                                <span t-field='question.question'/>
+                                <span t-if="question.constr_mandatory" class="text-danger">*</span>
+                                <span t-if="quizz_correction" class="badge badge-pill"
+                                      t-att-data-score-question="question.id"></span>
+                            </h2>
+                            <t t-if="question.description">
+                                <div class="text-muted oe_no_empty" t-field='question.description'/>
+                            </t>
+                            <t t-if="question.type == 'free_text'">
+                                <t t-call="step.free_text"/>
+                            </t>
+                            <t t-if="question.type == 'textbox'">
+                                <t t-call="step.textbox"/>
+                            </t>
+                            <t t-if="question.type == 'numerical_box'">
+                                <t t-call="step.numerical_box"/>
+                            </t>
+                            <t t-if="question.type == 'date'">
+                                <t t-call="step.date"/>
+                            </t>
+                            <t t-if="question.type == 'simple_choice'">
+                                <t t-call="step.simple_choice"/>
+                            </t>
+                            <t t-if="question.type == 'multiple_choice'">
+                                <t t-call="step.multiple_choice"/>
+                            </t>
+                            <t t-if="question.type == 'matrix'">
+                                <t t-call="step.matrix"/>
+                            </t>
+                            <t t-if="question.type == 'upload_file'">
+                                <t t-call="step.upload_file"/>
+                            </t>
+                            <t t-if="question.type in ['main_business_objective', 'why_communication',
+                             'main_objective_of_communication', 'budget', 'target_audience',
+                              'multiple_text_area', 'multiple_file_upload', 'summary_popup',
+                              'textarea_collapsible', 'divider', 'component_group', 'paragraph', 'header', 'audience_brief', 'prequote', 'iframeViewer', 'country_state_city', 'content_cluster','audience_custom', 'frequency_custom', 'feedback']">
+                                <t t-call="step.generic_json_data"/>
+                            </t>
+                            <t t-if="question.type == 'email'">
+                                <t t-call="step.email"/>
+                            </t>
+                            <t t-if="question.type == 'url'">
+                                <t t-call="step.url"/>
+                            </t>
+                            <div class="js_errzone alert alert-danger" style="display:none;" role="alert"></div>
+                        </div>
+                    </t>
+                    <hr/>
+                </t>
+            </div>
+        </div>
+    </div>
+</t>
+</template>
+        </data>
+        </odoo>

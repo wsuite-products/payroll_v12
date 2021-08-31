@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="crm_lead_view_form_inherit_multi_brand" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.multi.brand</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="before">
+                <field name="wpartner_id" options="{'no_create': True}"/>
+            </xpath>
+            <xpath expr="//field[@name='phone']" position="after">
+                <field name="brand_id" options="{'no_create': True}" context="{'partner_id': partner_id}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

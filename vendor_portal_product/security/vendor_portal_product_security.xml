@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value
+              eval="[('module', '=', 'base'), ('name', '=', 'res_partner_portal_public_rule')]"
+              />
+        </function>
+        <value eval="{'noupdate': False}" />
+    </function>
+
+    <record id="base.res_partner_portal_public_rule" model="ir.rule">
+        <field name="active" eval="False" />
+    </record>
+
+</odoo>

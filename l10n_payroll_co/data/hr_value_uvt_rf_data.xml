@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+  <record id="hr_value_uvt_rf_1" model="hr.value.uvt.rf">
+    <field name="name">2019</field>
+    <field name="status" eval="False"/>
+    <field name="value">34270</field>
+    <field name="start_date">2019-01-01</field>
+    <field name="end_date">2019-12-31</field>
+    <field name="percentage_renting_exempt">25</field>
+    <field name="max_value_renting_exempt">8225000</field>
+    <field name="max_uvt_deduction_renting_exempt">3800</field>
+    <field name="percentage_max_deduction">0</field>
+    <field name="r_ded_rent_exempt_value">0</field>
+    <field name="r_rent_exempt_value">0</field>
+    <field name="r_total_ded_exempt_value">0</field>
+    <field name="r_ded_rent_exempt_percetage">0</field>
+    <field name="r_rent_exempt_percetage">0</field>
+    <field name="r_total_ded_exempt_percetage">0</field>
+  </record>
+  <record id="hr_value_uvt_rf_2" model="hr.value.uvt.rf">
+    <field name="name">2018</field>
+    <field name="status" eval="False"/>
+    <field name="value">33156</field>
+    <field name="start_date">2018-01-01</field>
+    <field name="end_date">2018-12-31</field>
+    <field name="percentage_renting_exempt">25</field>
+    <field name="max_value_renting_exempt">7957440</field>
+    <field name="max_uvt_deduction_renting_exempt">0</field>
+    <field name="percentage_max_deduction">0</field>
+    <field name="r_ded_rent_exempt_value">0</field>
+    <field name="r_rent_exempt_value">0</field>
+    <field name="r_total_ded_exempt_value">0</field>
+    <field name="r_ded_rent_exempt_percetage">0</field>
+    <field name="r_rent_exempt_percetage">0</field>
+    <field name="r_total_ded_exempt_percetage">0</field>
+  </record>
+  <record id="hr_value_uvt_rf_3" model="hr.value.uvt.rf">
+    <field name="name">2020</field>
+    <field name="status" eval="True"/>
+    <field name="value">35607</field>
+    <field name="start_date">2020-01-01</field>
+    <field name="end_date">2020-12-31</field>
+    <field name="percentage_renting_exempt">25</field>
+    <field name="max_value_renting_exempt">8545680</field>
+    <field name="max_uvt_deduction_renting_exempt">3800</field>
+    <field name="percentage_max_deduction">30</field>
+    <field name="r_ded_rent_exempt_value">0</field>
+    <field name="r_rent_exempt_value">0</field>
+    <field name="r_total_ded_exempt_value">0</field>
+    <field name="r_ded_rent_exempt_percetage">0</field>
+    <field name="r_rent_exempt_percetage">0</field>
+    <field name="r_total_ded_exempt_percetage">0</field>
+  </record>
+</odoo>

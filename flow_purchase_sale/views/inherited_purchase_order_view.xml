@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <record id="purchase_order_form_inherit" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <field name="date_order" position="after">
+                <field name="so_id" groups="sales_team.group_sale_salesman"
+                       attrs="{'invisible': [('so_id','=',False)]}"/>
+                <field name="report_url" widget="url"/>
+                <field name="quotation_number"/>
+            </field>
+            <xpath expr="//field[@name='order_line']//tree//field[@name='name']" position="after">
+                <field name="quotation_number"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

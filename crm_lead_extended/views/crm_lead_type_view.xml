@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- CRM Lead Type tree view-->
+    <record id="crm_lead_type_tree" model="ir.ui.view">
+        <field name="name">CRM Lead Type Tree</field>
+        <field name="model">crm.lead.type</field>
+        <field name="arch" type="xml">
+            <tree string="CRM Lead Type">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="flows_ids" widget="many2many_tags"/>
+                <field name="parent_crm_lead_type"/>
+                <field name="partner_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- CRM Lead Type from view-->
+    <record id="crm_lead_type_form" model="ir.ui.view">
+        <field name="name">CRM Lead Type Tree</field>
+        <field name="model">crm.lead.type</field>
+        <field name="arch" type="xml">
+            <form string="CRM Lead Type">
+                <sheet>
+                    <field name="icon" widget='image' class="oe_avatar"/>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="flows_ids" widget="many2many_tags"/>
+                        <field name="parent_crm_lead_type"/>
+                        <field name="partner_id"/>
+                        <field name="image_url" widget="url"/>
+                        <field name="color"/>
+                        <field name="request_chk"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- CRM Lead Type Action-->
+    <record model="ir.actions.act_window" id="crm_lead_type_action">
+        <field name="name">CRM Lead Type</field>
+        <field name="res_model">crm.lead.type</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- CRM Lead Type Menu-->
+    <menuitem
+        id="crm_lead_type_menu"
+        action="crm_lead_type_action"
+        parent="crm.menu_crm_config_lead"/>
+
+</odoo>

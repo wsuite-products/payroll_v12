@@ -1,0 +1,2812 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * step
+# 
+# Translators:
+# 966ff43e6966712895a590e7320ca288, 2018
+# e2f <projects@e2f.com>, 2018
+# Ana Juaristi <ajuaristio@gmail.com>, 2018
+# Alejandro Santana <alejandrosantana@anubia.es>, 2018
+# Glen Sojo <inactive+glen.sojo@transifex.com>, 2018
+# Miquel Torner <miq@odoo.com>, 2018
+# Cristopher Cravioto <ccr@odoo.com>, 2018
+# Cristian Salamea <ovnicraft@gmail.com>, 2018
+# Jesús Alan Ramos Rodríguez <alan.ramos@jarsa.com.mx>, 2018
+# Luis M. Ontalba <luis.martinez@tecnativa.com>, 2018
+# Sergio Flores <vitavitae1@gmail.com>, 2018
+# Antonio Trueba, 2018
+# Jesus Zapata <jesus@vauxoo.com>, 2018
+# Nicolás Broggi <rnbroggi@gmail.com>, 2018
+# Gabriel Umana <gabriel.umana@delfixcr.com>, 2019
+# Pedro M. Baeza <pedro.baeza@gmail.com>, 2019
+# Martin Trigaux, 2019
+# RGB Consulting <odoo@rgbconsulting.com>, 2019
+# Vivian Montana <vmo@odoo.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 10:10+0000\n"
+"PO-Revision-Date: 2018-08-24 09:25+0000\n"
+"Last-Translator: Vivian Montana <vmo@odoo.com>, 2019\n"
+"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_tree
+msgid "#Questions"
+msgstr "#Preguntas"
+
+#. module: step
+#: model:mail.template,subject:step.email_template_step
+msgid "${object.title}: Step"
+msgstr ""
+
+#. module: step
+#: code:addons/step/models/step.py:122
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (copia)"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "&amp;times;"
+msgstr "&amp;times;"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "403: Forbidden"
+msgstr "403: Prohibido"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<b>Question </b>"
+msgstr "<b>Pregunta </b>"
+
+#. module: step
+#: model:mail.template,body_html:step.email_template_step
+msgid ""
+"<div style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Hello<br/><br/>\n"
+"        We are conducting a step, and your response would be appreciated.\n"
+"        <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"            <a href=\"__URL__\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                Start Step\n"
+"            </a>\n"
+"        </div>\n"
+"        Thanks for your participation!\n"
+"    </p>\n"
+"</div>\n"
+"            "
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-2x\" role=\"img\" aria-label=\"Numeric\" title=\"Numeric\">123..</i>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-align-justify fa-4x\" role=\"img\" aria-label=\"Multiple "
+"lines\" title=\"Multiple Lines\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid ""
+"<i class=\"fa fa-bar-chart\"/>\n"
+"                    Graph"
+msgstr ""
+"<i class=\"fa fa-bar-chart\"/>\n"
+"                    Gráfico"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-bar-chart-o\"/> Graph"
+msgstr "<i class=\"fa fa-bar-chart-o\"/> Gráfico"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-bar-chart-o\"/> Pie Chart"
+msgstr "<i class=\"fa fa-bar-chart-o\"/> Gráfico de sectores"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-check-square-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-check-square-o fa-lg\"/> respuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-circle-o  fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-circle-o  fa-lg\"/> respuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-circle-o fa-lg\" role=\"img\" aria-label=\"Not checked\" "
+"title=\"Not checked\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-dot-circle-o fa-lg\" role=\"img\" aria-label=\"Checked\" "
+"title=\"Checked\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-dot-circle-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-dot-circle-o fa-lg\"/> respuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    All Data"
+msgstr ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"Todos los datos"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    Data"
+msgstr ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"Datos"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-list-alt\"/> Data"
+msgstr "<i class=\"fa fa-list-alt\"/> Fecha"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid ""
+"<i class=\"fa fa-list-ol\"/>\n"
+"                    Most Common"
+msgstr ""
+"<i class=\"fa fa-list-ol\"/>\n"
+"Más común"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-minus fa-4x\" role=\"img\" aria-label=\"Single Line\" "
+"title=\"Single Line\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-square-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-square-o fa-lg\"/> respuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<i class=\"fa fa-times\"/> Clear All Filters"
+msgstr "<i class=\"fa fa-times\"/> Quitar todos los filtros"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-primary only_left_radius filter-all\">All "
+"steps</span><span class=\"badge badge-secondary only_right_radius filter-"
+"finished\">Finished steps</span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-primary only_left_radius\"><i class=\"fa fa-"
+"filter\" role=\"img\" aria-label=\"Filter\" title=\"Filter\"/></span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-secondary only_left_radius filter-all\">All "
+"steps</span><span class=\"badge badge-primary only_right_radius filter-"
+"finished\">Finished steps</span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Average </span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Maximum </span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Minimum </span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Sum </span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<span class=\"fa fa-filter\"/>  Filters"
+msgstr "<span class=\"fa fa-filter\"/>  Filtros"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span style=\"font-size:1.5em;\" class=\"fa fa-bar-chart-o float-right \" "
+"role=\"img\" aria-label=\"Chart\" title=\"Chart\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.no_result
+msgid ""
+"<span>\n"
+"                            <i style=\"font-size:1.8em\" class=\"fa fa-users float-right\" role=\"img\" aria-label=\"No answer\" title=\"No answer\"/>\n"
+"                        </span>\n"
+"                        Sorry, No one answered this step yet"
+msgstr ""
+
+#. module: step
+#: code:addons/step/models/step.py:688
+#, python-format
+msgid "A label must be attached to only one question."
+msgstr ""
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "A length must be positive!"
+msgstr "¡Una longitud debe ser positiva!"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__description
+msgid "A long description of the purpose of the step"
+msgstr "Una descripción larga del propósito de la encuesta"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_label__quizz_mark
+msgid ""
+"A positive score indicates a correct choice; a negative or null score "
+"indicates a wrong answer"
+msgstr ""
+"Una puntuación positiva indica una respuesta correcta, una negativa o nula "
+"indica una respuesta incorrecta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "A problem has occured"
+msgstr "Ha ocurrido un problema"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_4
+msgid "A process is defined for all enterprise flows"
+msgstr "Un proceso es definido para todos los flujos empresariales"
+
+#. module: step
+#: sql_constraint:step.user_input:0
+msgid "A token must be unique!"
+msgstr "El token debe ser único"
+
+#. module: step
+#: model:step.page,title:step.feedback_1
+msgid "About your Odoo usage"
+msgstr "Sobe su uso de Odoo"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Accepted"
+msgstr "Aceptada"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_needaction
+msgid "Action Needed"
+msgstr "Acción requerida"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__active_domain
+msgid "Active domain"
+msgstr "Dominio activo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__add_sign
+msgid "Add Sign"
+msgstr "Agregar Signo"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"Add a list of email of recipients (will not be converted into contacts). "
+"Separated by commas, semicolons or newline..."
+msgstr ""
+"Añada un listado de correos electrónicos de destinatarios (no serán "
+"convertidos en contactos). Separados por comas, puntos y comas o saltos de "
+"línea..."
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid "Add a new step"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Add existing contacts..."
+msgstr "Añadir contactos existentes..."
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_3
+#: model:step.label,value:step.fcol_2_2_3
+#: model:step.label,value:step.fcol_2_5_3
+#: model:step.label,value:step.fcol_2_7_3
+msgid "Agree"
+msgstr "De acuerdo"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Allow Comments"
+msgstr "Permitir comentarios"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_page__description
+msgid "An introductory text to your page"
+msgstr "Un texto introductorio de su página"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Analyze Answers"
+msgstr "Analizar respuestas"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Answer Choices"
+msgstr "Opciones de respuesta"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__type
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__answer_type
+msgid "Answer Type"
+msgstr "Tipo de respuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Answered"
+msgstr "Respondida"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_user_input
+#: model:ir.model.fields,field_description:step.field_step_question__user_input_line_ids
+#: model:ir.model.fields,field_description:step.field_step_user_input__user_input_line_ids
+#: model:ir.ui.menu,name:step.menu_step_type_form1
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Answers"
+msgstr "Respuestas"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__no_auto_thread
+msgid ""
+"Answers do not go in the original document discussion thread. This has an "
+"impact on the generated message-id."
+msgstr ""
+"Las respuestas no van al documento original del hilo de discusión. Esto "
+"tiene un impacto en el id del mensaje generado."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: step
+#: model:step.question,question:step.feedback_1_1
+msgid "Are you using Odoo on a daily basis?"
+msgstr "¿Está usando Odoo diariamente?"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteo de archivos adjuntos"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__attachment_ids
+msgid "Attachments"
+msgstr "Adjuntos"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__attachment_ids
+msgid ""
+"Attachments are linked to a document through model / res_id and to the "
+"message through this field."
+msgstr ""
+"Los adjuntos se asocian a un documento mediante el modelo / res_id y al "
+"mensaje mediante este campo."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__author_id
+msgid "Author"
+msgstr "Autor"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__author_id
+msgid ""
+"Author of the message. If not set, email_from may hold an email address that"
+" did not match any partner."
+msgstr ""
+"Autor del mensaje. Si no se establece, email_from puede contener una "
+"dirección de correo que no coincida con la de ninguna empresa."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__author_avatar
+msgid "Author's avatar"
+msgstr "Avatar del autor"
+
+#. module: step
+#: model:ir.model,name:step.model_ir_autovacuum
+msgid "Automatic Vacuum"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.back
+msgid "Back to Step"
+msgstr "Regresar a la encuesta"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_4
+msgid "CRM"
+msgstr "CRM"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__channel_ids
+msgid "Channels"
+msgstr "Canales"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__child_ids
+msgid "Child Messages"
+msgstr "Mensajes hijos"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Choices"
+msgstr "Opciones"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.simple_choice
+msgid "Choose..."
+msgstr "Seleccionar..."
+
+#. module: step
+#: code:addons/step/models/step.py:110
+#, python-format
+msgid "Click here to start step"
+msgstr "Pulse aquí para iniciar la encuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__closed
+#: model:step.stage,name:step.stage_closed
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Color"
+msgstr "Color"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__color
+msgid "Color Index"
+msgstr "Índice de Colores"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_comments
+#: selection:step.mail.compose.message,message_type:0
+msgid "Comment"
+msgstr "Comentario"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comment_count_as_answer
+msgid "Comment Field is an Answer Choice"
+msgstr "El campo de comentario es una opción de respuesta"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comments_message
+msgid "Comment Message"
+msgstr "Mensaje del comentario"
+
+#. module: step
+#: model:step.page,title:step.feedback_3
+msgid "Community and contributors"
+msgstr "Comunidad y contribuidores"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Company name"
+msgstr "Nombre de la compañía"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+#: selection:step.user_input,state:0
+msgid "Completed"
+msgstr "Completada"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Compose Email"
+msgstr "Componer correo electrónico"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__composition_mode
+msgid "Composition mode"
+msgstr "Modo de composición"
+
+#. module: step
+#: model:ir.ui.menu,name:step.menu_steps_configuration
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_2
+msgid "Configuration wizard exists for each important setting"
+msgstr "Asistente de configuración para cada ajuste importante"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Constraints"
+msgstr "Restricciones"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__body
+msgid "Contents"
+msgstr "Contenidos"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"Copy and paste the HTML code below to add this web link to any webpage."
+msgstr ""
+"Copie y pegue el código HTML a continuación para añadir este enlace web a "
+"cualquier página."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Copy, paste and share the web link below to your audience."
+msgstr "Copiar, pegar y compartir el enlace a continuación a su audiencia."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Copyright &amp;copy;"
+msgstr "Copyright &amp;copy;"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__date_create
+msgid "Create Date"
+msgstr "Fecha de Creación"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Create a"
+msgstr "Crea una"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__create_uid
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__create_uid
+#: model:ir.model.fields,field_description:step.field_step_page__create_uid
+#: model:ir.model.fields,field_description:step.field_step_question__create_uid
+#: model:ir.model.fields,field_description:step.field_step_stage__create_uid
+#: model:ir.model.fields,field_description:step.field_step_step__create_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input__create_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__create_date
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__create_date
+#: model:ir.model.fields,field_description:step.field_step_page__create_date
+#: model:ir.model.fields,field_description:step.field_step_question__create_date
+#: model:ir.model.fields,field_description:step.field_step_stage__create_date
+#: model:ir.model.fields,field_description:step.field_step_step__create_date
+#: model:ir.model.fields,field_description:step.field_step_user_input__create_date
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__date_create
+msgid "Creation Date"
+msgstr "Fecha de Creación"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__starred
+msgid "Current user has a starred notification linked to this message"
+msgstr ""
+"El usuario actual tiene una notificación destacada asociada a este mensaje"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__date
+#: selection:step.question,type:0
+#: selection:step.user_input_line,answer_type:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_date
+msgid "Date answer"
+msgstr "Fecha de respuesta"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_user_input__deadline
+msgid "Date by which the person can open the step and submit answers"
+msgstr ""
+"Fecha en la que el usuario puede abrir la encuesta y enviar las respuestas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__deadline
+msgid "Deadline"
+msgstr "Fecha límite"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__date_deadline
+msgid ""
+"Deadline to which the invitation to respond for this step is valid. If the"
+" field is empty,        the invitation is still valid."
+msgstr ""
+"Fecha límite para la que la invitación a responder es válida. Si el campo "
+"esta vació, la invitación seguirá siendo válida."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__date_deadline
+msgid "Deadline to which the invitation to respond is valid"
+msgstr "Fecha límite para la que la invitación a responder es válida"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Delete"
+msgstr "Suprimir"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__auto_delete
+msgid "Delete Emails"
+msgstr "Borrar correos"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__auto_delete_message
+msgid "Delete Message Copy"
+msgstr "Borrar copia del mensaje"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__auto_delete
+msgid "Delete sent emails (mass mailing only)"
+msgstr "Borrar correos enviados (solo envíos masivos)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__description
+#: model:ir.model.fields,field_description:step.field_step_page__description
+#: model:ir.model.fields,field_description:step.field_step_question__description
+#: model:ir.model.fields,field_description:step.field_step_step__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_1
+msgid "Descriptions and help tooltips are clear enough"
+msgstr "Descripciones y la ayuda contextual es lo suficientemente clara"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid ""
+"Design easily your step, send invitations to answer by email and analyse "
+"answers."
+msgstr ""
+"Diseñe fácilmente su encuesta, envíe invitaciones a responder por email y "
+"analice las respuestas."
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_2
+#: model:step.label,value:step.fcol_2_2_2
+#: model:step.label,value:step.fcol_2_5_2
+#: model:step.label,value:step.fcol_2_7_2
+msgid "Disagree"
+msgstr "En desacuerdo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__display_mode
+msgid "Display Mode"
+msgstr "Modo de visualización"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__display_name
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__display_name
+#: model:ir.model.fields,field_description:step.field_step_page__display_name
+#: model:ir.model.fields,field_description:step.field_step_question__display_name
+#: model:ir.model.fields,field_description:step.field_step_stage__display_name
+#: model:ir.model.fields,field_description:step.field_step_step__display_name
+#: model:ir.model.fields,field_description:step.field_step_user_input__display_name
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Display mode"
+msgstr "Modo de visualización"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__auto_delete_message
+msgid ""
+"Do not keep a copy of the email in the document communication history (mass "
+"mailing only)"
+msgstr ""
+"No mantengas una copia del correo en el histórico de comunicación del "
+"documento (solo correo masivo)"
+
+#. module: step
+#: model:step.question,question:step.feedback_3_3
+msgid "Do you have a proposition to attract new contributors?"
+msgstr "¿Tiene alguna propuesta para atraer nuevos contribuidores?"
+
+#. module: step
+#: model:step.question,question:step.feedback_3_2
+msgid "Do you have a proposition to help people to contribute?"
+msgstr "¿Tiene una propuesta para ayudar a la gente a contribuir?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_3
+msgid "Do you have suggestions on how to improve the process view ?"
+msgstr "¿Tiene sugerencias en cómo mejor la vista de procesos?"
+
+#. module: step
+#: model:step.stage,name:step.stage_draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Dropdown menu"
+msgstr "Menú desplegable"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__email
+msgid "E-mail"
+msgstr "Email"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Edit Pages and Questions"
+msgstr "Editar páginas y preguntas"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Edit Step"
+msgstr "Editar encuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+#: selection:step.mail.compose.message,message_type:0
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__email_template_id
+msgid "Email Template"
+msgstr "Plantilla de correo electrónico"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__email_from
+msgid ""
+"Email address of the sender. This field is set when no matching partner is "
+"found and replaces the author_id field in the chatter."
+msgstr ""
+"Dirección de correo del remitente. Este campo se establece cuando no se "
+"encuentra ningún socio coincidente y reemplaza el campo author_id en la "
+"charla."
+
+#. module: step
+#: model:ir.model,name:step.model_step_mail_compose_message
+msgid "Email composition wizard for Step"
+msgstr "Asistente de redacción de correo electrónico para la encuesta"
+
+#. module: step
+#: model:step.page,title:step.feedback_2
+msgid "Ergonomy and ease of use"
+msgstr "Ergonomía y facilidad de uso"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__constr_error_msg
+msgid "Error message"
+msgstr "Mensaje de error"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__partner_ids
+msgid "Existing contacts"
+msgstr "Contactos existentes"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_3
+msgid "Extra modules proposed are relevant"
+msgstr "Los módulos extra propuestos son relevantes"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__starred_partner_ids
+msgid "Favorited By"
+msgstr "Hecho Favorito por"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Filter question"
+msgstr ""
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_3
+msgid "Financial Management"
+msgstr "Gestión Financiera"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__fold
+msgid "Folded in kanban view"
+msgstr "Replegado en la vista kanban"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canales)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Empresas)"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Format"
+msgstr "Formatear"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Free Text"
+msgstr "Texto libre"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_free_text
+msgid "Free Text answer"
+msgstr "Respuesta de texto libre"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__email_from
+msgid "From"
+msgstr "De"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__has_error
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__has_error
+msgid "Has error"
+msgstr "Tiene un error"
+
+#. module: step
+#: model:step.question,question:step.feedback_3_1
+msgid "How do you contribute or plan to contribute to Odoo?"
+msgstr "¿Cómo contribuye o planea contribuir a Odoo?"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_6
+msgid "Human Resources"
+msgstr "Recursos Humanos"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_3
+msgid "I develop new features"
+msgstr "Desarrollo nuevos características"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_4
+msgid "I do not publish my developments"
+msgstr "No publico mis desarrollos"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_4
+msgid "I help to translate"
+msgstr "Ayudo a traducir"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_3
+msgid "I host them on my own website"
+msgstr "Lo hospedo en mi propio sitio web"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_1
+msgid "I participate to discussion and forums"
+msgstr "Participo en la discusión y en los foros"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_1
+msgid "I use Github, like all official Odoo projects"
+msgstr "Uso Github, como todos los proyectos oficiales de Odoo"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_2
+msgid "I use another repository system (SourceForge...)"
+msgstr "Uso otro sistema de repositorios  (SourceForge...)"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_3
+msgid "I use the contextual help in Odoo"
+msgstr "Utilizo la ayuda contextual en Odoo"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_5
+msgid "I write documentations"
+msgstr "Escribo documentación"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_2
+msgid "I'd like to contribute but I don't know how?"
+msgstr "Me gustaría contribuir pero... ¿cómo hacerlo?"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__id
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__id
+#: model:ir.model.fields,field_description:step.field_step_page__id
+#: model:ir.model.fields,field_description:step.field_step_question__id
+#: model:ir.model.fields,field_description:step.field_step_stage__id
+#: model:ir.model.fields,field_description:step.field_step_step__id
+#: model:ir.model.fields,field_description:step.field_step_user_input__id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__token
+msgid "Identification token"
+msgstr "Token de identificación"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado hay nuevos mensajes que requieren su atención."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si se encuentra marcado, algunos mensajes tienen error de envío."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__users_can_go_back
+msgid "If checked, users can go back to previous pages."
+msgstr "Si está marcado, los usuarios pueden volver a las páginas anteriores."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_stage__closed
+#: model:ir.model.fields,help:step.field_step_step__is_closed
+msgid "If closed, people won't be able to answer to steps in this column."
+msgstr ""
+"Si está cerrada, la gente no podrá responder encuestas en esta columna."
+
+#. module: step
+#: code:addons/step/models/step.py:471
+#: model:step.question,comments_message:step.feedback_1_1
+#: model:step.question,comments_message:step.feedback_1_2
+#: model:step.question,comments_message:step.feedback_2_1
+#: model:step.question,comments_message:step.feedback_2_2
+#: model:step.question,comments_message:step.feedback_2_3
+#: model:step.question,comments_message:step.feedback_2_4
+#: model:step.question,comments_message:step.feedback_2_5
+#: model:step.question,comments_message:step.feedback_2_6
+#: model:step.question,comments_message:step.feedback_2_7
+#: model:step.question,comments_message:step.feedback_3_1
+#: model:step.question,comments_message:step.feedback_3_2
+#: model:step.question,comments_message:step.feedback_3_3
+#: model:step.question,comments_message:step.feedback_4_1
+#, python-format
+msgid "If other, please specify:"
+msgstr "Si otra, por favor, precisar:"
+
+#. module: step
+#: model_terms:step.page,description:step.feedback_4
+msgid "If you do not contribute or develop in Odoo, skip this page."
+msgstr "Si no contribuye o desarrolla en Odoo, salte esta página."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "If you wish, you can"
+msgstr "Si quiere, puede"
+
+#. module: step
+#: model:step.stage,name:step.stage_in_progress
+msgid "In progress"
+msgstr "En proceso"
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:72
+#, python-format
+msgid "Incorrect Email Address: %s"
+msgstr "Dirección de correo electrónico incorrecto: %s"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__parent_id
+msgid "Initial thread message."
+msgstr "Mensaje inicial del hilo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_email
+msgid "Input must be an email"
+msgstr "La entrada debe ser un correo electrónico"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+msgid "Invitations sent"
+msgstr "Invitaciones enviadas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_is_follower
+msgid "Is Follower"
+msgstr "Es un seguidor"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__is_closed
+msgid "Is closed"
+msgstr "Está cerrado"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__designed
+msgid "Is designed?"
+msgstr "¿Está diseñado?"
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_2
+msgid "It can be improved"
+msgstr "Puede ser mejorado"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_2
+msgid "It helps in the beginning"
+msgstr "Ayuda en el comienzo"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_5
+msgid "It is clear"
+msgstr "Está claro"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_4
+msgid "It is complete"
+msgstr "Está completo"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_1
+msgid "It is up-to-date"
+msgstr "Está al día"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_5
+msgid "It's easy to find the process you need"
+msgstr "Es fácil encontrar el proceso que necesita"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__sequence
+msgid "Label Sequence order"
+msgstr "Secuencia de orden de la etiqueta"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_label_form
+#: model:ir.ui.menu,name:step.menu_step_label_form1
+msgid "Labels"
+msgstr "Etiquetas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label____last_update
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message____last_update
+#: model:ir.model.fields,field_description:step.field_step_page____last_update
+#: model:ir.model.fields,field_description:step.field_step_question____last_update
+#: model:ir.model.fields,field_description:step.field_step_stage____last_update
+#: model:ir.model.fields,field_description:step.field_step_step____last_update
+#: model:ir.model.fields,field_description:step.field_step_user_input____last_update
+#: model:ir.model.fields,field_description:step.field_step_user_input_line____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__write_uid
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__write_uid
+#: model:ir.model.fields,field_description:step.field_step_page__write_uid
+#: model:ir.model.fields,field_description:step.field_step_question__write_uid
+#: model:ir.model.fields,field_description:step.field_step_stage__write_uid
+#: model:ir.model.fields,field_description:step.field_step_step__write_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input__write_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__write_date
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__write_date
+#: model:ir.model.fields,field_description:step.field_step_page__write_date
+#: model:ir.model.fields,field_description:step.field_step_question__write_date
+#: model:ir.model.fields,field_description:step.field_step_stage__write_date
+#: model:ir.model.fields,field_description:step.field_step_step__write_date
+#: model:ir.model.fields,field_description:step.field_step_user_input__write_date
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__last_displayed_page_id
+msgid "Last displayed page"
+msgstr "Última página mostrada"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Late Activities"
+msgstr "Actividades tardías"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__layout
+msgid "Layout"
+msgstr "Diseño"
+
+#. module: step
+#: selection:step.user_input,type:0
+msgid "Link"
+msgstr "Vínculo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__multi_email
+msgid "List of emails"
+msgstr "Lista de correos electrónicos"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__is_log
+msgid "Log an Internal Note"
+msgstr "Registrar una nota interna"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__auth_required
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "Login required"
+msgstr "Se requiere iniciar sesión"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Logo"
+msgstr "Logo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__mail_activity_type_id
+msgid "Mail Activity Type"
+msgstr "Tipo de actividad del correo electrónico"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjuntos principales"
+
+#. module: step
+#: model:res.groups,name:step.group_step_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__constr_mandatory
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Mandatory Answer"
+msgstr "Respuesta obligatoria"
+
+#. module: step
+#: selection:step.user_input,type:0
+msgid "Manually"
+msgstr "Manualmente"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Matrix"
+msgstr "Matriz"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__matrix_subtype
+msgid "Matrix Type"
+msgstr "Tipo de matriz"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Matrix:"
+msgstr "Matriz:"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max date cannot be smaller than min date!"
+msgstr "¡La fecha máxima no puede ser menor que la mínima!"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max length cannot be smaller than min length!"
+msgstr "¡La longitud máxima no puede ser menor que la mínima!"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max value cannot be smaller than min value!"
+msgstr "¡El valor máximo no puede ser menor que el mínimo!"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_max_date
+msgid "Maximum Date"
+msgstr "Fecha máxima"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_length_max
+msgid "Maximum Text Length"
+msgstr "Longitud máxima del texto"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_max_float_value
+msgid "Maximum value"
+msgstr "Valor máximo"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "Maybe you were looking for"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Envío de Mensaje"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__record_name
+msgid "Message Record Name"
+msgstr "Nombre de registro del mensaje"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__description
+msgid "Message description: either the subject, or the beginning of the body"
+msgstr ""
+"Descripción del mensaje: o bien el asunto, o el comienzo del cuerpo del "
+"mensaje"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__message_type
+msgid ""
+"Message type: email for email message, notification for system message, "
+"comment for other messages such as user replies"
+msgstr ""
+"Tipo de mensaje: email para mensajes de correo, notification para mensajes "
+"de sistema, comment para otros tipos de mensaje como respuestas de usuarios."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__message_id
+msgid "Message unique identifier"
+msgstr "Identificador único del mensaje"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__message_id
+msgid "Message-Id"
+msgstr "Id del mensaje"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_min_date
+msgid "Minimum Date"
+msgstr "Fecha mínima"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_length_min
+msgid "Minimum Text Length"
+msgstr "Longitud mínima de texto"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_min_float_value
+msgid "Minimum value"
+msgstr "Valor mínimo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__moderator_id
+msgid "Moderated By"
+msgstr "Moderado por"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__moderation_status
+msgid "Moderation Status"
+msgstr "Estado de moderación"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple Lines Text Box"
+msgstr "Cuadro de texto de múltiples líneas"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Multiple choice with multiple answers"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Multiple choice with one answer"
+msgstr ""
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple choice: multiple answers allowed"
+msgstr "Elección múltiple: respuestas múltiples permitidas "
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple choice: only one answer"
+msgstr "Elección múltiple: sólo una respuesta"
+
+#. module: step
+#: selection:step.question,matrix_subtype:0
+msgid "Multiple choices per row"
+msgstr "Elección múltiple por fila"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "My Activities"
+msgstr "Mis actividades"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__record_name
+msgid "Name get of the related document."
+msgstr "Nombre obtenido del documento relacionado"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__needaction
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__needaction
+msgid "Need Action"
+msgstr "Requiere acción"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__need_moderation
+msgid "Need moderation"
+msgstr "Necesita moderación"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "New"
+msgstr "Nuevo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Siguiente plazo de actividad"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Next page"
+msgstr "Página siguiente"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_page_form
+msgid "No pages found"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_question_form
+msgid "No questions found"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_label_form
+msgid "No step labels found"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__no_auto_thread
+msgid "No threading for answers"
+msgstr "No hay un hilo para las respuestas"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_user_input_line
+msgid "No user input lines found"
+msgstr ""
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_4
+msgid "No, I just tested it"
+msgstr "No, sólo lo he probado"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_selected_step_user_input
+#: model_terms:ir.actions.act_window,help:step.action_step_user_input
+msgid "Nobody has replied to your steps yet"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.notopen
+msgid "Not open"
+msgstr "No abierto"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.nopages
+msgid "Not ready"
+msgstr "No está listo"
+
+#. module: step
+#: selection:step.user_input,state:0
+msgid "Not started yet"
+msgstr "Sin comenzar aún"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__notification_ids
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__notify
+msgid "Notify followers"
+msgstr "Notificar a los seguidores"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__notify
+msgid "Notify followers of the document (mass post only)"
+msgstr "Notificar a los seguidores del documento (sólo para envíos masivos)"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Number"
+msgstr "Número"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__column_nb
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Number of columns"
+msgstr "Número de columnas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_comp_step
+msgid "Number of completed steps"
+msgstr "Número de encuestas terminadas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_has_error_counter
+msgid "Number of error"
+msgstr "Número de error"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_sent_step
+msgid "Number of sent steps"
+msgstr "Número de encuestas enviadas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_start_step
+msgid "Number of started steps"
+msgstr "Número de encuestas empezadas"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leidos"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Numerical Value"
+msgstr "Valor numérico"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_number
+msgid "Numerical answer"
+msgstr "Respuesta numérica"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "Occurence"
+msgstr "Ocurrencia"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: step
+#: selection:step.question,matrix_subtype:0
+msgid "One choice per row"
+msgstr "Una elección por fila"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Options"
+msgstr "Opciones"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__mail_server_id
+msgid "Outgoing mail server"
+msgstr "Servidor de correos salientes"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Overdue"
+msgstr "Vencidas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__page_id
+#: model_terms:ir.ui.view,arch_db:step.page
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Page"
+msgstr "Página"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_page__title
+#: model_terms:ir.ui.view,arch_db:step.step_page_form
+msgid "Page Title"
+msgstr "Título de la página"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_page__sequence
+msgid "Page number"
+msgstr "Número de página"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.act_step_pages
+#: model:ir.actions.act_window,name:step.action_step_page_form
+#: model:ir.model.fields,field_description:step.field_step_step__page_ids
+#: model:ir.ui.menu,name:step.menu_step_page_form1
+msgid "Pages"
+msgstr "Páginas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__parent_id
+msgid "Parent Message"
+msgstr "Mensaje padre"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Partially Completed"
+msgstr ""
+
+#. module: step
+#: selection:step.user_input,state:0
+msgid "Partially completed"
+msgstr "Parcialmente completado"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__partner_id
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__needaction_partner_ids
+msgid "Partners with Need Action"
+msgstr "Asociados con acción requerida"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Pending Moderation"
+msgstr ""
+
+#. module: step
+#: model:step.stage,name:step.stage_permanent
+msgid "Permanent"
+msgstr "Permanente"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Planned"
+msgstr "Planificado"
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:188
+#, python-format
+msgid "Please enter at least one valid recipient."
+msgstr "Introduzca al menos un destinatario válido"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Previous page"
+msgstr "Pagina anterior"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Print Step"
+msgstr "Imprimir encuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "Print These Answers"
+msgstr "Imprimir estas respuestas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__print_url
+msgid "Print link"
+msgstr "Imprimir enlace"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_5
+msgid "Project Management"
+msgstr "Gestión de proyectos"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public_url_html
+msgid "Public HTML web link"
+msgstr "Enlace web HTML público"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__public_url
+msgid "Public link"
+msgstr "Enlace público"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__public_url_html
+msgid "Public link (html version)"
+msgstr "Enlace público (versión HTML)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__print_url
+msgid "Public link to the empty step"
+msgstr "Enlace público a la encuesta vacía"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__result_url
+msgid "Public link to the step results"
+msgstr "Enlace público a los resultados de la encuesta"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public_url
+msgid "Public url"
+msgstr "URL pública"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__website_published
+msgid "Published"
+msgstr "Publicado"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_2
+msgid "Purchases Management"
+msgstr "Gestión de compras"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__question_id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__question_id
+#: model_terms:ir.ui.view,arch_db:step.step_label_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Question"
+msgstr "Pregunta"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__question_id_2
+msgid "Question 2"
+msgstr "Pregunta 2"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__question
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Question Name"
+msgstr "Nombre de la Pregunta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Question name"
+msgstr "Nombre de la pregunta"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.act_step_page_question
+#: model:ir.actions.act_window,name:step.act_step_question
+#: model:ir.actions.act_window,name:step.action_step_question_form
+#: model:ir.model.fields,field_description:step.field_step_page__question_ids
+#: model:ir.ui.menu,name:step.menu_step_question_form1
+msgid "Questions"
+msgstr "Cuestionario"
+
+#. module: step
+#: model:step.page,title:step.feedback_4
+msgid "Questions for developers"
+msgstr "Preguntas para desarrolladores"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__quizz_mode
+msgid "Quizz Mode"
+msgstr "Modo cuestionario"
+
+#. module: step
+#: selection:step.question,display_mode:0
+msgid "Radio Buttons"
+msgstr "Botones de opción"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__rating_value
+msgid "Rating Value"
+msgstr "Valoración del valor"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Rejected"
+msgstr "Rechazada"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__res_id
+msgid "Related Document ID"
+msgstr "ID del documento relacionado"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__model
+msgid "Related Document Model"
+msgstr "Modelo de documento relacionado"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__rating_ids
+msgid "Related ratings"
+msgstr "Valoraciones relacionadas"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__reply_to
+msgid ""
+"Reply email address. Setting the reply_to bypasses the automatic thread "
+"creation."
+msgstr ""
+"Dirección de respuesta de los correos. Estableciendo este campo, se saltará "
+"la creación automática de hilos."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__reply_to
+msgid "Reply-To"
+msgstr "Responder a"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__result_url
+msgid "Results link"
+msgstr "Enlace de resultados"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_suggested_row
+msgid "Row answer"
+msgstr "Fila de la respuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row1"
+msgstr "Fila1"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row2"
+msgstr "Fila2"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row3"
+msgstr "Fila3"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Rows"
+msgstr "Fila4"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__labels_ids_2
+msgid "Rows of the Matrix"
+msgstr "Filas de la matriz"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_4
+msgid "Running the configuration wizards is a good way to spare time"
+msgstr ""
+"Ejecutar los asistentes de configuración es una buena forma de ahorrar "
+"tiempo"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_1
+msgid "Sales Management"
+msgstr "Gestión de ventas"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Save as a new template"
+msgstr "Guardar como plantilla nueva"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Save as new template"
+msgstr "Grabar como nueva plantilla"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__quizz_score
+msgid "Score for the quiz"
+msgstr "Marcador para el concurso"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__quizz_mark
+msgid "Score for this choice"
+msgstr "Puntuación para esta opción"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__quizz_mark
+msgid "Score given for this choice"
+msgstr "Puntuación dada a esta opción"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_label_search
+msgid "Search Label"
+msgstr "Buscar etiqueta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+msgid "Search Page"
+msgstr "Buscar página"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Search Question"
+msgstr "Buscar pregunta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Search Step"
+msgstr "Buscar encuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+msgid "Search User input lines"
+msgstr "Buscar líneas de entrada del usuario"
+
+#. module: step
+#: selection:step.question,display_mode:0
+msgid "Selection Box"
+msgstr "Caja de selección"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Send"
+msgstr "Enviar"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "Send Invitation Again"
+msgstr "Enviar invitación otra vez"
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid "Send by email the public web link to your audience."
+msgstr "Enviar por correo electrónico el enlace web público a su audiencia."
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid ""
+"Send private invitation to your audience (only one response per recipient "
+"and per invitation)."
+msgstr ""
+"Enviar una invitación privada a su audiencia (sólo una respuesta por "
+"destinatario e invitación)."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__sequence
+#: model:ir.model.fields,field_description:step.field_step_stage__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: step
+#: sql_constraint:step.stage:0
+msgid "Sequence number MUST be a natural"
+msgstr "El número de secuencia debe ser un número natural"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Share &amp;amp; Invite"
+msgstr "Compartir e invitar"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Share and invite by email"
+msgstr "Compartir e invitar por correo electrónico"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public
+msgid "Share options"
+msgstr "Opciones de compartición"
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid "Share the public web link to your audience."
+msgstr "Compartir en enlace web público a su audiencia."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comments_allowed
+msgid "Show Comments Field"
+msgstr "Mostrar campo de comentarios"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Show all records which has next action date is before today"
+msgstr ""
+"Mostrar todos los registros que tienen la próxima fecha de acción antes de "
+"hoy"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Single Line Text Box"
+msgstr "Única línea de texto"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__skipped
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Skipped"
+msgstr "Omitida"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__author_avatar
+msgid ""
+"Small-sized image of this contact. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is"
+" required."
+msgstr ""
+"Imagen de tamaño pequeño de este contacto. Se redimensiona automáticamente a"
+" 64x64 px, con el ratio de aspecto preservado. Use este campo donde se "
+"requiera una imagen pequeña."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid ""
+"Something went wrong while contacting step server. <strong class=\"text-"
+"danger\">Your answers have probably not been recorded.</strong> Try "
+"refreshing."
+msgstr ""
+"Se ha producido un error al contactar con el servidor de la encuesta. "
+"<strong class=\"text-danger\">Probablemente no se hayan registrado sus "
+"respuestas.</strong> Pruebe actualizando."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Sorry, No one answered this question."
+msgstr "Lo sentimos. Nadie ha contestado esta pregunta."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__stage_id
+#: model_terms:ir.ui.view,arch_db:step.step_stage_form
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__starred
+msgid "Starred"
+msgstr "Destacado"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_init
+msgid "Start Step"
+msgstr "Iniciar encuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+msgid "Started"
+msgstr "Iniciada"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Vencida: la fecha tope ya ha pasado\n"
+"Hoy: La fecha tope es hoy\n"
+"Planificada: futuras actividades."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__subject
+msgid "Subject"
+msgstr "Asunto"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Subject..."
+msgstr "Asunto..."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Submit step"
+msgstr "Enviar encuesta"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__subtype_id
+msgid "Subtype"
+msgstr "Subtipo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_suggested
+msgid "Suggested answer"
+msgstr "Respuesta sugerida"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__value
+msgid "Suggested value"
+msgstr "Valor sugerido"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Suggestion"
+msgstr "Sugerencia"
+
+#. module: step
+#: model:ir.model,name:step.model_step_step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__step_id
+#: model:ir.model.fields,field_description:step.field_step_page__step_id
+#: model:ir.model.fields,field_description:step.field_step_question__step_id
+#: model:ir.model.fields,field_description:step.field_step_user_input__step_id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__step_id
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Step"
+msgstr "Planificación"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_tree
+msgid "Step Answer Line"
+msgstr "Línea de respuesta de encuesta"
+
+#. module: step
+#: model:ir.model,name:step.model_step_label
+#: model_terms:ir.ui.view,arch_db:step.step_label_tree
+msgid "Step Label"
+msgstr "Etiqueta de la encuesta"
+
+#. module: step
+#: model:ir.model,name:step.model_step_page
+#: model_terms:ir.ui.view,arch_db:step.step_page_form
+#: model_terms:ir.ui.view,arch_db:step.step_page_tree
+msgid "Step Page"
+msgstr "Página de la encuesta"
+
+#. module: step
+#: model:ir.model,name:step.model_step_question
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_tree
+msgid "Step Question"
+msgstr "Pregunta de la encuesta"
+
+#. module: step
+#: model:ir.model,name:step.model_step_stage
+msgid "Step Stage"
+msgstr "Etapa de la encuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Step Title"
+msgstr "Título de la encuesta"
+
+#. module: step
+#: model:ir.model,name:step.model_step_user_input
+msgid "Step User Input"
+msgstr "Entrada de usuario de la encuesta"
+
+#. module: step
+#: model:ir.model,name:step.model_step_user_input_line
+msgid "Step User Input Line"
+msgstr "Línea de entrada de usuario de la encuesta"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_user_input_line
+msgid "Step User Input lines"
+msgstr "Líneas de entrada de usuario de la encuesta"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_selected_step_user_input
+msgid "Step User input"
+msgstr "Entrada de usuario de la encuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_tree
+msgid "Step User inputs"
+msgstr "Entradas de usuario de la encuesta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid "Step filter"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__page_id
+msgid "Step page"
+msgstr "Página de la encuesta"
+
+#. module: step
+#: model:ir.actions.server,name:step.step_action_server_clean_test_answers
+msgid "Step: Clean test answers"
+msgstr "Encuesta: Borrar respuestas de prueba"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_form
+#: model:ir.ui.menu,name:step.menu_step_form
+#: model:ir.ui.menu,name:step.menu_steps
+msgid "Steps"
+msgstr "Encuestas"
+
+#. module: step
+#: selection:step.mail.compose.message,message_type:0
+msgid "System notification"
+msgstr "Notificación del sistema"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Test"
+msgstr "Test"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Test Entries"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__test_entry
+msgid "Test Entry"
+msgstr "Entrada de prueba"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Test Step"
+msgstr "Probar encuesta"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Text"
+msgstr "Texto"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_text
+msgid "Text answer"
+msgstr "Respuesta de texto"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "Thank you!"
+msgstr "¡Gracias!"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__thank_you_message
+msgid "Thanks Message"
+msgstr "Mensaje de agradecimiento"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_3
+msgid "The 'Usability/Extended View' group helps in daily work"
+msgstr "El grupo 'Usabilidad/Vista extendida' le ayuda en su trabajo diario"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_4
+msgid "The 'Usability/Extended View' group hides only optional fields"
+msgstr "El grupo 'Usabilidad/Vista extendida' oculta sólo campos opcionales."
+
+#. module: step
+#: code:addons/step/models/step.py:819
+#, python-format
+msgid "The answer must be in the right type"
+msgstr "La respuesta debe estar en el tipo adecuado"
+
+#. module: step
+#: code:addons/step/models/step.py:485
+#: model:step.question,validation_error_msg:step.feedback_1_1
+#: model:step.question,validation_error_msg:step.feedback_1_2
+#: model:step.question,validation_error_msg:step.feedback_2_1
+#: model:step.question,validation_error_msg:step.feedback_2_2
+#: model:step.question,validation_error_msg:step.feedback_2_3
+#: model:step.question,validation_error_msg:step.feedback_2_4
+#: model:step.question,validation_error_msg:step.feedback_2_5
+#: model:step.question,validation_error_msg:step.feedback_2_6
+#: model:step.question,validation_error_msg:step.feedback_2_7
+#: model:step.question,validation_error_msg:step.feedback_3_1
+#: model:step.question,validation_error_msg:step.feedback_3_2
+#: model:step.question,validation_error_msg:step.feedback_3_3
+#: model:step.question,validation_error_msg:step.feedback_4_1
+#, python-format
+msgid "The answer you entered has an invalid format."
+msgstr "La respuesta introducida tiene un formato no válido."
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:163
+#, python-format
+msgid ""
+"The content of the text don't contain '__URL__'.                     __URL__"
+" is automaticaly converted into the special url of the step."
+msgstr ""
+"El contenido del texto no contiene '__URL__'. __URL__ se convierte "
+"automáticamente en la URL de la encuesta."
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_1
+msgid "The current menu structure is good"
+msgstr "La estructura de menús actual es buena"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_5
+msgid "The groups set on menu items are relevant"
+msgstr ""
+"El conjunto de grupos establecidos en los elementos de menú son relevantes"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_3
+msgid "The number of groups is good"
+msgstr "El número de grupos es adecuado"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "The page you were looking for could not be authorized."
+msgstr "No está autorizado a ver la página que está buscando."
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_1
+msgid "The security rules defined on groups are useful"
+msgstr "Las reglas de seguridad definidas en los grupos son útiles"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_2
+msgid "There are too few groups defined, security isn't accurate enough"
+msgstr "Hay demasiados pocos grupos definidos. La seguridad no es muy precisa"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_1
+msgid "There are too many groups defined, security is too complex to set"
+msgstr ""
+"Hay demasiados grupos definidos. La seguridad es demasiado compleja de "
+"establecer"
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_3
+msgid "There are too much menus, it's complex to understand"
+msgstr "Hay demasiados menús. Es muy complejo de entender"
+
+#. module: step
+#: model_terms:step.page,description:step.feedback_2
+msgid ""
+"These questions relate to the ergonomy and ease of use of Odoo. Try to remind your firsts days on Odoo and\n"
+"what have been your difficulties."
+msgstr ""
+"Estas preguntas están relacionadas con la ergonomía y facilidad de uso de "
+"Odoo. Trate de recordar sus primeros días en Odoo y cuáles fueron sus "
+"dificultades."
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_2
+msgid "They are clean and correct"
+msgstr "Son claros y correctos"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_3
+msgid "They are useful on a daily usage"
+msgstr "Son útiles en el uso diario"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_1
+msgid "They help new users to understand Odoo"
+msgstr "Ayudan a los nuevos usuarios a comprender Odoo"
+
+#. module: step
+#: code:addons/step/models/step.py:544
+#: code:addons/step/tests/test_step.py:86
+#, python-format
+msgid "This answer must be an email address"
+msgstr "Esta respuesta debe ser una dirección de correo electrónica"
+
+#. module: step
+#: code:addons/step/models/step.py:588
+#: code:addons/step/tests/test_step.py:107
+#, python-format
+msgid "This is not a date"
+msgstr "Esto no es una fecha"
+
+#. module: step
+#: code:addons/step/models/step.py:565
+#: code:addons/step/tests/test_step.py:97
+#, python-format
+msgid "This is not a number"
+msgstr "Esto no es un número"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__multi_email
+msgid ""
+"This list of emails of recipients will not be converted in contacts.        "
+"Emails must be separated by commas, semicolons or newline."
+msgstr ""
+"Esta lista de correos electrónicos destinatarios no se convertirá en "
+"contactos. Las direcciones deben separarse por comas, puntos y comas o "
+"nuevas líneas."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__thank_you_message
+msgid "This message will be displayed when step is completed"
+msgstr "Este mensaje será mostrado cuando se complete la encuesta"
+
+#. module: step
+#: code:addons/step/models/step.py:806
+#, python-format
+msgid "This question cannot be unanswered or skipped."
+msgstr ""
+
+#. module: step
+#: code:addons/step/models/step.py:489
+#: model:step.question,constr_error_msg:step.feedback_1_1
+#: model:step.question,constr_error_msg:step.feedback_1_2
+#: model:step.question,constr_error_msg:step.feedback_2_1
+#: model:step.question,constr_error_msg:step.feedback_2_2
+#: model:step.question,constr_error_msg:step.feedback_2_3
+#: model:step.question,constr_error_msg:step.feedback_2_4
+#: model:step.question,constr_error_msg:step.feedback_2_5
+#: model:step.question,constr_error_msg:step.feedback_2_6
+#: model:step.question,constr_error_msg:step.feedback_2_7
+#: model:step.question,constr_error_msg:step.feedback_3_1
+#: model:step.question,constr_error_msg:step.feedback_3_2
+#: model:step.question,constr_error_msg:step.feedback_3_3
+#: model:step.question,constr_error_msg:step.feedback_4_1
+#, python-format
+msgid "This question requires an answer."
+msgstr "Esta pregunta requiere una respuesta."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.nopages
+msgid "This step has no pages by now!"
+msgstr "Esta encuesta no tiene páginas por el momento"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.notopen
+msgid "This step is not open. Thank you for your interest!"
+msgstr "Esta encuesta no está abierta. ¡Gracias por su interés!"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "This step is open only to registered people. Please"
+msgstr "Esta encuesta está abierta sólo para gente registrada. Por favor"
+
+#. module: step
+#: model_terms:step.step,description:step.feedback_form
+msgid "This step should take less than five minutes."
+msgstr "Esta encuesta debe tomar menos de cinco minutos."
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_2
+msgid ""
+"Those security rules are standard and can be used out-of-the-box in most "
+"cases"
+msgstr ""
+"Las reglas de seguridad son estándar y puede ser usadas tal cual en la "
+"mayoría de casos"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__title
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Title"
+msgstr "Título"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Today"
+msgstr "Hoy"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Today Activities"
+msgstr "Actividades de Hoy"
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_4
+#: model:step.label,value:step.fcol_2_2_4
+#: model:step.label,value:step.fcol_2_5_4
+#: model:step.label,value:step.fcol_2_7_4
+msgid "Totally agree"
+msgstr "Totalmente de acuerdo"
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_1
+#: model:step.label,value:step.fcol_2_2_1
+#: model:step.label,value:step.fcol_2_5_1
+#: model:step.label,value:step.fcol_2_7_1
+msgid "Totally disagree"
+msgstr "Totalmente en desacuerdo"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__tracking_value_ids
+msgid ""
+"Tracked values are stored in a separate model. This field allow to "
+"reconstruct the tracking and to generate statistics on the model."
+msgstr ""
+"Los valores seguidos están almacenados en un modelo separado. Este campo "
+"permite reconstruir el seguimiento y generar estadísticas en el modelo."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__tracking_value_ids
+msgid "Tracking values"
+msgstr "Valores de seguimiento"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__message_type
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Type"
+msgstr "Tipo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__type
+msgid "Type of Question"
+msgstr "Tipo de pregunta"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Type of answers"
+msgstr "Tipo de respuestas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__labels_ids
+msgid "Types of answers"
+msgstr "Tipos de respuestas"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes sin leer"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes sin leer"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Upcoming Activities"
+msgstr "Próximas actividades"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__use_active_domain
+msgid "Use active domain"
+msgstr "Usar el dominio activo"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__template_id
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Use template"
+msgstr "Usar plantilla"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_question__description
+msgid ""
+"Use this field to add         additional explanations about your question"
+msgstr ""
+"Utilice este campo para añadir explicaciones adicionales sobre la pregunta"
+
+#. module: step
+#: model:res.groups,name:step.group_step_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: step
+#: model:step.step,title:step.feedback_form
+msgid "User Feedback Form"
+msgstr "Formulario de retroalimentación del usuario"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__user_input_id
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+msgid "User Input"
+msgstr "Entrada del usuario"
+
+#. module: step
+#: model:ir.ui.menu,name:step.menu_step_response_line_form
+msgid "User Input Lines"
+msgstr "Líneas de entrada del usuario"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+#: model_terms:ir.ui.view,arch_db:step.result_number
+#: model_terms:ir.ui.view,arch_db:step.result_text
+msgid "User Responses"
+msgstr "Respuestas del usuario"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "User can come back in the previous page"
+msgstr "El usuario puede regresar a la página anterior"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_line_form
+msgid "User input line details"
+msgstr "Detalles de la línea de entrada del usuario"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__user_input_ids
+msgid "User responses"
+msgstr "Respuestas del usuario"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__users_can_go_back
+msgid "Users can go back"
+msgstr "Los usuarios pueden volver atrás"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__auth_required
+msgid ""
+"Users with a public link will be requested to login before taking part to "
+"the step"
+msgstr ""
+"Los usuarios que accedan con un enlace público se les requerirá iniciar "
+"sesión antes de formar parte de la encuesta"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_required
+msgid "Validate entry"
+msgstr "Validar entrada"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_error_msg
+msgid "Validation Error message"
+msgstr "Mensaje de error de validación"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "View Results"
+msgstr "Ver Resultados"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "View results"
+msgstr "Ver resultados"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__website_published
+msgid "Visible on the website as a comment"
+msgstr "Visible en el sitio web como un comentario"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Vote"
+msgstr "Votar"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicaciones del sitio web"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_7
+msgid "What do you think about configuration wizards?"
+msgstr "¿Qué piensa acerca de los asistentes de configuración?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_1
+msgid "What do you think about the documentation available on doc.odoo.com?"
+msgstr "¿Qué opina de la documentación disponible en doc.odoo.com?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_5
+msgid "What do you think about the groups of users?"
+msgstr "¿Qué piensa de los grupos de usuarios?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_2
+msgid ""
+"What do you think about the process views of Odoo, available in the web "
+"client ?"
+msgstr ""
+"¿Qué opina acerca de las vistas de proceso de Odoo, disponibles en el "
+"cliente web?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_4
+#: model:step.question,question:step.feedback_2_6
+msgid "What do you think about the structure of the menus?"
+msgstr "¿Qué le parece la estructura de los menús?"
+
+#. module: step
+#: model:step.question,question:step.feedback_4_1
+msgid "Where do you develop your new features?"
+msgstr "¿Dónde desarrolla nuevas características?"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__is_log
+msgid "Whether the message is an internal note (comment mode only)"
+msgstr "Si el mensaje es una nota interna (sólo en modo de comentario)"
+
+#. module: step
+#: model:step.question,question:step.feedback_1_2
+msgid "Which modules are you using/testing?"
+msgstr "¿Qué módulos está usando/probando?"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"YYYY-MM-DD\n"
+"                                            <i class=\"fa fa-calendar fa-2x\" role=\"img\" aria-label=\"Calendar\" title=\"Calendar\"/>"
+msgstr ""
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_1
+msgid "Yes, I use a version < 7.0"
+msgstr "Sí, uso una versión < 7.0"
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_2
+msgid "Yes, I use the 7.0 version, installed locally"
+msgstr "Sí, uso la versión 7.0, instalado localmente"
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_3
+msgid "Yes, I use the online version of Odoo"
+msgstr "Sí, uso la versión en línea de Odoo"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid ""
+"You can create steps for different purposes: customer opinion, services "
+"feedback, recruitment interviews, employee's periodical evaluations, "
+"marketing campaigns, etc."
+msgstr ""
+"Puede crear encuestas para diferentes propósitos: opinión de los clientes, "
+"retroalimentación de los servicios, entrevistas de trabajo, evaluaciones "
+"periódicas de los empleados, campañas de marketing, etc."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"You can share your step web public link and/or send private invitations to"
+" your audience. People can answer once per invitation, and whenever they "
+"want with the public web link (in this case, the \"Login Required\" setting "
+"must be disabled)."
+msgstr ""
+"Puede compartir en enlace público web de la encuesta y/o enviar invitaciones"
+" privadas a su audiencia. La gente puede contestar una vez por invitación, y"
+" siempre que quieran con el enlace público (en este caso, la opción "
+"\"Iniciar sesión requerido\" debe estar inactivo)."
+
+#. module: step
+#: code:addons/step/models/step.py:315
+#, python-format
+msgid "You cannot send an invitation for a step that has no questions."
+msgstr ""
+"No puede enviar invitaciones para una encuesta que no tiene preguntas."
+
+#. module: step
+#: code:addons/step/models/step.py:318
+#, python-format
+msgid "You cannot send invitations for closed steps."
+msgstr "No puede enviar invitaciones para una encuesta cerrada."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "You scored"
+msgstr "Ha obtenido"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "ans"
+msgstr "res"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "free website"
+msgstr "web gratuita"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "log in"
+msgstr "iniciar sesión"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "of"
+msgstr "de"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "points."
+msgstr "puntos."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "review your answers"
+msgstr "revisar sus respuestas"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "this page"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "with"
+msgstr "con"

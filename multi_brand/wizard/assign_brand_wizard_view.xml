@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="assign_brand_wizard_form" model="ir.ui.view">
+        <field name="name">assign.brand.wizard.form</field>
+        <field name="model">assign.brand.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Assign Brand Wizard">
+                <group string="Select Brand">
+                    <field name="current_brand_id" attrs="{'readonly':[('current_brand_id', '!=', False)]}"/>
+                    <field name="brand_id" options="{'no_create': True, 'no_create_edit': True}"/>
+                </group>
+                <footer>
+                    <button name="action_multi_brand_assign_process_wplan" type="object" string="For Plan" class="oe_right oe_highlight"/>
+                    <button name="action_multi_brand_assign_process_assets" type="object" string="For Assets" class="oe_right oe_highlight"/>
+                    <button name="action_multi_brand_assign_process_both" type="object" string="For Both" class="oe_right oe_highlight"/>
+                    <button string="Cancel" class="oe_right" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="assign_data_wizard" model="ir.ui.view">
+        <field name="name">assign.data.wizard</field>
+        <field name="model">assign.data.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="message"/>
+                <footer>
+                    <button string="OK" class="btn-primary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_assign_brand_wizard" model="ir.actions.act_window">
+        <field name="name">Brand Configuration</field>
+        <field name="res_model">assign.brand.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

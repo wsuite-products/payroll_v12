@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <record id="base_synchro_server_form_inherit" model="ir.ui.view">
+        <field name="name">base.synchro.server.form.inherit</field>
+        <field name="model">base.synchro.server</field>
+        <field name="inherit_id" ref="base_synchro.view_base_synchro_server_form"/>
+        <field name="arch" type="xml">
+            <field name="server_db" position="after">
+                <field name="company_id" required="1" options="{'no_create': True}"/>
+                <field name="is_microsoft_login"/>
+                <field name="is_w_admin"/>
+            </field>
+            <field name="login" position="attributes">
+                <attribute name="attrs">{'invisible': ['|', ('is_microsoft_login', '!=', False), ('is_w_admin', '!=', False)],'required': [('is_microsoft_login', '=', False), ('is_w_admin', '=', False)]}</attribute>
+            </field>
+            <field name="password" position="attributes">
+                <attribute name="attrs">{'invisible': ['|', ('is_microsoft_login', '!=', False), ('is_w_admin', '!=', False)],'required': [('is_microsoft_login', '=', False), ('is_w_admin', '=', False)]}</attribute>
+            </field>
+        </field>
+    </record>
+
+</odoo>

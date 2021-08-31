@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+  <record id="hr_value_uvt_input_not_rf_1" model="hr.value.uvt.input.not.rf">
+    <field name="name">SALUD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_129"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_2" model="hr.value.uvt.input.not.rf">
+    <field name="name">SALUD SI</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_130"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_3" model="hr.value.uvt.input.not.rf">
+    <field name="name">PENSION</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_127"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_4" model="hr.value.uvt.input.not.rf">
+    <field name="name">PENSION SI</field>
+    <field name="rule_id">APORTE PENSI&#211;N(si)</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_128"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_5" model="hr.value.uvt.input.not.rf">
+    <field name="name">FONDO DE SOLIDARIDAD</field>
+    <field name="rule_id">FONDO DE SOLIDARIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_131"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_6" model="hr.value.uvt.input.not.rf">
+    <field name="name">FONDO DE SOLIDARIDAD SI</field>
+    <field name="rule_id">FONDO DE SOLIDARIDAD SI</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_132"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_7" model="hr.value.uvt.input.not.rf">
+    <field name="name">APORTE SALUD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_129"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_8" model="hr.value.uvt.input.not.rf">
+    <field name="name">APORTE SALUD(si)</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_130"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_9" model="hr.value.uvt.input.not.rf">
+    <field name="name">APORTE PENSI&#211;N</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_127"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_10" model="hr.value.uvt.input.not.rf">
+    <field name="name">APORTE PENSI&#211;N(si)</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_128"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_11" model="hr.value.uvt.input.not.rf">
+    <field name="name">FONDO DE SOLIDARIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_131"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_12" model="hr.value.uvt.input.not.rf">
+    <field name="name">FONDO DE SOLIDARIDAD SI</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_132"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_not_rf_13" model="hr.value.uvt.input.not.rf">
+    <field name="name">AJUSTE FONDO DE SOLIDARIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_112"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+</odoo>

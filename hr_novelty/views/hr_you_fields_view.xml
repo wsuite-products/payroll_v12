@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <record id="hr_you_fields_types_view_tree" model="ir.ui.view">
+        <field name="name">hr.you.fields.types.view.tree</field>
+        <field name="model">hr.you.fields.types</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name" required="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_you_fields_view_tree" model="ir.ui.view">
+        <field name="name">hr.you.fields.view.tree</field>
+        <field name="model">hr.you.fields</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name" required="1"/>
+                <field name="type_id"
+                       options="{'no_open':'False', 'no_create': True, 'no_create_edit': True}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_you_fields_type_conf_view_tree" model="ir.ui.view">
+        <field name="name">hr.you.fields.type.conf.view.tree</field>
+        <field name="model">hr.you.fields.type.conf</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="field_id" required="1"
+                       options="{'no_open':'False', 'no_create': True, 'no_create_edit': True}"/>
+                <field name="type_id"/>
+                <field name="message"/>
+                <field name="event_id" required="1"
+                       options="{'no_open':'False', 'no_create': True, 'no_create_edit': True}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_you_fields_types_action" model="ir.actions.act_window">
+        <field name="name">You Fields Type</field>
+        <field name="res_model">hr.you.fields.types</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record id="hr_you_fields_type_conf_action" model="ir.actions.act_window">
+        <field name="name">You Fields Type Conf</field>
+        <field name="res_model">hr.you.fields.type.conf</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record id="hr_you_fields_action" model="ir.actions.act_window">
+        <field name="name">You Fields</field>
+        <field name="res_model">hr.you.fields</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem
+        id="hr_you_fields_types_menu_action"
+        name="Hr You Fields Type"
+        action="hr_you_fields_types_action"
+        parent="hr.menu_human_resources_configuration"/>
+
+    <menuitem
+        id="hr_you_fields_menu_action"
+        name="Hr You Fields"
+        action="hr_you_fields_action"
+        parent="hr.menu_human_resources_configuration"/>
+
+    <menuitem
+        id="hr_you_fields_type_conf_menu_action"
+        name="Hr You Fields Type Conf"
+        action="hr_you_fields_type_conf_action"
+        parent="hr.menu_human_resources_configuration"/>
+
+</odoo>

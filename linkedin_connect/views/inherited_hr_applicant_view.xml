@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <record id="crm_case_form_view_job_inherit" model="ir.ui.view">
+        <field name="name">crm.case.form.view.job.inherit</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.crm_case_form_view_job"/>
+        <field name="groups_id" eval="[(4, ref('hr.group_hr_manager'))]"/>
+        <field name="arch" type="xml">
+            <button name="create_employee_from_applicant" position="after">
+                <button string="Sync" name="sync" type="object"/>
+            </button>
+            <field name="reference" position="after">
+                <field name="link" widget="url"/>
+            </field>
+            <field name="job_id" position="attributes">
+                <attribute name="required">1</attribute>
+            </field>
+        </field>
+    </record>
+
+</odoo>

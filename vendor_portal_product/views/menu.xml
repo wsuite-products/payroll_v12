@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <menuitem name="Vendor Portal" id="vendor_portal_product_menu_vendor_portal_root" sequence="70"/>
+
+    <menuitem name="Vendors" id="vendor_portal_product_vendor_menu_action_root" parent="vendor_portal_product_menu_vendor_portal_root" sequence="1"/>
+    <menuitem name="Vendors" id="vendor_portal_product_vendor_menu_action" action="base.action_partner_supplier_form" parent="vendor_portal_product_vendor_menu_action_root" sequence="1"/>
+
+</odoo>

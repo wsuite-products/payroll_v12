@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- MRP Workorder Inherit Form View -->
+    <record id="mrp_workorder_view_form_inherit_wtrack" model="ir.ui.view">
+        <field name="name">mrp.workorder.form.inherit.wtrack</field>
+        <field name="model">mrp.workorder</field>
+        <field name="inherit_id" ref="mrp.mrp_production_workorder_form_view_inherit"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='button_scrap']" position="after">
+                <button name="action_reopen" type="object" string="Re-Open" states="done,cancel"/>
+            </xpath>
+            <xpath expr="//field[@name='move_raw_ids']" position="before">
+                <group>
+                    <field name="json_data"/>
+                    <field name="task_form_json"/>
+                    <field name="task_id"/>
+                    <field name="is_operational"/>
+                    <field name="responsible_id"/>
+                    <field name="assign_id"/>
+                    <field name="spent_time"/>
+                    <field name="description"/>
+                    <field name="user_ids" widget="many2many_tags"/>
+                    <field name="watcher_ids" widget="many2many_tags"/>
+                    <field name="brand_id"/>
+                    <field name="page_id"/>
+                    <field name="re_open" attrs="{'invisible': [('re_open', '=', False)]}"/>
+                </group>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <group string="WorkOrder Reject History">
+                    <field name="reject_ids" nolabel="1">
+                        <tree>
+                            <field name="create_date"/>
+                            <field name="user_id" />
+                            <field name="comment"/>
+                        </tree>
+                    </field>
+                </group>
+<!--                <group string="Comments">-->
+<!--                    <field name="comment_ids" nolabel="1">-->
+<!--                        <tree>-->
+<!--                            <field name="sequence" widget="handle"/>-->
+<!--                            <field name="type"/>-->
+<!--                            <field name="comment" required="1"/>-->
+<!--                            <field name="user_id"/>-->
+<!--                            <field name="attachment" filename="file_name"/>-->
+<!--                            <field name="filesize"/>-->
+<!--                            <field name="attachment_url" widget="url"/>-->
+<!--                            <field name="final_asset"/>-->
+<!--                        </tree>-->
+<!--                        <form>-->
+<!--                            <group col="4">-->
+<!--                                <field name="comment" required="1"/>-->
+<!--                                <field name="user_id"/>-->
+<!--                                <field name="type"/>-->
+<!--                                <field name="attachment" filename="file_name"/>-->
+<!--                                <field name="attachment_url" widget="url"/>-->
+<!--                                <field name="filesize"/>-->
+<!--                                <field name="create_date"/>-->
+<!--                                <field name="write_date"/>-->
+<!--                                <field name="order_id"/>-->
+<!--                                <field name="final_asset"/>-->
+<!--                            </group>-->
+<!--                        </form>-->
+<!--                    </field>-->
+<!--                </group>-->
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- MRP Production Inherit Form View -->
+    <record id="mrp_production_form_view_wtrack" model="ir.ui.view">
+        <field name="name">mrp.mrp_production_form_view</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Comments">
+                    <field name="comment_ids" nolabel="1">
+                        <tree>
+                            <field name="sequence" widget="handle"/>
+                            <field name="type"/>
+                            <field name="comment"/>
+                            <field name="user_id"/>
+                            <field name="attachment" filename="file_name"/>
+                            <field name="filesize"/>
+                            <field name="attachment_url" widget="url"/>
+                            <field name="final_asset"/>
+                        </tree>
+                        <form>
+                            <group col="4">
+                                <field name="comment" required="1"/>
+                                <field name="user_id"/>
+                                <field name="type"/>
+                                <field name="order_id"/>
+                                <field name="attachment" filename="file_name"/>
+                                <field name="attachment_url" widget="url"/>
+                                <field name="filesize"/>
+                                <field name="create_date"/>
+                                <field name="write_date"/>
+                                <field name="order_id"/>
+                                <field name="final_asset"/>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+            <xpath expr="//field[@name='availability']" position="after">
+                <group>
+                    <field name="sale_order_id"/>
+                    <field name="sale_order_line_id"/>
+                    <field name="purchase_order_id"/>
+                    <field name="purchase_order_line_id"/>
+                    <field name="task_assignee_config"/>
+                    <field name="lead_id"/>
+                    <field name="lead_line_id"/>
+                    <field name="quotation_number"/>
+                    <field name="brand_id"/>
+                    <field name="step_id"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

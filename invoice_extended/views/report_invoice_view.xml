@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_collection_report_name" inherit_id="account.report_invoice_document">
+        <xpath expr="//div/h2" position="replace">
+            <h2>
+                <span t-if="o.type == 'out_invoice' and o.state in ('open', 'in_payment', 'paid')">Invoice</span>
+                <span t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
+                <span t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
+                <span t-if="o.type == 'out_refund'">Credit Note</span>
+                <span t-if="o.type == 'in_refund'">Vendor Credit Note</span>
+                <span t-if="o.type == 'in_invoice'">Vendor Bill</span>
+                <span t-if="o.type == 'out_account_collection' and o.state in ('open', 'in_payment', 'paid')">Collection Invoice</span>
+                <span t-if="o.type == 'out_account_collection' and o.state == 'draft'">Draft Collection Invoice</span>
+                <span t-if="o.type == 'out_account_collection' and o.state == 'cancel'">Cancelled Collection Invoice</span>
+                <span t-if="o.type == 'in_refund_account_collection'">Credit Collection Note</span>
+                <span t-field="o.number"/>
+            </h2>
+        </xpath>
+    </template>
+</odoo>

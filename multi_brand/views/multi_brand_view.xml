@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Multi Brand tree view-->
+    <record id="multi_brand_tree" model="ir.ui.view">
+        <field name="name">Multi Brand Tree</field>
+        <field name="model">multi.brand</field>
+        <field name="arch" type="xml">
+            <tree string="Multi Brand">
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Multi Brand from view-->
+    <record id="multi_brand_form" model="ir.ui.view">
+        <field name="name">Multi Brand Tree</field>
+        <field name="model">multi.brand</field>
+        <field name="arch" type="xml">
+            <form string="Multi Brand">
+                <header>
+                    <button name="%(multi_brand.action_assign_brand_wizard)d" context="{'default_current_brand_id': active_id}" class="oe_highlight" type='action' string='Brand Configuration' groups="multi_brand.group_multi_brand"/>
+                    <button name="%(multi_brand.action_other_db_assign_brand_wizard)d" context="{'default_current_brand_id': active_id}" class="oe_highlight" type='action' string='Other DB Brand Configuration' groups="multi_brand.group_multi_brand"/>
+                    <button name="action_multi_brand_delete" type="object" confirm="Are you sure you want to delete records?. This deletes the Category, Assets, Module, Bom related to this brand Category!" string="Delete Assets Records" groups="multi_brand.group_multi_brand"/>
+                    <button name="action_multi_brand_delete_plan" type="object" confirm="Are you sure you want to delete records?. This deletes the Lead Type, Flows, Step related to this brand Category!" string="Delete Plan Records" groups="multi_brand.group_multi_brand"/>
+                    <button name="delete_data_related_to_brand" type="object" confirm="Are you sure you want to delete records of Asset/Plan?. This deletes the Category, Assets, Module, Bom, Manufacturing Order, Lead, Sale Order, Lead Type, Flows, Step related to this brand Category!" string="Delete Assets/Plan Records" groups="multi_brand.group_multi_brand"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" type="object" name="toggle_active" icon="fa-archive">
+                            <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                        </button>
+                    </div>
+                    <field name="image" widget='image' class="oe_avatar"
+                           filename="file_name"/>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="categ_ids" widget="many2many_tags"/>
+                        <field name="file_name" invisible="1"/>
+                        <field name="image_url" widget="url" invisible="0" attrs="{'readonly':[('id', '!=', False)]}"/>
+                        <field name="brand_reference"/>
+                        <field name="is_default"/>
+                        <field name="use_default_brand_asset"/>
+                        <field name="provision_complete"/>
+                        <field name="provision_fail"/>
+                        <field name="advertising_services_percentage"/>
+                    </group>
+                    <group>
+                        <field name="folder_config"/>
+                        <field name="quotation_config"/>
+                    </group>
+                    <notebook>
+                        <page string="Wsuite" name="wsuite">
+                            <group string="Wsuite Product">
+                                <field name="product_suite_ids" nolabel="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="multi_brand_view_search" model="ir.ui.view">
+        <field name="name">multi.brand.view.search</field>
+        <field name="model">multi.brand</field>
+        <field name="arch" type="xml">
+            <search string="Multi Brand">
+                <field name="name" filter_domain="[('name','ilike',self)]"/>
+                <field name="description" filter_domain="[('description','ilike',self)]"/>
+                <field name="brand_reference" filter_domain="[('brand_reference','ilike',self)]"/>
+                <filter string="Active" name="is_active" domain="[('active', '=', True)]"/>
+                <filter string="Inactive" name="is_not_active" domain="[('active', '=', False)]"/>
+                <filter string="Is Default" name="is_default" domain="[('is_default', '=', False)]"/>
+                <filter string="Product Category is set" name="categ_ids_set" domain="[('categ_ids', '!=', False)]"/>
+                <filter string="Product Category is not set" name="categ_ids" domain="[('categ_ids', '=', False)]"/>
+
+            </search>
+        </field>
+    </record>
+
+
+    <!-- Multi Brand Action-->
+    <record model="ir.actions.act_window" id="multi_brand_action">
+        <field name="name">Multi Brand</field>
+        <field name="res_model">multi.brand</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Multi Brand Menu-->
+    <menuitem
+        id="multi_brand_menu"
+        action="multi_brand_action"
+        parent="crm.menu_crm_config_lead"/>
+
+</odoo>

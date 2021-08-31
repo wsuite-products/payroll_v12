@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vendor_rfq_user,vendor.rfq,model_vendor_rfq,purchase.group_purchase_user,1,1,1,1
+access_vendor_rfq_manager,vendor.rfq,model_vendor_rfq,purchase.group_purchase_manager,1,1,1,1
+access_vendor_rfq_line_user,vendor.rfq.line,model_vendor_rfq_line,purchase.group_purchase_user,1,1,1,1
+access_vendor_rfq_line_manager,vendor.rfq.line,model_vendor_rfq_line,purchase.group_purchase_manager,1,1,1,1
+access_vendor_rfq_portal,vendor.rfq.portal,model_vendor_rfq,base.group_portal,1,1,0,0
+access_vendor_rfq_line_portal,vendor.rfq.line.portal,model_vendor_rfq_line,base.group_portal,1,1,1,0
+access_product_template,access_product_template,product.model_product_template,base.group_portal,1,0,0,0
+access_product_product,access_product_product,product.model_product_product,base.group_portal,1,0,0,0
+access_crm_lead_lines_portal,access_crm_lead_lines_portal,crm_lead_extended.model_crm_lead_lines,base.group_portal,1,1,1,1

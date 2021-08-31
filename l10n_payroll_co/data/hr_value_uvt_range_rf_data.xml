@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+  <record id="hr_value_uvt_range_rf_1" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">87</field>
+    <field name="uvt_discount">0</field>
+    <field name="marginal_rate">0</field>
+    <field name="uvt_additional">0</field>
+    <field name="description">$ 0</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_2" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">145</field>
+    <field name="uvt_discount">87</field>
+    <field name="marginal_rate">19</field>
+    <field name="uvt_additional">0</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 87 UVT)*19%			</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_3" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">335</field>
+    <field name="uvt_discount">145</field>
+    <field name="marginal_rate">28</field>
+    <field name="uvt_additional">11</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 145 UVT)*28% m&#225;s 11 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_4" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">640</field>
+    <field name="uvt_discount">335</field>
+    <field name="marginal_rate">33</field>
+    <field name="uvt_additional">64</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 335 UVT)* 33% m&#225;s 64 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_5" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">945</field>
+    <field name="uvt_discount">640</field>
+    <field name="marginal_rate">35</field>
+    <field name="uvt_additional">165</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 640 UVT)*35% m&#225;s 165 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_6" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">2300</field>
+    <field name="uvt_discount">945</field>
+    <field name="marginal_rate">37</field>
+    <field name="uvt_additional">272</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 945 UVT)*37% m&#225;s 272 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_7" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">100000</field>
+    <field name="uvt_discount">2300</field>
+    <field name="marginal_rate">39</field>
+    <field name="uvt_additional">773</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 2300 UVT)*39% m&#225;s 773 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_8" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">95</field>
+    <field name="uvt_discount">0</field>
+    <field name="marginal_rate">0</field>
+    <field name="uvt_additional">0</field>
+    <field name="description"></field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_2"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_9" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">150</field>
+    <field name="uvt_discount">95</field>
+    <field name="marginal_rate">19</field>
+    <field name="uvt_additional">0</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 95 UVT)*19%</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_2"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_10" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">360</field>
+    <field name="uvt_discount">150</field>
+    <field name="marginal_rate">28</field>
+    <field name="uvt_additional">10</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 150 UVT)*28% m&#225;s 10 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_2"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_11" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">100000</field>
+    <field name="uvt_discount">360</field>
+    <field name="marginal_rate">33</field>
+    <field name="uvt_additional">69</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 360 UVT)*33% m&#225;s 69 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_2"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_12" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">95</field>
+    <field name="uvt_discount">0</field>
+    <field name="marginal_rate">0</field>
+    <field name="uvt_additional">0</field>
+    <field name="description">$ 0</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_13" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">150</field>
+    <field name="uvt_discount">95</field>
+    <field name="marginal_rate">19</field>
+    <field name="uvt_additional">0</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 95 UVT)*19%</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_14" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">360</field>
+    <field name="uvt_discount">150</field>
+    <field name="marginal_rate">28</field>
+    <field name="uvt_additional">10</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 150 UVT)*28% m&#225;s 10 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_15" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">640</field>
+    <field name="uvt_discount">360</field>
+    <field name="marginal_rate">33</field>
+    <field name="uvt_additional">69</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 360 UVT)*33% m&#225;s 69 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_16" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">945</field>
+    <field name="uvt_discount">640</field>
+    <field name="marginal_rate">35</field>
+    <field name="uvt_additional">162</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 640 UVT)*35% m&#225;s 162 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_17" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">2300</field>
+    <field name="uvt_discount">945</field>
+    <field name="marginal_rate">37</field>
+    <field name="uvt_additional">268</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 945 UVT)*37% m&#225;s 268 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_range_rf_18" model="hr.value.uvt.range.rf">
+    <field name="value_uvt_max">100000</field>
+    <field name="uvt_discount">2300</field>
+    <field name="marginal_rate">39</field>
+    <field name="uvt_additional">770</field>
+    <field name="description">(Ingreso laboral gravado expresado en UVT menos 2300 UVT)*39% m&#225;s 770 UVT</field>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+</odoo>

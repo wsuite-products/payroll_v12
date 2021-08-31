@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_group_inherit_product" model="ir.ui.view">
+        <field name="model">res.groups</field>
+        <field name="inherit_id" ref="base.view_groups_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='share']" position="after">
+                <field name="product_id"/>
+            </xpath>
+
+<!--            <xpath expr="//notebook[last()]" position="inside">-->
+<!--                <page string="Products">-->
+<!--                    <field name="product_ids" nolabel="1" context="{'default_wsuite':True}"/>-->
+<!--                </page>-->
+<!--            </xpath>-->
+        </field>
+    </record>
+</odoo>

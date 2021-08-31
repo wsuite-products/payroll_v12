@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="paperformat_lead_line" model="report.paperformat">
+            <field name="name">Lead Media</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">297</field>
+            <field name="page_width">300</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">80</field>
+            <field name="margin_bottom">10</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">70</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report
+            id="action_report_leadline_custom"
+            string="Quotation"
+            model="crm.lead"
+            report_type="qweb-pdf"
+            file="crm_lead_extended.report_leadline_custom"
+            name="crm_lead_extended.report_leadline_custom"
+            print_report_name="Quotation Media Type"
+        />
+
+        <record id="action_report_leadline_custom" model="ir.actions.report">
+            <field name="paperformat_id" ref="crm_lead_extended.paperformat_lead_line"/>
+        </record>
+
+        <record id="paperformat_lead_line_1" model="report.paperformat">
+            <field name="name">Lead Production</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">105.00</field>
+            <field name="margin_bottom">15</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">105</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report
+            id="action_report_leadline_quote_type"
+            string="Quotation Quote Type"
+            model="crm.lead"
+            report_type="qweb-pdf"
+            file="crm_lead_extended.report_leadline_quote_type"
+            name="crm_lead_extended.report_leadline_quote_type"
+            print_report_name="Quotation Quote Type"
+        />
+        <record id="action_report_leadline_quote_type" model="ir.actions.report">
+            <field name="paperformat_id" ref="crm_lead_extended.paperformat_lead_line_1"/>
+        </record>
+
+    </data>
+</odoo>
+

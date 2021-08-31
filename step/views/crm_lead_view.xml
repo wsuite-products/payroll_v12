@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_lead_step_inherit" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='phone']" position="after">
+                <label for="step_id" groups="base.group_user" invisible="1"/>
+                <div groups="base.group_user" class="o_row">
+                    <field name="step_id" invisible="1"/>
+                    <button string="Display Interview Form" name="action_print_step" type="object" invisible="1" class="oe_link"/>
+                </div>
+                <field name="response_id" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_start_step"
+                    class="oe_stat_button"
+                    icon="fa-user"
+                    type="object"
+                    help="Answer related job question"
+                    context="{'step_id': step_id}"
+                    attrs="{'invisible':[('step_id','=',False)]}">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_text">Start</span>
+                        <span class="o_stat_text">Interview</span>
+                    </div>
+                </button>
+            </xpath>
+
+            <xpath expr="//field[@name='crm_lead_stage_ids']//tree//field[@name='stage_id']" position="after">
+                <field name="step_id"/>
+                <field name="response_id" string="Answer"/>
+                <field name="state"/>
+                <button name="action_print_step"
+                    class="oe_stat_button"
+                    icon="fa-print"
+                    type="object"
+                    help="Print interview report"
+                    attrs="{'invisible':[('step_id', '=', False)]}"
+                />
+
+                <button name="action_step_results"
+                    class="oe_stat_button"
+                    icon="fa-bar-chart"
+                    type="object"
+                    help="View Result"
+                    attrs="{'invisible':[('response_id', '=', False)]}"
+                />
+
+                <button name="action_send_step"
+                    class="oe_stat_button"
+                    icon="fa-share-square"
+                    type="object"
+                    help="Share and Sent"
+                    attrs="{'invisible':[('step_id', '=', False)]}"
+                />
+
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

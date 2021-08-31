@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="paperformat_s_l_line" model="report.paperformat">
+            <field name="name">Quotation / Order Custom Media</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">297</field>
+            <field name="page_width">300</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">125</field>
+            <field name="margin_bottom">10</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">120</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report
+            id="action_report_saleorder_custom"
+            string="Quotation / Order Custom"
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="flow_purchase_sale.report_saleorder_custom"
+            name="flow_purchase_sale.report_saleorder_custom"
+            print_report_name="(object.state in ('draft', 'sent') and 'Quotation - %s' % (object.name)) or 'Order - %s' % (object.name)"
+        />
+
+        <record id="action_report_saleorder_custom" model="ir.actions.report">
+            <field name="paperformat_id" ref="flow_purchase_sale.paperformat_s_l_line"/>
+        </record>
+
+        <record id="paperformat_s_l_line_1" model="report.paperformat">
+            <field name="name">Quotation / Order Quote Type Production</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">115</field>
+            <field name="margin_bottom">15</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">110</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report
+            id="action_report_saleorder_quote_type"
+            string="Quotation / Order Quote Type"
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="flow_purchase_sale.report_saleorder_quote_type"
+            name="flow_purchase_sale.report_saleorder_quote_type"
+            print_report_name="(object.state in ('draft', 'sent') and 'Quotation - %s' % (object.name)) or 'Order - %s' % (object.name)"
+        />
+        <record id="action_report_saleorder_quote_type" model="ir.actions.report">
+            <field name="paperformat_id" ref="flow_purchase_sale.paperformat_s_l_line_1"/>
+        </record>
+
+        <record id="paperformat_p_l_line" model="report.paperformat">
+            <field name="name">PO Media</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">297</field>
+            <field name="page_width">300</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">95</field>
+            <field name="margin_bottom">15</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">90</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report
+            string="Purchase Order Custom"
+            id="action_report_purchase_order_custom"
+            model="purchase.order"
+            report_type="qweb-pdf"
+            name="flow_purchase_sale.report_purchaseorder_custom"
+            file="flow_purchase_sale.report_purchaseorder_custom"
+            print_report_name="
+                (object.state in ('draft', 'sent') and 'Request for Quotation - %s' % (object.name) or
+                'Purchase Order - %s' % (object.name))"
+        />
+
+        <record id="action_report_purchase_order_custom" model="ir.actions.report">
+            <field name="paperformat_id" ref="flow_purchase_sale.paperformat_p_l_line"/>
+        </record>
+
+        <record id="paperformat_p_l_line_1" model="report.paperformat">
+            <field name="name">PO Production</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">125.00</field>
+            <field name="margin_bottom">15</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">120</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report
+            id="action_report_purchaseorder_quote_type"
+            string="Purchase Order Quote Type"
+            model="purchase.order"
+            report_type="qweb-pdf"
+            file="flow_purchase_sale.report_purchaseorder_quote_type"
+            name="flow_purchase_sale.report_purchaseorder_quote_type"
+            print_report_name="
+                (object.state in ('draft', 'sent') and 'Request for Quotation - %s' % (object.name) or
+                'Purchase Order - %s' % (object.name))"
+        />
+        <record id="action_report_purchaseorder_quote_type" model="ir.actions.report">
+            <field name="paperformat_id" ref="flow_purchase_sale.paperformat_p_l_line_1"/>
+        </record>
+
+    </data>
+</odoo>
+

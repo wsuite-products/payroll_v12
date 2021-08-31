@@ -1,0 +1,25 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_step_public,step.step public,model_step_step,,1,0,0,0
+access_step_page_public,step.page public,model_step_page,,1,0,0,0
+access_step_question_public,step.question public,model_step_question,,1,0,0,0
+access_step_label_public,step.label public,model_step_label,,1,0,0,0
+access_step_user_input_public,step.user_input public,model_step_user_input,,1,1,1,0
+access_step_user_input_line_public,step.user_input_line public,model_step_user_input_line,,1,1,1,0
+access_step_stage_public,step.stage public,model_step_stage,,1,0,0,0
+access_step_user,step.step user,model_step_step,group_step_user,1,0,0,0
+access_step_page_user,step.page user,model_step_page,group_step_user,1,0,0,0
+access_step_question_user,step.question user,model_step_question,group_step_user,1,0,0,0
+access_step_label_user,step.label user,model_step_label,group_step_user,1,0,0,0
+access_step_user_input_user,step.user_input user,model_step_user_input,group_step_user,1,1,1,0
+access_step_user_input_line_user,step.user_input_line user,model_step_user_input_line,group_step_user,1,1,1,0
+access_step_stage_user,step.stage user,model_step_stage,group_step_user,1,0,0,0
+access_step_manager,step.step manager,model_step_step,group_step_manager,1,1,1,1
+access_step_page_manager,step.page manager,model_step_page,group_step_manager,1,1,1,1
+access_step_question_manager,step.question manager,model_step_question,group_step_manager,1,1,1,1
+access_step_label_manager,step.label manager,model_step_label,group_step_manager,1,1,1,1
+access_step_user_input_manager,step.user_input manager,model_step_user_input,group_step_manager,1,1,1,1
+access_step_user_input_line_manager,step.user_input_line manager,model_step_user_input_line,group_step_manager,1,1,1,1
+access_step_stage_manager,step.stage manager,model_step_stage,group_step_manager,1,1,1,1
+access_step_page_comment_public,step.page_comment public,model_step_page_comment,,1,0,0,0
+access_step_page_comment_user,step.page_comment user,model_step_page_comment,group_step_user,1,0,0,0
+access_step_page_comment_manager,step.page_comment manager,model_step_page_comment,group_step_manager,1,1,1,1

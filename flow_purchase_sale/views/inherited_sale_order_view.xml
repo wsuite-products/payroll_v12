@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <record id="view_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_quotation_send']" position="before">
+                <button name="action_create_purchase_order" string="Create Purchase Order"
+                    type="object" attrs="{'invisible': [('state', '!=', 'sale')]}"
+                    groups="purchase.group_purchase_user"/>
+            </xpath>
+            <button name="action_view_invoice" position="after">
+                <button name="action_view_po" type="object" class="oe_stat_button" icon="fa-credit-card"
+                    attrs="{'invisible': [('total_po', '=', 0)]}" groups="purchase.group_purchase_user">
+                    <field name="total_po" widget="statinfo" string="Purchase"/>
+                </button>
+            </button>
+            <xpath expr="//field[@name='partner_shipping_id']" position="after">
+                <field name="report_url" widget="url"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

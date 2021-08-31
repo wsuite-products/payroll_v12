@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="hr_payroll.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <div id="hr_payroll_accountant" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="is_all_payroll_colombian"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="is_all_payroll_colombian"/>
+                        <div class="text-muted">
+                            All Payroll Colombian
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_contract_completion"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_contract_completion"/>
+                        <div class="text-muted">
+                            Hr Contract Completion
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_contract_extended"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_contract_extended"/>
+                        <div class="text-muted">
+                            Hr Contract Extended
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_contract_termination_report"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_contract_termination_report"/>
+                        <div class="text-muted">
+                            Hr Contract Termination Report
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_curriculum_vitae"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_curriculum_vitae"/>
+                        <div class="text-muted">
+                            Hr Curriculum Vitae
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_employee_extended"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_employee_extended"/>
+                        <div class="text-muted">
+                            Hr Employee Extended
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_employee_policy"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_employee_policy"/>
+                        <div class="text-muted">
+                            Hr Employee Policy
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_holiday_exclude_special_days"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_holiday_exclude_special_days"/>
+                        <div class="text-muted">
+                            Hr Holiday Exclude Special Days
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_novelty"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_novelty"/>
+                        <div class="text-muted">
+                            Hr Novelty
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_novelty_close"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_novelty_close"/>
+                        <div class="text-muted">
+                            Hr Novelty Close
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_novelty_s3"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_novelty_s3"/>
+                        <div class="text-muted">
+                            Hr Novelty S3
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_payroll_income_withholding"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_payroll_income_withholding"/>
+                        <div class="text-muted">
+                            Hr Payroll Income Withholding
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_payroll_interface"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_payroll_interface"/>
+                        <div class="text-muted">
+                            Hr Payroll Interface
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_payroll_extended"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_payroll_extended"/>
+                        <div class="text-muted">
+                            Hr Payroll Extended
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_payslip_special_settlement"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_payslip_special_settlement"/>
+                        <div class="text-muted">
+                            Hr Payslip Special Settlement
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_extended"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_extended"/>
+                        <div class="text-muted">
+                            Hr Extended
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_hr_recruitment_extended"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="module_hr_recruitment_extended"/>
+                        <div class="text-muted">
+                            Hr Recruitment Extended
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+
+</odoo>

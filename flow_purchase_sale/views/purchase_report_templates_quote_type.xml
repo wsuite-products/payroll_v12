@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="external_layout_standard_quote_type_purchase">
+    <div class="header">
+        <div class="row" style="font-size: 13px;">
+            <div class="col-5 mb4">
+                <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="width:100px;" alt="Logo"/>
+                <div t-field="company.partner_id"
+                    t-options='{"widget": "contact", "fields": ["name", "address", "phone", "fax", "email", "website", "vat"], "no_marker": true}'
+                />
+            </div>
+        </div>
+        <br/>
+        <div class="row" style="font-size: 13px;">
+            <div class="col-8 mb4">
+                <strong>WORK ORDER <span t-esc="data['No']" />1</strong>
+                <br/>
+            </div>
+            <div class="col-4 mb4">
+                <strong> Page <span class="page"/> of <span class="topage"/></strong>
+                </div>
+            <br/>
+        </div>
+        <div class="row" style="font-size: 13px;">
+            <div class="col-6 mb4">
+                <table width="100%">
+                    <tr>
+                        <td width="20%" class="text-left"><strong>Area:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Area']" /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="text-left"><strong>Provider:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Proveedor']" /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="text-left"><strong>Nit Provider:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Nit_Proveedor']" /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="text-left"><strong>Client:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Cliente']" /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="text-left"><strong>Product:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Producto']" /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="text-left"><strong>ID Draft:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Proyecto_ID']" /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="text-left"><strong>Draft:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Proyecto']" /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="text-left"><strong>Contact:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Contacto']" /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" class="text-left"><strong>Date:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/></td>
+                    </tr>
+                    <tr>
+                        <td  width="20%" class="text-left"><strong>Currency:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Moneda']" /></td>
+                    </tr>
+                    <tr>
+                        <td  width="20%" class="text-left"><strong>Main Client:</strong></td>
+                        <td width="5%"></td>
+                        <td><span t-esc="data['Cliente_Principal']" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="article o_report_layout_standard" style="font-size:12px;" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+        <t t-call="web.address_layout"/>
+        <t t-raw="0"/>
+    </div>
+    <div class="footer" style="font-size: 13px;">
+        <table width="100%">
+            <tr>
+                <td width="25%"><strong>Project Manager:</strong></td>
+                <td width="25%"></td>
+                <td width="25%"><strong>Approved by:</strong></td>
+                <td width="25%"></td>
+            </tr>
+            <tr>
+                <td width="25%"><strong>Produced by:</strong></td>
+                <td width="25%"></td>
+                <td width="25%"><strong>WORK ORDER:</strong></td>
+                <td width="25%"></td>
+            </tr>
+            <tr>
+                <td width="25%"><strong>Ordered for:</strong></td>
+                <td width="25%"></td>
+                <td width="25%"><strong>Date printing :</strong></td>
+                <td width="25%"><span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y %H:%M:%S %p')"/> </td>
+            </tr>
+        </table>
+    </div>
+</template>
+
+<template id="quote_type_external_layout_purchase">
+    <t t-if="not o" t-set="o" t-value="doc"/>
+
+    <t t-if="not company">
+        <t t-if="company_id">
+            <t t-set="company" t-value="company_id"/>
+        </t>
+        <t t-elif="o and 'company_id' in o">
+            <t t-set="company" t-value="o.company_id.sudo()"/>
+        </t>
+        <t t-else="else">
+            <t t-set="company" t-value="res_company"/>
+        </t>
+    </t>
+
+    <t t-call="flow_purchase_sale.external_layout_standard_quote_type_purchase"><t t-raw="0"/></t>
+
+</template>
+
+<template id="report_purchaseorder_quote_type_custom">
+        <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)" />
+        <t t-call="flow_purchase_sale.quote_type_external_layout_purchase">
+        <div class="page">
+            <div class="oe_structure"/>
+            <table width="100%" style="border: 1px solid black;">
+                <tr class="text-center" style="border: 1px solid black;height:20px;background-color:#BEBEBE;">
+                    <th width="28%" style="border: 1px solid black;" rowspan="2"> Quantity</th>
+                    <th width="8%" style="border: 1px solid black;">Days</th>
+                    <th width="8%" style="border: 1px solid black;">Description</th>
+                    <th width="10%" style="border: 1px solid black;">Vr. Unitary</th>
+                    <th width="10%" style="border: 1px solid black;">Total Vr</th>
+                    <th width="10%" style="border: 1px solid black;">%Iva</th>
+                    <th width="10%" style="border: 1px solid black;">Iva</th>
+                </tr>
+                <tbody class="sale_tbody">
+                    <t t-foreach="list_data" t-as="line">
+                        <tr>
+                            <td style="padding-left:5px;border-right: 1px solid black;" colspan="7"><strong><span t-esc="line.get('category_name')"/></strong></td>
+                        </tr>
+                        <tr class="text-center" style="border-bottom: 1px solid black;">
+                            <td><span t-esc="float(line.get('Cantidad'))" t-options='{"widget": "float", "decimal_precision": "Product Unit of Measure"}'/></td>
+                            <td><span t-esc="line.get('Dias')"/></td>
+                            <td><span t-esc="line.get('name')"/></td>
+                            <td><span t-esc="float(line.get('Vr_Unitario'))" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
+                            <td><span t-esc="float(line.get('Vr_Total'))" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
+                            <td><span t-esc="float(line.get('percentage_Iva'))" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
+                            <td><span t-esc="float(line.get('Iva'))" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/></td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+            <br/><br/>
+            <table width="100%">
+                <tr class="text-center">
+                    <td width="50%">___________________________________________________</td>
+                    <td width="50%">___________________________________________________</td>
+                </tr>
+                <tr class="text-center">
+                    <td>PROJECT MANAGEMENT DIRECTOR</td>
+                    <td>RECEIVED</td>
+                </tr>
+            </table><br/>
+            <!--<table width="100%">
+                <tr>
+                    <td colspan="2">
+                        La prestación del servicio aquí solicitado no podrá ser modificado en ninguna de sus partes sin previa aceptacion escrita de la agencia y la respectiva factura deberá regirse en un
+todo con esta orden. El valor de esta orden debe ser facturado a nombre y NIT de <span t-esc="data.get('company_name')"/>, señalando el nombre de cliente y producto dentro del cuerpo mismo de la
+factura (Decreto 1514, Articulo 3o de Agosto 1998). Deberá radicarse en original y dos (2) copias a mas tardar el día 25 de cada mes (No se aceptan fotocopias), se deberá indicar
+en la respectiva factura el número de esta orden y deberá reunir los requisitos legales según la ley 49 de 1990.
+                    </td>
+                </tr>
+            </table><br/>
+            <table width="100%">
+                <tr>
+                    <td colspan="2">
+                        El Proveedor declara y garantiza la buena calidad, idoneidad técnica, estabilidad, y el cumplimiento de la normatividad aplicable y vigente de las obras y los entregables
+resultantes de los servicios desarrollados en virtud de esta Orden de Trabajo, por lo tanto, el Proveedor acepta que es responsable frente a <span t-esc="data.get('company_name')"/> y el Cliente de la
+correcta y oportuna ejecución de los servicios en el plazo indicado por <span t-esc="data.get('company_name')"/> y por la idoneidad, estabilidad y seguridad de las obras y entregables que sea bienes
+tangibles, lo que lo obliga a reparar y realizar el mantenimiento de las obras entregadas cuando el Cliente o <span t-esc="data.get('company_name')"/> lo requieran.
+                    </td>
+                </tr>
+            </table><br/>
+            <table width="100%">
+                <tr>
+                    <td colspan="2">
+                        Si la obra o el entregable desarrollado en virtud de esta Orden de Trabajo es un bien intangible, el Proveedor declara y garantiza que es una obra original y originaria; que no viola
+ni violará derechos de propiedad intelectual, imagen y en general derechos de terceras personas; que cede los derechos patrimoniales del intangible sin limitaciones de tiempo,
+territorio y sin restricciones de uso por lo tanto el Proveedor acepta mantener indemne a <span t-esc="data.get('company_name')"/> y/o al Cliente en que caso se presenten reclamos y demandas de
+terceros.
+                    </td>
+                </tr>
+            </table> -->
+        </div>
+    </t>
+</template>
+
+<template id="report_purchaseorder_quote_type">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="flow_purchase_sale.report_purchaseorder_quote_type_custom" t-lang="doc.partner_id.lang"/>
+        </t>
+    </t>
+</template>
+
+</odoo>

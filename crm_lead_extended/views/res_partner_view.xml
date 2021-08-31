@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_partner_form_inherit_wadmin" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.wadmin</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="customer_admin"/>
+            </xpath>
+            <xpath expr="//notebook[1]" position="inside">
+                <page string="Wsuite" name="wsuite">
+                    <group string="Wsuite Product">
+                        <field name="product_suite_ids" nolabel="1"/>
+                    </group>
+                </page>
+                <page string="CRM Lead Type" name="crm_lead_type">
+                    <group string="CRM Lead Type">
+                        <field name="crm_lead_type_ids" nolabel="1"/>
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//group[@name='purchase']/field[@name='supplier']" position="after">
+                <field name="is_special_vendor"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter_wadmin" model="ir.ui.view">
+        <field name="name">res.partner.search.inherit.wadmin</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <filter name="customer" position="before">
+                <filter string="Customer Admin" name="customer_admin" domain="[('customer_admin','=',True)]"/>
+            </filter>
+        </field>
+    </record>
+
+</odoo>

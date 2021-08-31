@@ -1,0 +1,823 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* flow_purchase_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-15 10:20+0000\n"
+"PO-Revision-Date: 2020-12-15 10:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "!important; font-size: 10px\" &gt;"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "!important; font-size: 8px; min-width: 18px\"&gt;"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_purchase_order__quotation_number
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_purchase_order_line__quotation_number
+msgid "#Quotation Number"
+msgstr "Número de cotización"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "% <br/>Desc <br/>Agen"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "% <br/>Desc <br/>Client"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "% <br/>Desc <br/>Finan"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "% <br/>Equiv"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "% <br/>Rcgos"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "% SP"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+msgid "%Iva"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "&lt;/td&gt;"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "&lt;td class=\"text-center oe_leftfit oe_rightfit\" style=\"background-color:"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "<br/>\n"
+"                                                 <strong>Advertising Services</strong>"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+msgid "<br/>\n"
+"                    <br/>\n"
+"                    No :"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<br/>\n"
+"                    <br/>\n"
+"                    Order No. :"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+msgid "<span class=\"page\"/> from <span class=\"topage\"/>"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<span class=\"page\"/> of <span class=\"topage\"/>"
+msgstr "<span class =\"page\"/> de <span class=\"topage\"/>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "<span><strong>Advertising Services</strong></span>"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "<strong> Observations:</strong>"
+msgstr "Observaciones"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong> Page <span class=\"page\"/> of <span class=\"topage\"/></strong>"
+msgstr "<strong> Page <span class=\"page\"/> de <span class=\"topage\"/></strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "<strong> RECEIVED BY </strong>"
+msgstr "<strong> RECIBIDA POR </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "<strong> Reference <br/> Type of Crib <br/> System </strong>"
+msgstr "<strong> Referencia <br/> Tipo de <br/> sistema de cuna </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "<strong> Station <br/> Dial/Band <br/> Program </strong>"
+msgstr "<strong> Estación <br/> Marcación / Banda <br/> Programa </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Approved by:</strong>"
+msgstr "<strong> Aprobado por: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Area:</strong>"
+msgstr "<strong> Área: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<strong>Attention:</strong>"
+msgstr "<strong> Atención: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<strong>Budget No:</strong>"
+msgstr "<strong> No de presupuesto: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Client:</strong>"
+msgstr "<strong> Cliente: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Contact:</strong>"
+msgstr "<strong> Contacto: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Currency:</strong>"
+msgstr "<strong> Moneda: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Date printing :</strong>"
+msgstr "<strong> Impresión de fecha: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Fecha:</strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Draft:</strong>"
+msgstr "<strong> Borrador: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>ID Draft:</strong>"
+msgstr "<strong> Borrador de identificación: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Main Client:</strong>"
+msgstr "<strong> Cliente principal: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+msgid "<strong>Name:</strong>"
+msgstr "<strong> Nombre: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<strong>Nit Client:</strong>"
+msgstr "<strong> Cliente Nit: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Nit Provider:</strong>"
+msgstr "<strong> Proveedor de liendres: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<strong>Order Date:</strong>"
+msgstr "<strong>Fecha orden:</strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+msgid "<strong>Order ID:</strong>"
+msgstr "<strong> ID de pedido: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Ordered for:</strong>"
+msgstr "<strong> Ordenada para: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "<strong>PLANNER</strong>"
+msgstr "<strong> PLANIFICADORA </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<strong>Page</strong>"
+msgstr "<strong> Página </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Produced by:</strong>"
+msgstr "<strong> Producida por: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Product:</strong>"
+msgstr "<strong> Producto: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Project Manager:</strong>"
+msgstr "<strong> Gestor de proyectos: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>Provider:</strong>"
+msgstr "<strong> Proveedor: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Referencia:</strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<strong>Report Date</strong>"
+msgstr "<strong> Fecha del informe </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<strong>Report Time</strong>"
+msgstr "<strong> Hora del informe </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "<strong>Sirs:</strong>"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+msgid "<strong>Version:</strong>"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "<strong>WORK ORDER:</strong>"
+msgstr "<strong> ORDEN DE TRABAJO: </strong>"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "ACCOUNT'S MANAGER"
+msgstr "GESTORA DE CUENTA"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Audience"
+msgstr "Audiencia"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+msgid "BUDGET OF"
+msgstr "PRESUPUESTO DE "
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+msgid "COMPARATIVE TABLE No"
+msgstr "TABLA COMPARATIVA No"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "CPM"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.create_purchase_order_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Channel"
+msgstr "Canal"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "City <br/>Station"
+msgstr "Ciudad <br/> Estación"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Color"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__cpo_id
+msgid "Cpo"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__cpol_ids
+msgid "Cpol"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: code:addons/flow_purchase_sale/models/inherited_sale_order.py:49
+#: model:ir.actions.act_window,name:flow_purchase_sale.action_create_purchase_order
+#: model:ir.model,name:flow_purchase_sale.model_create_purchase_order
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.create_purchase_order_form_view
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.view_order_form_inherit
+#, python-format
+msgid "Create Purchase Order"
+msgstr "Crear orden de compra"
+
+#. module: flow_purchase_sale
+#: model:ir.model,name:flow_purchase_sale.model_create_purchase_order_line
+msgid "Create Purchase Order Line"
+msgstr "Crear línea de orden de compra"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__create_uid
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__create_date
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Crib Type"
+msgstr "Tipo de cuna"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+msgid "Days"
+msgstr "Días"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__name
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+msgid "Description"
+msgstr "Descripción"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__display_name
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_purchaseorder_custom__display_name
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_purchaseorder_quote_type__display_name
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_saleorder_custom__display_name
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_saleorder_quote_type__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Duration"
+msgstr "Duración"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Format"
+msgstr "Formatear"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Gross <br/> Value"
+msgstr "Valor <br/> bruto"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Gross <br/> value"
+msgstr "Valor <br/> bruto"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__id
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__id
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_purchaseorder_custom__id
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_purchaseorder_quote_type__id
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_saleorder_custom__id
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_saleorder_quote_type__id
+msgid "ID"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "IVA"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "IVA Vr SP"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "Iva"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "Ivan Chaparro Navarrete"
+msgstr "Iván Chaparro Navarrete"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order____last_update
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_purchaseorder_custom____last_update
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_purchaseorder_quote_type____last_update
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_saleorder_custom____last_update
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_report_flow_purchase_sale_report_saleorder_quote_type____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__write_uid
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__write_date
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_purchase_order_line__crm_lead_line_id
+msgid "Lead Line"
+msgstr "Línea guía"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Listeners <br/>ECAR"
+msgstr "Oyentes <br/> ECAR"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "Logo"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Net <br/> Value"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Net <br/>Value"
+msgstr "Valor <br/> neto"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_purchase
+msgid "ORDER OF"
+msgstr "ORDEN DE"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Order"
+msgstr "Pedido"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_purchase_order_line__order_line_id
+msgid "Order Line Reference"
+msgstr "Referencia de línea de pedido"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "PROJECT MANAGEMENT DIRECTOR"
+msgstr "DIRECTORA DE GESTION DE PROYECTOS"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Piece"
+msgstr Pedazo"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Portal"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Program"
+msgstr "Programa"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Program <br/>Period"
+msgstr "Programa <br/> Periodo"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "Provider <br/>Qty."
+msgstr "Proveedor <br/> Cant."
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Published <br/>Rate"
+msgstr "Publicado <br/> Tarifa"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.view_order_form_inherit
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: flow_purchase_sale
+#: code:addons/flow_purchase_sale/models/inherited_sale_order.py:62
+#: model:ir.model,name:flow_purchase_sale.model_purchase_order
+#, python-format
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: flow_purchase_sale
+#: model:ir.actions.report,name:flow_purchase_sale.action_report_purchase_order_custom
+msgid "Purchase Order Custom"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model,name:flow_purchase_sale.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea pedido de compra"
+
+#. module: flow_purchase_sale
+#: model:ir.actions.report,name:flow_purchase_sale.action_report_purchaseorder_quote_type
+msgid "Purchase Order Quote Type"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Purchase Type"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__product_qty
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: flow_purchase_sale
+#: model:ir.actions.report,name:flow_purchase_sale.action_report_saleorder_custom
+msgid "Quotation / Order Custom"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.actions.report,name:flow_purchase_sale.action_report_saleorder_quote_type
+msgid "Quotation / Order Quote Type"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "Quoted"
+msgstr "Cotizada"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+msgid "RECEIVED"
+msgstr "RECIBIDA"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Rate <br/>Published"
+msgstr "Calificar <br/> Publicado"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Rating"
+msgstr "Calificación"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.create_purchase_order_form_view
+msgid "Reason Change Wizard"
+msgstr "Asistente de cambio de razón"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_purchase_order__report_url
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_sale_order__report_url
+msgid "Report S3 URL"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: code:addons/flow_purchase_sale/report/purchase_report_quote_type.py:18
+#, python-format
+msgid "Report Type Miss-Match data.\n"
+"This Purchase Order data is related to Production Type and you are trying to print report of Media Type"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: code:addons/flow_purchase_sale/report/purchase_report.py:79
+#: code:addons/flow_purchase_sale/report/sale_report.py:18
+#, python-format
+msgid "Report Type Miss-Match data.\n"
+"This Sale Order data is related to Media Type and you are trying to print report of Production Type"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: code:addons/flow_purchase_sale/report/sale_report_quote_type.py:19
+#, python-format
+msgid "Report Type Miss-Match data.\n"
+"This Sale Order data is related to Production Type and you are trying to print report of Media Type"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model,name:flow_purchase_sale.model_sale_order
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_purchase_order__so_id
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__date_order
+msgid "Scheduled Date"
+msgstr "Fecha prevista"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Section"
+msgstr "Sección"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Stripe"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__price_subtotal
+msgid "Subtotal"
+msgstr "Total parcial"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "System <br/> Chain"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "TOTAL SUPPLIERS"
+msgstr "PROVEEDORES TOTALES"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "TOTAL:"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "TOTALS"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "TRP"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "Total"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Total <br/> Location"
+msgstr "Total <br/> Ubicación"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_document_custom
+msgid "Total <br/>Cribs"
+msgstr "Total <br/> Cunas"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_sale_order__total_po
+msgid "Total Purchase Order"
+msgstr "Orden de compra total"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+msgid "Total Vr"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order_line__price_unit
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: flow_purchase_sale
+#: model:ir.model.fields,field_description:flow_purchase_sale.field_create_purchase_order__partner_id
+msgid "Vendor"
+msgstr "Proveedor"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type
+msgid "Version 1"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "Vr SP"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "Vr Total"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "Vr. Unit"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+msgid "Vr. Unitary"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.external_layout_standard_quote_type_purchase
+msgid "WORK ORDER"
+msgstr "ORDEN DE TRABAJO"
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_document_custom
+msgid "_________________________________________"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_purchaseorder_quote_type_custom
+#: model_terms:ir.ui.view,arch_db:flow_purchase_sale.report_saleorder_quote_type_custom
+msgid "___________________________________________________"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model,name:flow_purchase_sale.model_report_flow_purchase_sale_report_purchaseorder_custom
+msgid "report.flow_purchase_sale.report_purchaseorder_custom"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model,name:flow_purchase_sale.model_report_flow_purchase_sale_report_purchaseorder_quote_type
+msgid "report.flow_purchase_sale.report_purchaseorder_quote_type"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model,name:flow_purchase_sale.model_report_flow_purchase_sale_report_saleorder_custom
+msgid "report.flow_purchase_sale.report_saleorder_custom"
+msgstr ""
+
+#. module: flow_purchase_sale
+#: model:ir.model,name:flow_purchase_sale.model_report_flow_purchase_sale_report_saleorder_quote_type
+msgid "report.flow_purchase_sale.report_saleorder_quote_type"
+msgstr ""

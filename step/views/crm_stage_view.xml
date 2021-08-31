@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- CRM Stage Form View Inherited-->
+    <record id="crm_stage_form_view_inherit_extended" model="ir.ui.view">
+        <field name="name">crm.stage.form.view.inherit.extended</field>
+        <field name="model">crm.stage</field>
+        <field name="inherit_id" ref="crm.crm_stage_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="after">
+                <group col="4">
+                    <field name="step_id"/>
+                    <field name="feedback"/>
+                    <field name="feedback_category"/>
+                    <field name="feedback_type"/>
+                    <field name="step_flag"/>
+                    <field name="category_css"/>
+                    <field name="is_loghour"/>
+                    <field name="color" groups="base.group_no_one"/>
+                    <field name="image_url" widget="url" invisible="0" attrs="{'readonly':[('id', '!=', False)]}"/>
+                    <field name="mandatory"/>
+                    <field name="approved_by"/>
+                    <field name="active"/>
+                    <field name="file_name" invisible="1"/>
+                </group>
+            </xpath>
+            <field name="team_count" position="before">
+                <div class="oe_button_box">
+                </div>
+                <field name="image" widget='image' class="oe_avatar" filename="file_name"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- CRM Stage tree View Inherited-->
+    <record id="crm_stage_tree_view_inherit_extended" model="ir.ui.view">
+        <field name="name">crm.stage.tree.view.inherit.extended</field>
+        <field name="model">crm.stage</field>
+        <field name="inherit_id" ref="crm.crm_stage_tree"/>
+        <field name="arch" type="xml">
+            <field name="team_id" position="after">
+               <field name="step_id"/>
+               <field name="active"/>
+            </field>
+        </field>
+    </record>
+
+    <menuitem id="crm_step_config"
+        name="Steps"
+        parent="crm.crm_menu_config"
+        action="step.action_step_form"
+        sequence="5"/>
+
+</odoo>

@@ -1,0 +1,3 @@
+#!/bin/bash
+cp -r /tmp/odoo/* /data/odoo12/odoo_prod
+chmod +x /data/odoo12/odoo_prod/scripts/*

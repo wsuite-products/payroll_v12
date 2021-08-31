@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Content Config tree view-->
+    <record id="content_config_tree" model="ir.ui.view">
+        <field name="name">Content Config Tree</field>
+        <field name="model">content.config</field>
+        <field name="arch" type="xml">
+            <tree string="Content Config">
+                <field name="name"/>
+                <field name="user_id"/>
+                <field name="partner_id"/>
+                <field name="brand_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Content Config from view-->
+    <record id="content_config_form" model="ir.ui.view">
+        <field name="name">Content Config Tree</field>
+        <field name="model">content.config</field>
+        <field name="arch" type="xml">
+            <form string="Content Config">
+                <sheet>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="user_id"/>
+                        <field name="partner_id"/>
+                        <field name="brand_id"/>
+                        <field name="create_date"/>
+                        <field name="write_date"/>
+                    </group>
+                    <group>
+                        <field name="json_data"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Content Config Action-->
+    <record model="ir.actions.act_window" id="content_config_action">
+        <field name="name">Content Config</field>
+        <field name="res_model">content.config</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Content Config Menu-->
+    <menuitem
+        id="content_config_menu"
+        action="content_config_action"
+        parent="crm.menu_crm_config_lead"/>
+
+</odoo>

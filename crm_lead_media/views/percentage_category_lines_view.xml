@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Percentage Category Lines tree view-->
+    <record id="percentage_category_lines_tree" model="ir.ui.view">
+        <field name="name">Percentage Category Lines Tree</field>
+        <field name="model">percentage.category.lines</field>
+        <field name="arch" type="xml">
+            <tree string="Percentage Category Lines">
+                <field name="name"/>
+                <field name="lead_id"/>
+                <field name="classification_id"/>
+                <field name="percentage" string="Percentage(%)"/>
+                <field name="level"/>
+                <field name="percentage_total" string="Percentage Total(%)"/>
+                <field name="qty"/>
+                <field name="cpr_prom"/>
+                <field name="sov_channel" string="SOV Channel(%)"/>
+                <field name="investment"/>
+                <field name="parent_category_share_accumulate"/>
+                <field name="per_categ_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Percentage Category Lines from view-->
+    <record id="percentage_category_lines_form" model="ir.ui.view">
+        <field name="name">Percentage Category Lines Form</field>
+        <field name="model">percentage.category.lines</field>
+        <field name="arch" type="xml">
+            <form string="Percentage Category Lines">
+                <sheet>
+                    <label for="name" class="oe_edit_only"/>
+                    <h1>
+                        <field name="name"/>
+                    </h1>
+                    <group col="4">
+                        <field name="lead_id" readonly="context.get('lead')"/>
+                        <field name="classification_id" required="1"/>
+                        <field name="parent_category"/>
+                        <label for="percentage" string="Percentage"/>
+                        <div name="percentage">
+                            <field name="percentage" class="oe_inline"/> %%
+                        </div>
+                        <field name="level"/>
+                        <label for="percentage_total"/>
+                        <div name="percentage_total">
+                            <field name="percentage_total" class="oe_inline"/> %%
+                        </div>
+                        <field name="qty"/>
+                        <field name="cpr_prom"/>
+                        <label for="sov_channel"/>
+                        <div name="sov_channel">
+                            <field name="sov_channel" class="oe_inline"/> %%
+                        </div>
+                        <field name="investment"/>
+                        <field name="parent_category_share_accumulate"/>
+                        <field name="per_categ_id"/>
+                    </group>
+                    <group>
+                        <field name="media_config"/>
+                        <field name="reference_config"/>
+                        <field name="request_config"/>
+                    </group>
+                    <group string="Channel Fringe Lines">
+                        <field name="channel_fringe_ids" context="{'default_lead_id': lead_id, 'lead': True}" nolabel="1"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="percentage_category_lines_search" model="ir.ui.view">
+        <field name="name">Percentage Category Lines Search</field>
+        <field name="model">percentage.category.lines</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="lead_id" filter_domain="[('lead_id', 'ilike', self)]" string="Lead.."/>
+                <field name="classification_id" filter_domain="[('classification_id', 'ilike', self)]" string="Category.."/>
+                <field name="per_categ_id" filter_domain="[('per_categ_id', 'ilike', self)]" string="Percentage Category.."/>
+                <group string="Group By">
+                  <filter string="Lead" name="lead_id" context="{'group_by':'lead_id'}"/>
+                    <filter string="Category" name="classification_id" context="{'group_by':'classification_id'}"/>
+                    <filter string="Percentage Category" name="classification_id" context="{'group_by':'classification_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Percentage Category Lines Action-->
+    <record model="ir.actions.act_window" id="percentage_category_lines_action">
+        <field name="name">Percentage Category Lines</field>
+        <field name="res_model">percentage.category.lines</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Percentage Category Lines Menu-->
+    <menuitem
+        id="percentage_category_lines_menu"
+        action="percentage_category_lines_action"
+        parent="crm.menu_crm_config_lead"/>
+
+</odoo>

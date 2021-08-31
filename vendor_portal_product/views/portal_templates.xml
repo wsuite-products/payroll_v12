@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="portal_my_home_menu_rfq" name="Portal layout : purchase menu entries" inherit_id="portal.portal_breadcrumbs" priority="25">
+    <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+      <li t-if="page_name == 'rfq' or rfq_order" t-attf-class="breadcrumb-item #{'active ' if not rfq else ''}">
+        <a t-if="rfq_order" t-attf-href="/my/rfq?{{ keep_query() }}">RFQ</a>
+        <t t-else="">RFQ</t>
+      </li>
+      <li t-if="rfq_order" class="breadcrumb-item active">
+        <t t-esc="rfq_order.name"/>
+      </li>
+    </xpath>
+  </template>
+
+  <template id="portal_my_home_vendor_rfq" name="Portal My Home : RFQ entry" inherit_id="portal.portal_my_home" priority="50">
+    <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+        <t t-if="rfq_count" t-call="portal.portal_docs_entry">
+            <t t-set="title">Yours RFQs</t>
+            <t t-set="url" t-value="'/my/rfq'"/>
+            <t t-set="count" t-value="rfq_count"/>
+        </t>
+    </xpath>
+  </template>
+
+  <template id="portal_my_rfq_orders" name="Portal: My RFQ">
+    <t t-call="portal.portal_layout">
+      <t t-call="portal.portal_searchbar">
+        <t t-set="title">Your RFQs</t>
+      </t>
+      <t t-if="orders" t-call="portal.portal_table">
+        <thead>
+          <tr class="active">
+            <th style="text-align: left;font: Bold 12px/49px Open Sans;letter-spacing: 0;color: #868686;opacity: 1;">Reference #&#160;&#160;&#160;<i class="fa fa-sort"></i></th>
+            <th style="text-align: left;font: Bold 12px/49px Open Sans;letter-spacing: 0;color: #868686;opacity: 1;">ITEMS&#160;&#160;&#160;<i class="fa fa-sort"></i></th>
+            <th style="text-align: left;font: Bold 12px/49px Open Sans;letter-spacing: 0;color: #868686;opacity: 1;">QUANTITY&#160;&#160;&#160;<i class="fa fa-sort"></i></th>
+            <th style="text-align: left;font: Bold 12px/49px Open Sans;letter-spacing: 0;color: #868686;opacity: 1;">Closed Date&#160;&#160;&#160;<i class="fa fa-sort"></i></th>
+            <th style="text-align: left;font: Bold 12px/49px Open Sans;letter-spacing: 0;color: #868686;opacity: 1;">Status&#160;&#160;&#160;<i class="fa fa-sort"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <t t-foreach="orders" t-as="order">
+            <tr>
+              <td style="text-align: left;font: Bold 13px/16px Open Sans;letter-spacing: 0;color: #404040;opacity: 1;"><a t-attf-href="/my/rfq/#{order.id}?#{keep_query()}"><t t-esc="order.crm_lead_line_id.quotation_number"/></a></td>
+              <td style="text-align: left;font: Bold 13px/16px Open Sans;letter-spacing: 0;color: #404040;text-transform: uppercase;opacity: 1;"><span t-field="order.product_id.name"/></td>
+              <td style="text-align: left;font: Bold 13px/16px Open Sans;letter-spacing: 0;color: #404040;text-transform: uppercase;opacity: 1;"><span t-field="order.qty"/></td>
+              <td style="text-align: left;font: Bold 13px/16px Open Sans;letter-spacing: 0;color: #404040;opacity: 1;"><span t-field="order.rfq_closing_date"/></td>
+              <td>
+                <t t-if="order.state == 'in_progress'">
+                  <span style="color:white;font-weight:bold;background-color:blue;border-radius: 5px;padding:3px;">In Progress</span>
+                </t>
+                <t t-if="order.state == 'done'">
+                  <span style="color:white;font-weight:bold;background-color:green;border-radius: 5px;padding:3px;"><i class="fa fa-fw fa-remove"/> Done</span>
+                </t>
+                <t t-if="order.state == 'cancel'">
+                  <span style="color:white;font-weight:bold;background-color:red;border-radius: 5px;padding:3px;"><i class="fa fa-fw fa-remove"/> Cancelled</span>
+                </t>
+              </td>
+            </tr>
+          </t>
+        </tbody>
+      </t>
+    </t>
+  </template>
+
+
+  <template id="portal_my_rfq_order" name="Portal: My RFQ">
+      <t t-call="portal.portal_layout">
+        <br/><br/><br/>
+        <table width="100%">
+            <tr>
+                <td width="50%">
+                    <table width="100%">
+                        <tr>
+                            <td width="33%">
+                                <t t-esc="vendor_rfq.crm_lead_line_id.quotation_number"/>
+                            </td>
+                            <td width="33%">
+                                <t t-esc="vendor_rfq.product_id.description"/>
+                            </td>
+                            <td width="33%">
+                                <a class="o_attachment_download" t-attf-href="#{vendor_rfq.product_id.image_url}?#{keep_query()}" target="_blank">
+                                    Download
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="right" width="50%">
+                    <t t-if="vendor_rfq.state == 'in_progress'">
+                        <span style="color:white;font-weight:bold;background-color:blue;border-radius: 5px;padding:3px;">In Progress</span>
+                    </t>
+                    <t t-if="vendor_rfq.state == 'done'">
+                        <span style="color:white;font-weight:bold;background-color:green;border-radius: 5px;padding:3px;"><i class="fa fa-fw fa-remove"/> Done</span>
+                    </t>
+                    <t t-if="vendor_rfq.state == 'cancel'">
+                        <span style="color:white;font-weight:bold;background-color:red;border-radius: 5px;padding:3px;"><i class="fa fa-fw fa-remove"/> Cancelled</span>
+                    </t>
+                </td>
+            </tr>
+        </table>
+        <t t-if="vendor_rfq_line" t-call="portal.portal_table">
+            <tbody>
+                <tr>
+                    <td width="50%">
+                        <table width="100%">
+                            <tr>
+                                <td width="25%">
+                                    <span t-field="rfq_id.product_id.categ_id"/>
+                                </td>
+                                <td width="25%">
+                                    Quantity: <span t-esc="rfq_id.qty"/>
+                                </td>
+                                <td width="25%">
+                                    Value Total
+                                </td>
+                                <td width="25%">
+                                    <t t-foreach="vendor_rfq_line" t-as="line">
+                                        <span t-field="line.rfq_price"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%" align="right">
+                        <t t-foreach="vendor_rfq_line" t-as="line">
+                            <span t-field="line.del_date"/>
+                        </t>
+                    </td>
+                </tr>
+            </tbody>
+        </t>
+        <t t-foreach="list(dict.fromkeys(vendor_rfq_line.mapped('vrfq_template_line_ids.product_id.categ_id.name')))" t-as="category">
+            <t t-if="vendor_rfq_line" t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <th colspan="3">
+                            <h4><t t-esc="category"/></h4>
+                        </th>
+                        <th align="right">
+                            &#160;
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="vendor_rfq_line.vrfq_template_line_ids" t-as="line">
+                        <t t-if="line.product_id.categ_id.name == category" class="row">
+                            <tr>
+                                <td style="text-align: left;font: Semibold 16px/22px Open Sans;letter-spacing: 0;color: #000000;opacity: 1;" width="20%"><span t-field="line.product_id"/>
+                                </td>
+                                <td style="text-align: left;font: Semibold 16px/22px Open Sans;letter-spacing: 0;color: #000000;opacity: 1;" width="15%">My Price : <t t-esc="line.price_unitary"/>
+                                </td>
+                                <td style="text-align: left;font: Semibold 16px/22px Open Sans;letter-spacing: 0;color: #000000;opacity: 1;" width="15%">Quantity : <t t-esc="line.qty"/>
+                                </td>
+                                <td style="text-align: left;font: Semibold 16px/22px Open Sans;letter-spacing: 0;color: #000000;opacity: 1;" width="15%">Delivery Date : <span t-field="line.del_date"/>
+                                </td>
+                                <td style="text-align: left;font: Semibold 16px/22px Open Sans;letter-spacing: 0;color: #000000;opacity: 1;" width="15%">Additional Note : <span t-field="line.note"/>
+                                </td>
+                                <td style="text-align: left;font: Regular 12px/17px Open Sans;letter-spacing: 0;color: #000000;opacity: 1;" width="15%">
+                                    <button type="button" style="border: 1px solid #5ABE2B;opacity: 1;"><span style="text-align: center;font: Semibold 13px/16px Open Sans;letter-spacing: 0;color: #5ABE2B;opacity: 1;" data-toggle="modal" data-target="#myAddPrice" t-att-id="line.id" onclick="rfq_template_line_ids_add(this.id)">Add Price</span>
+                                    </button>
+                                    <div class="modal fade" id="myAddPrice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <div style="text-align: left;font: Semibold 14px/17px Open Sans;letter-spacing: 0;color: #868686;text-transform: uppercase;opacity: 1;">
+                                                        Item Price
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <form action="/submit/myprice" method="post" style="margin-top: 23px;margin-left: 41px;">
+                                                        <div style="text-align: left;font: Bold 16px/22px Open Sans;letter-spacing: 0;color: #555555;opacity: 1;">
+                                                            Submit Your Details
+                                                        </div>
+                                                        <br/><br/>
+                                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                        <input type="hidden" name="for_loguser" id="loguser" t-att-value="int(user_id.id)"/>
+                                                        <input type="hidden" name="rfq_id" id="rfqId" t-att-value="int(rfq_order.id)"/>
+                                                        <input type="hidden" name="rfq_template_line_id" id="rfqTemplateLineId" t-att-value="int(line.id)"/>
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-2 col-form-label" style="text-align: left;font: Regular 12px/17px Open Sans;letter-spacing: 0;color: #555555;opacity: 1;" for="inputQuantity">Quantity</label>
+                                                          <div class="col-sm-10">
+                                                            <input style="width: 40%;#FFFFFF 0% 0% no-repeat padding-box;border: 1px solid #555555;border-radius: 4px 0px 0px 4px;opacity: 1;" type="number" class="form-control" name="inputQuantity"/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-2 col-form-label" style="text-align: left;font: Regular 12px/17px Open Sans;letter-spacing: 0;color: #555555;opacity: 1;" for="inputPrice">My Price</label>
+                                                          <div class="col-sm-10">
+                                                            <input style="width: 40%;#FFFFFF 0% 0% no-repeat padding-box;border: 1px solid #555555;border-radius: 4px 0px 0px 4px;opacity: 1;" type="number" class="form-control" name="inputPrice"/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                          <label for="inputDelivery" style="text-align: left;font: Regular 12px/17px Open Sans;letter-spacing: 0;color: #555555;opacity: 1;" class="col-sm-2 col-form-label">Delivery Date</label>
+                                                          <div class="col-sm-10">
+                                                            <input type="date" style="width: 40%;#FFFFFF 0% 0% no-repeat padding-box;border: 1px solid #555555;border-radius: 4px 0px 0px 4px;opacity: 1;" class="form-control" name="inputDelivery"/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                          <label for="inputNote" style="text-align: left;font: Regular 12px/17px Open Sans;letter-spacing: 0;color: #555555;opacity: 1;" class="col-sm-2 col-form-label">Additional Note</label>
+                                                          <div class="col-sm-10">
+                                                            <textarea rows="3" style="width: 40%;#FFFFFF 0% 0% no-repeat padding-box;border: 1px solid #555555;border-radius: 4px 0px 0px 4px;opacity: 1;" class="form-control" name="inputNote"/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                          <label for="inputFile" style="text-align: left;font: Regular 12px/17px Open Sans;letter-spacing: 0;color: #555555;opacity: 1;" class="col-sm-2 col-form-label">File</label>
+                                                          <div class="col-sm-10">
+                                                            <input type="file" class="o_input_file" name="inputFile"/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                          <div class="offset-sm-2 col-sm-10">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                                                Close
+                                                                    </button>
+                                                            <button type="submit" style="background: #5ABE2B 0% 0% no-repeat padding-box;opacity: 1;" class="btn btn-primary" onclick="submit_rfq_line_data()">Submit</button>
+                                                          </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;font: Semibold 16px/22px Open Sans;letter-spacing: 0;color: #000000;opacity: 1;" width="50%">&#160;
+                                </td>
+                            </tr>
+                        </t>
+                    </t>
+                </tbody>
+            </t>
+        </t>
+<!--          <t t-set="rfq_order" t-value="order"/>-->
+<!--           <div id="optional_placeholder"></div>
+          <div class="container">
+              <div t-if="vendor_price &gt; 0.0" class="row">
+                        <div style="width: 100%;text-align: center;">
+                            <div style="margin: 15px;" t-if="rfq_order.state == 'in_progress'" class="alert alert-info">
+                                <span style="font-size:medium">
+                                    <t t-esc="msg_submit"/>
+                                </span>
+                            </div>
+                            <t t-if="msg_reject != ''">
+                                <div style="margin: 15px;" t-if="rfq_order.state == 'done'" class="alert alert-danger">
+                                    <span style="font-size:medium">
+                                        <t t-esc="msg_reject"/>
+                                    </span>
+                                </div>
+                            </t>
+                            <t t-if="msg_reject == ''">
+                                <div style="margin: 15px;" t-if="rfq_order.state == 'done' and ( not rfq_order.purchase_id)" class="alert alert-success">
+                                    <span style="font-size:medium">
+                                        <t t-esc="msg_accept"/>
+                                    </span>
+                                </div>
+                                <div style="margin: 15px;" t-if="rfq_order.state == 'done' and (rfq_order.purchase_id)" class="alert alert-success">
+                                    <span style="font-size:medium">
+                                        <t t-esc="msg_po"/>
+                                    </span>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+              <div class="card">
+                <div class="card-header">
+
+                  <div class="row">
+                    <div class="col-md-10">
+                        <h4>
+                            Reference
+                            <span t-esc="rfq_order.name"/>
+                        </h4>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-3 pull-right" style="margin-top: 5px;" id="o_portal_rfq_actions">
+                            <t t-if="rfq_order.state == 'in_progress'">
+                                <span class="alert alert-info"><i class="fa fa-fw fa-clock-o"/><span class="hidden-xs"> In Progress</span></span>
+                            </t>
+                            <t t-if="rfq_order.state == 'done'">
+                                <span class="alert alert-success"><i class="fa fa-fw fa-check"/><span class="hidden-xs"> Done</span></span>
+                            </t>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <strong>Product : </strong><br/>
+                            <img t-att-src="'/web/image/product.product/%s/image_small/48x48' % rfq_order.product_id.id"/>
+                            <span t-field="rfq_order.product_id"/>
+                        </div>
+                        <br/>
+                        <div>
+                            <strong>Quantity : </strong>
+                            <span t-field="rfq_order.qty"/>
+                        </div>
+                        <br/>
+                        <div t-if="rfq_order.estimated_price">
+                            <strong>Estimated Price : </strong>
+                            <span t-field="rfq_order.estimated_price" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: rfq_order.currency_id}"/>
+                            <strong>/</strong>
+                            <span t-field="rfq_order.product_uom"/>
+                        </div>
+                        <br/>
+                        <div t-if="rfq_order.estimated_del_date">
+                            <strong>Estimated Delivery Date : </strong>
+                            <span t-field="rfq_order.estimated_del_date" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+                        </div>
+                    </div>
+                      <div class="col-md-6">
+                            <div>
+                                <strong>Created Date:</strong>
+                                <span t-field="rfq_order.create_date" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+                            </div>
+                            <br/>
+                            <div t-if="rfq_order.rfq_closing_date">
+                                <strong>Closing Date:</strong>
+                                <span t-field="rfq_order.rfq_closing_date" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+                            </div>
+                            <t t-if="vendor_price  == 0.0">
+                                <br/>
+                                <input type="hidden" name="for_loguser" id="loguser" t-att-value="int(user_id.id)"/>
+                                <input type="hidden" name="rfq_id" id="rfqId" t-att-value="int(rfq_order.id)"/>
+                                <t t-if="rfq_order.state == 'in_progress'">
+                                    <div class="container">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalHorizontal">My Price
+                                        </button>
+                                        <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="col-md-10" id="myModalLabel">
+                                                            Submit Your Details
+                                                        </h4>
+                                                    </div>
+                                                    <div class="container">
+                                                        <form action="/submit/myprice" method="post" style="margin-top: 23px;margin-left: 41px;">
+                                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                            <input type="hidden" name="for_loguser" id="loguser" t-att-value="int(user_id.id)"/>
+                                                            <input type="hidden" name="rfq_id" id="rfqId" t-att-value="int(rfq_order.id)"/>
+                                                            <div class="form-group row">
+                                                              <label class="col-sm-2 col-form-label" style="padding: 7px;" for="inputPrice">My Price</label>
+                                                              <div class="col-sm-10">
+                                                                <input style="width: 40%;" type="number" class="form-control" name="inputPrice"/>
+                                                              </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                              <label for="inputDelivery" style="padding: 7px;" class="col-sm-2 col-form-label">Delivery Date</label>
+                                                              <div class="col-sm-10">
+                                                                <input type="date" style="width: 40%;" class="form-control" name="inputDelivery"/>
+                                                              </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                              <label for="inputNote" style="padding: 7px;" class="col-sm-2 col-form-label">Additional Note</label>
+                                                              <div class="col-sm-10">
+                                                                <textarea rows="3" style="width: 40%;" class="form-control" name="inputNote"/>
+                                                              </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                              <div class="offset-sm-2 col-sm-10">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                                                    Close
+                                                                        </button>
+                                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                              </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </t>
+                            <t t-if="vendor_price">
+                                <br/>
+                                <div>
+                                    <strong>My Proposed Price : </strong>
+                                    <t t-esc="vendor_price" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: rfq_order.currency_id}"/>
+                                    <strong>/</strong>
+                                    <span t-field="rfq_order.product_uom"/>
+                                </div>
+                            </t>
+                            <t t-if="vendor_del_date">
+                                <br/>
+                                <div>
+                                    <strong>My Proposed Delivery Date : </strong>
+                                    <t t-esc="vendor_del_date" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+                                </div>
+                            </t>
+                            <t t-if="vendor_note">
+                                <br/>
+                                <div>
+                                    <strong>My Note : </strong><br/>
+                                    <t t-esc="vendor_note"/>
+                                </div>
+                            </t>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div> -->
+      </t>
+      <script>
+      function rfq_template_line_ids_add(clicked_id) {
+        window.localStorage.setItem('vendor_rfq_line_template_id', clicked_id);
+        document.getElementById("rfqTemplateLineId").value = localStorage.getItem("vendor_rfq_line_template_id")
+
+      }
+      function submit_rfq_line_data(){
+        localStorage.removeItem("vendor_rfq_line_template_id");
+      }
+      </script>
+  </template>
+
+    <template id="portal_my_purchase_orders_inherit" name="Portal layout : purchase menu entries" inherit_id="purchase.portal_my_purchase_orders">
+        <xpath expr="//tr[hasclass('active')]/th[2]" position="after">
+            <th>State</th>
+        </xpath>
+        <xpath expr="//tbody[1]/t[1]/tr[1]/td[2]" position="after">
+            <td>
+                <span t-field="order.state"/>
+            </td>
+        </xpath>
+    </template>
+
+</odoo>

@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+  <record id="hr_retention_method_rf_1" model="hr.retention.method.rf">
+    <field name="name">1</field>
+  </record>
+  <record id="hr_retention_method_rf_2" model="hr.retention.method.rf">
+    <field name="name">2</field>
+  </record>
+  <record id="hr_value_uvt_input_rf_1" model="hr.value.uvt.input.rf">
+    <field name="name">SALARIO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_8"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_2" model="hr.value.uvt.input.rf">
+    <field name="name">SALARIO INTEGRAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_9"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_3" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_13"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_4" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES SI</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_14"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_5" model="hr.value.uvt.input.rf">
+    <field name="name">INCAPACIDAD GENERAL ENTIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_16"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_6" model="hr.value.uvt.input.rf">
+    <field name="name">INCAPACIDAD GENERAL EMPRESA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_15"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_7" model="hr.value.uvt.input.rf">
+    <field name="name">INCAPACIDADES</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_31"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_8" model="hr.value.uvt.input.rf">
+    <field name="name">LICENCIA POR LUTO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_19"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_9" model="hr.value.uvt.input.rf">
+    <field name="name">LICENCIA DE MATERNIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_20"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_10" model="hr.value.uvt.input.rf">
+    <field name="name">LICENCIA DE PATERNIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_21"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_11" model="hr.value.uvt.input.rf">
+    <field name="name">HORA EXTRA DIURNA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_26"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_12" model="hr.value.uvt.input.rf">
+    <field name="name">HORA EXTRA NOCTURNA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_27"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_13" model="hr.value.uvt.input.rf">
+    <field name="name">HORA EXTRA DIURNA FESTIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_28"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_14" model="hr.value.uvt.input.rf">
+    <field name="name">HORA EXTRA NOCTURNA FESTIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_29"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_15" model="hr.value.uvt.input.rf">
+    <field name="name">RECARGO NOCTURNO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_30"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_16" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE VOLUNTARIO ADICIONAL CF</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_73"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_17" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO DE ALIMENTACION CF</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_75"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_18" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO DE TRANSPORTE CF</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_76"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_19" model="hr.value.uvt.input.rf">
+    <field name="name">GANA GANA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_81"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_20" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO DE VIVIENDA CF</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_77"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_21" model="hr.value.uvt.input.rf">
+    <field name="name">VALES DE ALIMENTACION GRAVADOS</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_99"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_22" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO DE RODAMIENTO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_94"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_23" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL PLUS</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_80"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_24" model="hr.value.uvt.input.rf">
+    <field name="name">AJUSTE AUXILIO MONETARIO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_98"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_25" model="hr.value.uvt.input.rf">
+    <field name="name">AJUSTE SUELDO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_35"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_26" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPLEADO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_74"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_27" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPRESA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_79"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_28" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPRESA (SI)</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_84"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_29" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO DE TELETRABAJO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_32"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_30" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO EDUCACION</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_97"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_31" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO ALIMENTACI&#211;N</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_103"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_32" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO VIVIENDA (DR)</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_91"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_33" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO VIVIENDA P</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_85"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_34" model="hr.value.uvt.input.rf">
+    <field name="name">BONIFICACION MERA LIBERALIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_104"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_35" model="hr.value.uvt.input.rf">
+    <field name="name">BONIFICACION NO HABITUAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_105"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_36" model="hr.value.uvt.input.rf">
+    <field name="name">BONIFICACION SALARIAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_101"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_37" model="hr.value.uvt.input.rf">
+    <field name="name">BONO POR PARTICIPACI&#211;N</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_106"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_38" model="hr.value.uvt.input.rf">
+    <field name="name">BONO SALARIAL VIG</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_108"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_39" model="hr.value.uvt.input.rf">
+    <field name="name">COMPENSACION DE FLUJO DE CAJA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_107"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_40" model="hr.value.uvt.input.rf">
+    <field name="name">CUOTA DE SOSTENIMIENTO LECTIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_11"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_41" model="hr.value.uvt.input.rf">
+    <field name="name">CUOTA DE SOSTENIMIENTO PRODUCTIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_10"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_42" model="hr.value.uvt.input.rf">
+    <field name="name">DOMINICAL LABORADO CON COMPENSATORIO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_24"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_43" model="hr.value.uvt.input.rf">
+    <field name="name">BONO PRIMA EXTRALEGAL NIVEL 1 Y 2</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_109"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_45" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO DE CELULAR</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_93"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_46" model="hr.value.uvt.input.rf">
+    <field name="name">APORTES INSTITUCIONAL EMPRESA K</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_87"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_47" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPRESA DI</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_88"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_48" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPRESA HB</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_89"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_51" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO DE TRANSPORTE</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_22"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_52" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES POR RETIRO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_49"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_53" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES POR RETIRO S.I.</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_48"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_54" model="hr.value.uvt.input.rf">
+    <field name="name">PRIMA LEGAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_43"/>
+    <field name="exempt_rm_id" ref="hr_retention_method_rf_1"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_55" model="hr.value.uvt.input.rf">
+    <field name="name">PRIMA - CAMBIO SALARIO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_67"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_56" model="hr.value.uvt.input.rf">
+    <field name="name">AJUSTE AUX TRANSPORTE</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_37"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_57" model="hr.value.uvt.input.rf">
+    <field name="name">DESCANSO REMUNERADO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_25"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_58" model="hr.value.uvt.input.rf">
+    <field name="name">PRIMA LEGAL DEFINITIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_44"/>
+    <field name="exempt_rm_id" ref="hr_retention_method_rf_1"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_62" model="hr.value.uvt.input.rf">
+    <field name="name">SUMA CONCILIATORIA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_121"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_63" model="hr.value.uvt.input.rf">
+    <field name="name">SALARIO BASICO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_8"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_64" model="hr.value.uvt.input.rf">
+    <field name="name">SALARIO INTEGRAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_9"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_65" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES A DISFRUTAR SALARIO TRADICIONAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_13"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_66" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES A DISFRUTAR SALARIO INTEGRAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_14"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_67" model="hr.value.uvt.input.rf">
+    <field name="name">INCAPACIDAD GENERAL ENTIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_16"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_68" model="hr.value.uvt.input.rf">
+    <field name="name">INCAPACIDAD GENERAL EMPRESA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_15"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_69" model="hr.value.uvt.input.rf">
+    <field name="name">INCAPACIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_31"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_70" model="hr.value.uvt.input.rf">
+    <field name="name">LICENCIA POR LUTO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_19"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_71" model="hr.value.uvt.input.rf">
+    <field name="name">LICENCIA DE MATERNIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_20"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_72" model="hr.value.uvt.input.rf">
+    <field name="name">LICENCIA DE PATERNIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_21"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_73" model="hr.value.uvt.input.rf">
+    <field name="name">HORA EXTRA DIURNA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_26"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_74" model="hr.value.uvt.input.rf">
+    <field name="name">HORA EXTRA NOCTURNA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_27"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_75" model="hr.value.uvt.input.rf">
+    <field name="name">HORA EXTRA DIURNA FESTIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_28"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_76" model="hr.value.uvt.input.rf">
+    <field name="name">HORA EXTRA NOCTURNA FESTIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_29"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_77" model="hr.value.uvt.input.rf">
+    <field name="name">RECARGO NOCTURNO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_30"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_78" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE VOLUNTARIO ADICIONAL CF</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_73"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_79" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO DE ALIMENTACION -CF</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_75"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_80" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO DE TRANSPORTE CF</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_76"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_81" model="hr.value.uvt.input.rf">
+    <field name="name">GANA GANA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_81"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_82" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO DE VIVIENDA CF</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_77"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_83" model="hr.value.uvt.input.rf">
+    <field name="name">VALES DE ALIMENTACION GRAVADOS</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_99"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_84" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO DE RODAMIENTO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_94"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_85" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL PLUS</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_80"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_86" model="hr.value.uvt.input.rf">
+    <field name="name">AJUSTE AUXILIO MONETARIO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_98"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_87" model="hr.value.uvt.input.rf">
+    <field name="name">AJUSTE SUELDO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_35"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_88" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPLEADO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_74"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_89" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPRESA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_79"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_90" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPRESA (SI)</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_84"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_91" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO DE TELETRABAJO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_32"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_92" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO EDUCACION</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_97"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_93" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO ALIMENTACI&#211;N</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_103"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_94" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO VIVIENDA (DR)</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_91"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_95" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO VIVIENDA P</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_85"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_96" model="hr.value.uvt.input.rf">
+    <field name="name">BONIFICACION MERA LIBERALIDAD</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_104"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_97" model="hr.value.uvt.input.rf">
+    <field name="name">BONIFICACION NO HABITUAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_105"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_98" model="hr.value.uvt.input.rf">
+    <field name="name">BONIFICACION SALARIAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_101"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_99" model="hr.value.uvt.input.rf">
+    <field name="name">BONO POR PARTICIPACI&#211;N</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_106"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_100" model="hr.value.uvt.input.rf">
+    <field name="name">BONO SALARIAL VIG</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_108"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_101" model="hr.value.uvt.input.rf">
+    <field name="name">COMPENSACION DE FLUJO DE CAJA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_107"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_102" model="hr.value.uvt.input.rf">
+    <field name="name">CUOTA DE SOSTENIMIENTO LECTIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_11"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_103" model="hr.value.uvt.input.rf">
+    <field name="name">CUOTA DE SOSTENIMIENTO PRODUCTIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_10"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_104" model="hr.value.uvt.input.rf">
+    <field name="name">DOMINICAL LABORADO CON COMPENSATORIO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_24"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_105" model="hr.value.uvt.input.rf">
+    <field name="name">BONO PRIMA EXTRALEGAL NIVEL 1 Y 2</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_109"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_106" model="hr.value.uvt.input.rf">
+    <field name="name">GANA GANA (SI)</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_86"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_107" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO DE CELULAR</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_93"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_108" model="hr.value.uvt.input.rf">
+    <field name="name">APORTES INSTITUCIONAL EMPRESA K</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_87"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_109" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPRESA DI</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_88"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_110" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL EMPRESA HB</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_89"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_111" model="hr.value.uvt.input.rf">
+    <field name="name">APORTE INSTITUCIONAL PLUS HB</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_90"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_112" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO GASTO TRASLADO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_115"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_113" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO DE TRANSPORTE</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_22"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_114" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES POR RETIRO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_49"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_115" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES POR RETIRO S.I.</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_48"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_116" model="hr.value.uvt.input.rf">
+    <field name="name">PRIMA LEGAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_43"/>
+    <field name="exempt_rm_id" ref="hr_retention_method_rf_1"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_117" model="hr.value.uvt.input.rf">
+    <field name="name">PRIMA - CAMBIO SALARIO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_67"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_118" model="hr.value.uvt.input.rf">
+    <field name="name">AJUSTE AUX TRANSPORTE</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_37"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_119" model="hr.value.uvt.input.rf">
+    <field name="name">DESCANSO REMUNERADO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_25"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_120" model="hr.value.uvt.input.rf">
+    <field name="name">PRIMA LEGAL DEFINITIVA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_44"/>
+    <field name="exempt_rm_id" ref="hr_retention_method_rf_1"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_121" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES EN DINERO SALARIO TRADICIONAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_54"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_122" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES EN DINERO SALARIO INTEGRAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_55"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_123" model="hr.value.uvt.input.rf">
+    <field name="name">AJUSTE VACACIONES HIST&#211;RICO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_113"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_124" model="hr.value.uvt.input.rf">
+    <field name="name">DEVOLUCION DESCUENTO AFC</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_123"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_127" model="hr.value.uvt.input.rf">
+    <field name="name">VACACIONES EN DINERO POR RETIRO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_68"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_128" model="hr.value.uvt.input.rf">
+    <field name="name">INDEMNIZACION</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_223"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_129" model="hr.value.uvt.input.rf">
+    <field name="name">INTERESES DE CESANTIAS A&#209;O ANTERIOR</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_42"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_130" model="hr.value.uvt.input.rf">
+    <field name="name">CESANTIAS POR RETIRO</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_46"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_131" model="hr.value.uvt.input.rf">
+    <field name="name">SUMA CONCILIATORIA</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_121"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_132" model="hr.value.uvt.input.rf">
+    <field name="name">AJUSTE SUELDO DIVERSOS</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_124"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_133" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO EDUCACION ADICIONAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_224"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_134" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO MEDIOS TRANSPORTE ADICIONAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_225"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_135" model="hr.value.uvt.input.rf">
+    <field name="name">AUXILIO MONETARIO VIVIENDA ADICIONAL</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_226"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_3"/>
+  </record>
+  <record id="hr_value_uvt_input_rf_136" model="hr.value.uvt.input.rf">
+    <field name="name">DCTO APORTE INSTITUCIONAL PLUS HB</field>
+    <field name="rule_id" ref="l10n_payroll_co.hr_salary_rule_180"/>
+    <field name="hr_uvtvalue_id" ref="hr_value_uvt_rf_1"/>
+  </record>
+</odoo>

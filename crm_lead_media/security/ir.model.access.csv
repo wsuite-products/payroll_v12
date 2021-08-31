@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_process_type,access_crm_process_type,model_crm_process_type,base.group_user,1,1,1,1
+access_channel_fringe_lines,access_channel_fringe_lines,model_channel_fringe_lines,base.group_user,1,1,1,1
+access_percentage_category_lines,access_percentage_category_lines,model_percentage_category_lines,base.group_user,1,1,1,1
+access_crm_audience,access_crm_audience,model_crm_audience,base.group_user,1,1,1,1
+access_crm_audience_lines,access_crm_audience_lines,model_crm_audience_lines,base.group_user,1,1,1,1
+access_crm_audience_attributes,access_crm_audience_attributes,model_crm_audience_attributes,base.group_user,1,1,1,1
+access_crm_product_categ_tag,access_crm_product_categ_tag,model_crm_product_categ_tag,base.group_user,1,1,1,1
+access_crm_audience_type,access_crm_audience_type,model_crm_audience_type,base.group_user,1,1,1,1

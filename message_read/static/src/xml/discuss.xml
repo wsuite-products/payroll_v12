@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+
+    <t t-extend="mail.discuss.Sidebar">
+        <t t-jquery="[t-attf-class*=o_mail_mailbox_title_starred]" t-operation="replace">
+            <div t-attf-class="o_mail_discuss_title_main o_mail_mailbox_title_starred o_mail_discuss_item #{(activeThreadID === 'mailbox_starred') ? 'o_active': ''}"
+                 data-thread-id="mailbox_starred">
+                <span class="o_thread_name"><i class="fa fa-archive mr8"/>Archive</span>
+                <t t-set="counter" t-value="starredCounter"/>
+                <t t-call="mail.discuss.SidebarCounter"/>
+            </div>
+        </t>
+    </t>
+
+    <t t-extend="mail.widget.Thread.Message">
+        <t t-jquery="[t-att-class*=fa-lg]" t-operation="replace"/>
+    </t>
+
+    <t t-extend="mail.discuss.ControlButtons">
+        <t t-jquery=".o_mail_discuss_button_unstar_all" t-operation="replace">
+            <button type="button" class="btn btn-secondary o_mail_discuss_button_unstar_all" title="Unstar all messages">Delete All</button>
+        </t>
+    </t>
+
+    <div t-name="mail.widget.Thread.Empty" class="o_mail_no_content">
+        <t t-if="thread.getID() === 'mailbox_inbox'">
+            <div class="o_thread_title">Congratulations, your inbox is empty</div>
+            <div>New messages appear here.</div>
+        </t>
+        <t t-if="thread.getID() === 'mailbox_starred'">
+            <div class="o_thread_title">No archive message</div>
+            <div>You can mark any message as 'archived', and it shows up in this mailbox.</div>
+        </t>
+        <t t-if="thread.getID() === 'mailbox_moderation'">
+            <div class="o_thread_title">You have no message to moderate</div>
+            <div>Pending moderation messages appear here.</div>
+        </t>
+    </div>
+
+</template>

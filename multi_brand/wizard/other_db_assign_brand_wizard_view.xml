@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="other_db_assign_brand_wizard_form" model="ir.ui.view">
+        <field name="name">other.db.assign.brand.wizard.form</field>
+        <field name="model">other.db.assign.brand.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Other DB Assign Brand Wizard">
+                <group string="Select Brand">
+                    <field name="db_name" required="1"/>
+                    <field name="brand_ids" required="1"/>
+                </group>
+                <footer>
+                    <button name="action_multi_brand_assign_process_both" type="object" string="Copy Plan/Assets Data" class="oe_right oe_highlight"/>
+                    <button string="Cancel" class="oe_right" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="other_db_assign_data_wizard" model="ir.ui.view">
+        <field name="name">other.db.assign.data.wizard</field>
+        <field name="model">other.db.assign.data.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="message"/>
+                <footer>
+                    <button string="OK" class="btn-primary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_other_db_assign_brand_wizard" model="ir.actions.act_window">
+        <field name="name">Other DB Brand Configuration</field>
+        <field name="res_model">other.db.assign.brand.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="multi_brand.model_multi_brand" />
+    </record>
+
+</odoo>

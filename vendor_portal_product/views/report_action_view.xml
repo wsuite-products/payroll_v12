@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="paperformat_vendor_rfq" model="report.paperformat">
+            <field name="name">Vendor RFQ</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">297</field>
+            <field name="page_width">300</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">98</field>
+            <field name="margin_bottom">10</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">93</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report
+            id="action_report_vendor_rfq"
+            string="Vendor RFQ Report"
+            model="vendor.rfq"
+            report_type="qweb-pdf"
+            file="vendor_portal_product.report_vendor_rfq"
+            name="vendor_portal_product.report_vendor_rfq"
+            print_report_name="('Vendor RFQ - %s' % (object.name))"
+        />
+        <record id="action_report_vendor_rfq" model="ir.actions.report">
+            <field name="paperformat_id" ref="vendor_portal_product.paperformat_vendor_rfq"/>
+        </record>
+
+    </data>
+</odoo>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <record id="vendor_rfq_tree_form_inherit" model="ir.ui.view">
+        <field name="name">vendor.rfq.tree.form.inherit</field>
+        <field name="model">vendor.rfq</field>
+        <field name="inherit_id" ref="vendor_portal_product.vendor_rfq_tree_form"/>
+        <field name="arch" type="xml">
+            <field name="estimated_del_date" position="after">
+                <field name="crm_lead_line_id"
+                       options="{'no_create': True, 'no_create_edit': True}"/>
+                <field name="template_id"
+                       options="{'no_create': True, 'no_create_edit': True}"/>
+            </field>
+            <xpath expr="//field[@name='rfq_line_ids']/tree" position="after">
+                <form string="Suppliers" name="suppliers">
+                    <group>
+                        <group colspan="4" col="4">
+                            <field name="vendor_id" context="{'default_customer': 0, 'search_default_supplier': 1, 'default_supplier': 1}" on_change="check_product(parent.product_id, parent.product_tmpl_id)"/>
+                            <field name="rfq_price" widget="monetary"/>
+                            <field name="del_date"/>
+                            <field name="note"/>
+                            <field name="is_accept" invisible="1"/>
+                            <field name="is_reject" invisible="1"/>
+                            <button name="mark_done" attrs="{'column_invisible': [('parent.is_assign_vendor', '=', True)]}" string="Select Vendor" confirm="Are you sure you want to do this?" type="object" icon="fa-paper-plane text-success"/>
+                        </group>
+                    </group>
+                    <group string="Template Lines">
+                        <field name="vrfq_template_line_ids" nolabel="1">
+                            <tree string="Suppliers">
+                                <field name="product_id"/>
+                                <field name="qty"/>
+                                <field name="price_unitary"/>
+                                <field name="price_subtotal"/>
+                                <field name="file"/>
+                            </tree>
+                        </field>
+                    </group>
+                </form>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_multi_brand,access_multi_brand,model_multi_brand,base.group_user,1,1,1,1
+access_res_user_groups_brand,access_res_user_groups_brand,model_res_user_groups_brand,base.group_user,1,1,1,1
+access_content_config,access_content_config,model_content_config,base.group_user,1,1,1,1
+access_share_brand,access_share_brand,model_share_brand,base.group_user,1,1,1,1
+access_people_config,access_people_config,model_people_config,base.group_user,1,1,1,1
+access_assets_config,access_assets_config,model_assets_config,base.group_user,1,1,1,1

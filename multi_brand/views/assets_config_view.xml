@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Assets Config tree view-->
+    <record id="assets_config_tree" model="ir.ui.view">
+        <field name="name">Assets Config Tree</field>
+        <field name="model">assets.config</field>
+        <field name="arch" type="xml">
+            <tree string="Assets Config">
+                <field name="name"/>
+                <field name="provider_id"/>
+                <field name="brand_id"/>
+                <field name="asset_config_type"/>
+                <field name="is_test_success"/>
+                <field name="is_default"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Assets Config from view-->
+    <record id="assets_config_form" model="ir.ui.view">
+        <field name="name">Assets Config Tree</field>
+        <field name="model">assets.config</field>
+        <field name="arch" type="xml">
+            <form string="Assets Config">
+                <sheet>
+                    <group col="4">
+                        <field name="name" required="1"/>
+                        <field name="provider_id" required="1"/>
+                        <field name="brand_id" required="1"/>
+                        <field name="partner_id"/>
+                        <field name="asset_config_type"/>
+                        <field name="is_test_success"/>
+                        <field name="is_default"/>
+                        <field name="create_uid"/>
+                        <field name="write_uid"/>
+                        <field name="create_date"/>
+                        <field name="write_date"/>
+                    </group>
+                    <group>
+                        <field name="config_data"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Assets Config Action-->
+    <record model="ir.actions.act_window" id="assets_config_action">
+        <field name="name">Assets Config</field>
+        <field name="res_model">assets.config</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Assets Config Menu-->
+    <menuitem
+        id="assets_config_menu"
+        action="assets_config_action"
+        parent="crm.menu_crm_config_lead"/>
+
+    <record id="product_supplierinfo_form_view_brand" model="ir.ui.view">
+        <field name="name">product_supplierinfo_form_view.brand.inherit</field>
+        <field name="model">product.supplierinfo</field>
+        <field name="inherit_id" ref="product.product_supplierinfo_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="before">
+                <group>
+                    <div class="oe_left" style="padding-right : 20px;">
+                        <field name="image" widget="image" class="oe_avatar" filename="file_name" width="100px" height="100px"/>
+                    </div>
+                    <field name="image_url" widget="url"/>
+                    <field name="file_name" invisible="1"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

@@ -1,0 +1,2831 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * step
+# 
+# Translators:
+# Yaroslav Molochko <onorua@gmail.com>, 2018
+# Taras Kovaliuk <tratatuta123@gmail.com>, 2018
+# Martin Trigaux, 2018
+# Olga Lugova <trolka.olug@gmail.com>, 2018
+# Alina Lisnenko <alinasemeniuk1@gmail.com>, 2019
+# Bohdan Lisnenko, 2019
+# ТАрас <tratatuta@i.ua>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 10:10+0000\n"
+"PO-Revision-Date: 2018-08-24 09:25+0000\n"
+"Last-Translator: ТАрас <tratatuta@i.ua>, 2019\n"
+"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_tree
+msgid "#Questions"
+msgstr "Питань"
+
+#. module: step
+#: model:mail.template,subject:step.email_template_step
+msgid "${object.title}: Step"
+msgstr "${object.title}: Опитування"
+
+#. module: step
+#: code:addons/step/models/step.py:122
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (копія)"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "&amp;times;"
+msgstr "&amp;times;"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "403: Forbidden"
+msgstr "403: Заборонено"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<b>Question </b>"
+msgstr "<b>Запитання </b>"
+
+#. module: step
+#: model:mail.template,body_html:step.email_template_step
+msgid ""
+"<div style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Hello<br/><br/>\n"
+"        We are conducting a step, and your response would be appreciated.\n"
+"        <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"            <a href=\"__URL__\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                Start Step\n"
+"            </a>\n"
+"        </div>\n"
+"        Thanks for your participation!\n"
+"    </p>\n"
+"</div>\n"
+"            "
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Вітаємо<br/><br/>\n"
+"        Ми проводимо опитування, і ваша відповідь буде оцінена.\n"
+"        <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"            <a href=\"__URL__\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                Розпочніть опитування\n"
+"            </a>\n"
+"        </div>\n"
+"        Дякуємо за вашу участь!\n"
+"    </p>\n"
+"</div>\n"
+"            "
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-2x\" role=\"img\" aria-label=\"Numeric\" title=\"Numeric\">123..</i>"
+msgstr "<i class=\"fa fa-2x\" role=\"img\" aria-label=\"Numeric\" title=\"Numeric\">123..</i>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-align-justify fa-4x\" role=\"img\" aria-label=\"Multiple "
+"lines\" title=\"Multiple Lines\"/>"
+msgstr ""
+"<i class=\"fa fa-align-justify fa-4x\" role=\"img\" aria-label=\"Multiple "
+"lines\" title=\"Multiple Lines\"/>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid ""
+"<i class=\"fa fa-bar-chart\"/>\n"
+"                    Graph"
+msgstr ""
+"<i class=\"fa fa-bar-chart\"/>\n"
+"                    Графік"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-bar-chart-o\"/> Graph"
+msgstr "<i class=\"fa fa-bar-chart-o\"/> Графік"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-bar-chart-o\"/> Pie Chart"
+msgstr "<i class=\"fa fa-bar-chart-o\"/>Кругова діаграма"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-check-square-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-check-square-o fa-lg\"/> відповідь"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-circle-o  fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-circle-o  fa-lg\"/>відповідь"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-circle-o fa-lg\" role=\"img\" aria-label=\"Not checked\" "
+"title=\"Not checked\"/>"
+msgstr ""
+"<i class=\"fa fa-circle-o fa-lg\" role=\"img\" aria-label=\"Not checked\" "
+"title=\"Not checked\"/>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-dot-circle-o fa-lg\" role=\"img\" aria-label=\"Checked\" "
+"title=\"Checked\"/>"
+msgstr ""
+"<i class=\"fa fa-dot-circle-o fa-lg\" role=\"img\" aria-label=\"Checked\" "
+"title=\"Checked\"/>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-dot-circle-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-dot-circle-o fa-lg\"/> відповідь"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    All Data"
+msgstr ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    Усі дані"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    Data"
+msgstr ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    Дані"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-list-alt\"/> Data"
+msgstr "<i class=\"fa fa-list-alt\"/> Дані"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid ""
+"<i class=\"fa fa-list-ol\"/>\n"
+"                    Most Common"
+msgstr ""
+"<i class=\"fa fa-list-ol\"/>\n"
+"                    Найбільш поширений"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-minus fa-4x\" role=\"img\" aria-label=\"Single Line\" "
+"title=\"Single Line\"/>"
+msgstr ""
+"<i class=\"fa fa-minus fa-4x\" role=\"img\" aria-label=\"Single Line\" "
+"title=\"Single Line\"/>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-square-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-square-o fa-lg\"/> відповідь"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<i class=\"fa fa-times\"/> Clear All Filters"
+msgstr "<i class=\"fa fa-times\"/> Очистити усі фільтри"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-primary only_left_radius filter-all\">All "
+"steps</span><span class=\"badge badge-secondary only_right_radius filter-"
+"finished\">Finished steps</span>"
+msgstr ""
+"<span class=\"badge badge-primary only_left_radius filter-all\">Усі "
+"опитування</span><span class=\"badge badge-secondary only_right_radius "
+"filter-finished\">Завершені опитування</span>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-primary only_left_radius\"><i class=\"fa fa-"
+"filter\" role=\"img\" aria-label=\"Filter\" title=\"Filter\"/></span>"
+msgstr ""
+"<span class=\"badge badge-primary only_left_radius\"><i class=\"fa fa-"
+"filter\" role=\"img\" aria-label=\"Filter\" title=\"Filter\"/></span>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-secondary only_left_radius filter-all\">All "
+"steps</span><span class=\"badge badge-primary only_right_radius filter-"
+"finished\">Finished steps</span>"
+msgstr ""
+"<span class=\"badge badge-secondary only_left_radius filter-all\">Усі "
+"опитування</span><span class=\"badge badge-primary only_right_radius filter-"
+"finished\">Завершені опитування</span>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Average </span>"
+msgstr "<span class=\"badge badge-secondary only_left_radius\">Середній </span>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Maximum </span>"
+msgstr "<span class=\"badge badge-secondary only_left_radius\">Максимум </span>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Minimum </span>"
+msgstr "<span class=\"badge badge-secondary only_left_radius\">Мінімум </span>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Sum </span>"
+msgstr "<span class=\"badge badge-secondary only_left_radius\">Сума </span>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<span class=\"fa fa-filter\"/>  Filters"
+msgstr "<span class=\"fa fa-filter\"/>  Фільтри"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span style=\"font-size:1.5em;\" class=\"fa fa-bar-chart-o float-right \" "
+"role=\"img\" aria-label=\"Chart\" title=\"Chart\"/>"
+msgstr ""
+"<span style=\"font-size:1.5em;\" class=\"fa fa-bar-chart-o float-right \" "
+"role=\"img\" aria-label=\"Chart\" title=\"Chart\"/>"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.no_result
+msgid ""
+"<span>\n"
+"                            <i style=\"font-size:1.8em\" class=\"fa fa-users float-right\" role=\"img\" aria-label=\"No answer\" title=\"No answer\"/>\n"
+"                        </span>\n"
+"                        Sorry, No one answered this step yet"
+msgstr ""
+"<span>\n"
+"                            <i style=\"font-size:1.8em\" class=\"fa fa-users float-right\" role=\"img\" aria-label=\"No answer\" title=\"No answer\"/>\n"
+"                        </span>\n"
+"                        На жаль, ще ніхто не відповів на це опитування"
+
+#. module: step
+#: code:addons/step/models/step.py:688
+#, python-format
+msgid "A label must be attached to only one question."
+msgstr "Мітка повинна бути додана тільки до одного питання."
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "A length must be positive!"
+msgstr "Довжина повинна бути позитивною!"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__description
+msgid "A long description of the purpose of the step"
+msgstr "Довгий опис мети дослідження"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_label__quizz_mark
+msgid ""
+"A positive score indicates a correct choice; a negative or null score "
+"indicates a wrong answer"
+msgstr ""
+"Позитивна оцінка свідчить про правильний вибір; негативна або нульова оцінка"
+" показує, що відповідь невірна"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "A problem has occured"
+msgstr "Виникла проблема"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_4
+msgid "A process is defined for all enterprise flows"
+msgstr "Процес визначається для всіх корпоративних процесів"
+
+#. module: step
+#: sql_constraint:step.user_input:0
+msgid "A token must be unique!"
+msgstr "Токен повинен бути унікальним!"
+
+#. module: step
+#: model:step.page,title:step.feedback_1
+msgid "About your Odoo usage"
+msgstr "Про ваше використання Odoo"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Accepted"
+msgstr "Прийнято"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_needaction
+msgid "Action Needed"
+msgstr "Дія необхідна"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__active
+msgid "Active"
+msgstr "Активно"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__active_domain
+msgid "Active domain"
+msgstr "Активний домен"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_ids
+msgid "Activities"
+msgstr "Дії"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_state
+msgid "Activity State"
+msgstr "Стан дії"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__add_sign
+msgid "Add Sign"
+msgstr "Додати підпис"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"Add a list of email of recipients (will not be converted into contacts). "
+"Separated by commas, semicolons or newline..."
+msgstr ""
+"Додайте список електронних адрес отримувачів (не конвертовані в контакти). "
+"Відокремлено комами, комами-крапками або рядком ..."
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid "Add a new step"
+msgstr "Додати нове опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Add existing contacts..."
+msgstr "Додайте існуючі контакти..."
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_3
+#: model:step.label,value:step.fcol_2_2_3
+#: model:step.label,value:step.fcol_2_5_3
+#: model:step.label,value:step.fcol_2_7_3
+msgid "Agree"
+msgstr "Погодитися"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Allow Comments"
+msgstr "Дозвольте коментарі"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_page__description
+msgid "An introductory text to your page"
+msgstr "Вступний текст на вашу сторінку"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Analyze Answers"
+msgstr "Проаналізуйте відповіді"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Answer Choices"
+msgstr "Вибір відповідей"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__type
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__answer_type
+msgid "Answer Type"
+msgstr "Тип відповіді"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Answered"
+msgstr "Відповів "
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_user_input
+#: model:ir.model.fields,field_description:step.field_step_question__user_input_line_ids
+#: model:ir.model.fields,field_description:step.field_step_user_input__user_input_line_ids
+#: model:ir.ui.menu,name:step.menu_step_type_form1
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Answers"
+msgstr "Відповіді"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__no_auto_thread
+msgid ""
+"Answers do not go in the original document discussion thread. This has an "
+"impact on the generated message-id."
+msgstr ""
+"Відповіді не надходять до початкового обговорення документа. Це має вплив на"
+" створені ідентифікатори повідомлень."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Archived"
+msgstr "Заархівовано"
+
+#. module: step
+#: model:step.question,question:step.feedback_1_1
+msgid "Are you using Odoo on a daily basis?"
+msgstr "Чи використовуєте ви Odoo на щоденній основі?"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_attachment_count
+msgid "Attachment Count"
+msgstr "Підрахунок прикріплення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__attachment_ids
+msgid "Attachments"
+msgstr "Долучення"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__attachment_ids
+msgid ""
+"Attachments are linked to a document through model / res_id and to the "
+"message through this field."
+msgstr ""
+"Додатки пов'язані з документом через модель / res_id та до повідомлення "
+"через це поле."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__author_id
+msgid "Author"
+msgstr "Автор"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__author_id
+msgid ""
+"Author of the message. If not set, email_from may hold an email address that"
+" did not match any partner."
+msgstr ""
+"Автор повідомлення. Якщо не встановлено, email_from може містити електронну "
+"адресу, яка не відповідає жодному з партнерів."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__author_avatar
+msgid "Author's avatar"
+msgstr "Аватар автора"
+
+#. module: step
+#: model:ir.model,name:step.model_ir_autovacuum
+msgid "Automatic Vacuum"
+msgstr "Автоматичний вакуум"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.back
+msgid "Back to Step"
+msgstr "Повернутися до опитування"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_4
+msgid "CRM"
+msgstr "CRM"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__channel_ids
+msgid "Channels"
+msgstr "Канали"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__child_ids
+msgid "Child Messages"
+msgstr "Дочірні повідомлення"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Choices"
+msgstr "Вибір"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.simple_choice
+msgid "Choose..."
+msgstr "Обрати..."
+
+#. module: step
+#: code:addons/step/models/step.py:110
+#, python-format
+msgid "Click here to start step"
+msgstr "Натисніть тут, щоб розпочати опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Close"
+msgstr "Закрити"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__closed
+#: model:step.stage,name:step.stage_closed
+msgid "Closed"
+msgstr "Завершено"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Color"
+msgstr "Колір"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__color
+msgid "Color Index"
+msgstr "Індекс кольору"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_comments
+#: selection:step.mail.compose.message,message_type:0
+msgid "Comment"
+msgstr "Коментар"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comment_count_as_answer
+msgid "Comment Field is an Answer Choice"
+msgstr "Поле коментарів - це вибір відповідей"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comments_message
+msgid "Comment Message"
+msgstr "Повідомлення коментаря"
+
+#. module: step
+#: model:step.page,title:step.feedback_3
+msgid "Community and contributors"
+msgstr "Спільнота та учасники"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Company name"
+msgstr "Назва компанії"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+#: selection:step.user_input,state:0
+msgid "Completed"
+msgstr "Завершено"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Compose Email"
+msgstr "Створити електронний лист"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__composition_mode
+msgid "Composition mode"
+msgstr "Режим створення"
+
+#. module: step
+#: model:ir.ui.menu,name:step.menu_steps_configuration
+msgid "Configuration"
+msgstr "Налаштування"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_2
+msgid "Configuration wizard exists for each important setting"
+msgstr "Майстер налаштуваня існує для кожного важливого налаштування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Constraints"
+msgstr "Обмеження"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__body
+msgid "Contents"
+msgstr "Містить"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"Copy and paste the HTML code below to add this web link to any webpage."
+msgstr ""
+"Скопіюйте та вставте HTML-код нижче, щоб додати це веб-посилання на будь-яку"
+" веб-сторінку."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Copy, paste and share the web link below to your audience."
+msgstr ""
+"Скопіюйте, вставте та надішліть веб-посилання нижче до своєї аудиторії."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Copyright &amp;copy;"
+msgstr "Авторські права &amp;copy;"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__date_create
+msgid "Create Date"
+msgstr "Дата створення"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Create a"
+msgstr "Створити"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__create_uid
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__create_uid
+#: model:ir.model.fields,field_description:step.field_step_page__create_uid
+#: model:ir.model.fields,field_description:step.field_step_question__create_uid
+#: model:ir.model.fields,field_description:step.field_step_stage__create_uid
+#: model:ir.model.fields,field_description:step.field_step_step__create_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input__create_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__create_uid
+msgid "Created by"
+msgstr "Створив"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__create_date
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__create_date
+#: model:ir.model.fields,field_description:step.field_step_page__create_date
+#: model:ir.model.fields,field_description:step.field_step_question__create_date
+#: model:ir.model.fields,field_description:step.field_step_stage__create_date
+#: model:ir.model.fields,field_description:step.field_step_step__create_date
+#: model:ir.model.fields,field_description:step.field_step_user_input__create_date
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__create_date
+msgid "Created on"
+msgstr "Створено"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__date_create
+msgid "Creation Date"
+msgstr "Дата створення"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__starred
+msgid "Current user has a starred notification linked to this message"
+msgstr ""
+"Поточний користувач має сповіщення позначене зірочкою, що пов'язане до цього"
+" повідомлення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__date
+#: selection:step.question,type:0
+#: selection:step.user_input_line,answer_type:0
+msgid "Date"
+msgstr "Дата"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_date
+msgid "Date answer"
+msgstr "Дата відповіді"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_user_input__deadline
+msgid "Date by which the person can open the step and submit answers"
+msgstr "Дата, з якої особа може відкрити опитування та надати відповіді"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__deadline
+msgid "Deadline"
+msgstr "Кінцевий термін"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__date_deadline
+msgid ""
+"Deadline to which the invitation to respond for this step is valid. If the"
+" field is empty,        the invitation is still valid."
+msgstr ""
+"Кінцевий термін дії запрошення, щоби відповісти на це опитування. Якщо поле "
+"порожнє, запрошення залишається дійсним."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__date_deadline
+msgid "Deadline to which the invitation to respond is valid"
+msgstr "Кінцевий термін дії запрошення на відповідь"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Delete"
+msgstr "Видалити"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__auto_delete
+msgid "Delete Emails"
+msgstr "Видалити листи"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__auto_delete_message
+msgid "Delete Message Copy"
+msgstr "Видалити копію повідомлення"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__auto_delete
+msgid "Delete sent emails (mass mailing only)"
+msgstr "Видалити відправлені електронні листи (лише для масової розсилки)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__description
+#: model:ir.model.fields,field_description:step.field_step_page__description
+#: model:ir.model.fields,field_description:step.field_step_question__description
+#: model:ir.model.fields,field_description:step.field_step_step__description
+msgid "Description"
+msgstr "Опис"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_1
+msgid "Descriptions and help tooltips are clear enough"
+msgstr "Пояснення та довідкові підказки досить чіткі"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid ""
+"Design easily your step, send invitations to answer by email and analyse "
+"answers."
+msgstr ""
+"Легко спроектуйте своє опитування, надсилайте запрошення на відповідь "
+"електронною поштою та аналізуйте відповіді."
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_2
+#: model:step.label,value:step.fcol_2_2_2
+#: model:step.label,value:step.fcol_2_5_2
+#: model:step.label,value:step.fcol_2_7_2
+msgid "Disagree"
+msgstr "Незгода"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__display_mode
+msgid "Display Mode"
+msgstr "Режим відображення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__display_name
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__display_name
+#: model:ir.model.fields,field_description:step.field_step_page__display_name
+#: model:ir.model.fields,field_description:step.field_step_question__display_name
+#: model:ir.model.fields,field_description:step.field_step_stage__display_name
+#: model:ir.model.fields,field_description:step.field_step_step__display_name
+#: model:ir.model.fields,field_description:step.field_step_user_input__display_name
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__display_name
+msgid "Display Name"
+msgstr "Назва для відображення"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Display mode"
+msgstr "Режим відображення"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__auto_delete_message
+msgid ""
+"Do not keep a copy of the email in the document communication history (mass "
+"mailing only)"
+msgstr ""
+"Не зберігайте копію повідомлення електронної пошти в історії повідомлень "
+"документа (лише для масової розсилки)."
+
+#. module: step
+#: model:step.question,question:step.feedback_3_3
+msgid "Do you have a proposition to attract new contributors?"
+msgstr "Чи є у вас пропозиція залучити нових учасників?"
+
+#. module: step
+#: model:step.question,question:step.feedback_3_2
+msgid "Do you have a proposition to help people to contribute?"
+msgstr "Чи є у вас пропозиція, щоб допомогти людям зробити свій внесок?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_3
+msgid "Do you have suggestions on how to improve the process view ?"
+msgstr "Чи є у вас пропозиції щодо вдосконалення перегляду процесу?"
+
+#. module: step
+#: model:step.stage,name:step.stage_draft
+msgid "Draft"
+msgstr "Чернетка"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Dropdown menu"
+msgstr "Спадне меню"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__email
+msgid "E-mail"
+msgstr "E-mail"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Edit Pages and Questions"
+msgstr "Відредагуйте сторінки та запитання"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Edit Step"
+msgstr "Редагувати опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+#: selection:step.mail.compose.message,message_type:0
+msgid "Email"
+msgstr "Ел. пошта"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__email_template_id
+msgid "Email Template"
+msgstr "Шаблон ел. листа"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__email_from
+msgid ""
+"Email address of the sender. This field is set when no matching partner is "
+"found and replaces the author_id field in the chatter."
+msgstr ""
+"Електронна адреса відправника. Це поле встановлюється, коли не знайдено "
+"відповідного партнера і воно замінює ідентифікатор автора у обговоренні."
+
+#. module: step
+#: model:ir.model,name:step.model_step_mail_compose_message
+msgid "Email composition wizard for Step"
+msgstr "Майстер створення електронного листа для опитування"
+
+#. module: step
+#: model:step.page,title:step.feedback_2
+msgid "Ergonomy and ease of use"
+msgstr "Ергономічність та легкість використання"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__constr_error_msg
+msgid "Error message"
+msgstr "Повідомлення про помилку"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__partner_ids
+msgid "Existing contacts"
+msgstr "Існуючі контакти"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_3
+msgid "Extra modules proposed are relevant"
+msgstr "Запропоновані додаткові модулі є актуальними"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__starred_partner_ids
+msgid "Favorited By"
+msgstr "В закладках у"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Filter question"
+msgstr "Фільтрувати запитання"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_3
+msgid "Financial Management"
+msgstr "Фінансове управління"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__fold
+msgid "Folded in kanban view"
+msgstr "Складений у перегляді канбану"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_follower_ids
+msgid "Followers"
+msgstr "Підписники"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Підписники (Канали)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Підписники (Партнери)"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Format"
+msgstr "Формат"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Free Text"
+msgstr "Безкоштовний текст"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_free_text
+msgid "Free Text answer"
+msgstr "Безкоштовний текст відповіді"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__email_from
+msgid "From"
+msgstr "Від"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Group By"
+msgstr "Групувати за"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__has_error
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__has_error
+msgid "Has error"
+msgstr "Має помилку"
+
+#. module: step
+#: model:step.question,question:step.feedback_3_1
+msgid "How do you contribute or plan to contribute to Odoo?"
+msgstr "Як ви робитимете внесок або плануєте внести свій вклад в Odoo?"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_6
+msgid "Human Resources"
+msgstr "Людські ресурси"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_3
+msgid "I develop new features"
+msgstr "Я розробляю нові характеристики"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_4
+msgid "I do not publish my developments"
+msgstr "Я не публікую мої розробки"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_4
+msgid "I help to translate"
+msgstr "Я допомагаю перекладати"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_3
+msgid "I host them on my own website"
+msgstr "Я приймаю їх на своєму веб-сайті"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_1
+msgid "I participate to discussion and forums"
+msgstr "Я беру участь у дискусіях і форумах"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_1
+msgid "I use Github, like all official Odoo projects"
+msgstr "Я використовую Github, як усі офіційні проекти Odoo"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_2
+msgid "I use another repository system (SourceForge...)"
+msgstr "Я використовую іншу систему сховища (SourceForge ...)"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_3
+msgid "I use the contextual help in Odoo"
+msgstr "Я використовую контекстну допомогу в Odoo"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_5
+msgid "I write documentations"
+msgstr "Я пишу документацію"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_2
+msgid "I'd like to contribute but I don't know how?"
+msgstr "Я хочу зробити свій внесок, але не знаю, як це зробити?"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__id
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__id
+#: model:ir.model.fields,field_description:step.field_step_page__id
+#: model:ir.model.fields,field_description:step.field_step_question__id
+#: model:ir.model.fields,field_description:step.field_step_stage__id
+#: model:ir.model.fields,field_description:step.field_step_step__id
+#: model:ir.model.fields,field_description:step.field_step_user_input__id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__token
+msgid "Identification token"
+msgstr "Токен ідентифікації"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Якщо позначено, то повідомленя потребує вашої уваги"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Якщо відмічено, то нові повідомлення будуть потребувати вашої уваги."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Якщо позначено, деякі повідомлення мають помилку доставки."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__users_can_go_back
+msgid "If checked, users can go back to previous pages."
+msgstr ""
+"Якщо позначено цей пункт, користувачі зможуть повернутися на попередні "
+"сторінки."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_stage__closed
+#: model:ir.model.fields,help:step.field_step_step__is_closed
+msgid "If closed, people won't be able to answer to steps in this column."
+msgstr "Якщо закрито, люди не зможуть відповісти на опитування у цій колонці."
+
+#. module: step
+#: code:addons/step/models/step.py:471
+#: model:step.question,comments_message:step.feedback_1_1
+#: model:step.question,comments_message:step.feedback_1_2
+#: model:step.question,comments_message:step.feedback_2_1
+#: model:step.question,comments_message:step.feedback_2_2
+#: model:step.question,comments_message:step.feedback_2_3
+#: model:step.question,comments_message:step.feedback_2_4
+#: model:step.question,comments_message:step.feedback_2_5
+#: model:step.question,comments_message:step.feedback_2_6
+#: model:step.question,comments_message:step.feedback_2_7
+#: model:step.question,comments_message:step.feedback_3_1
+#: model:step.question,comments_message:step.feedback_3_2
+#: model:step.question,comments_message:step.feedback_3_3
+#: model:step.question,comments_message:step.feedback_4_1
+#, python-format
+msgid "If other, please specify:"
+msgstr "Якщо інше, вкажіть:"
+
+#. module: step
+#: model_terms:step.page,description:step.feedback_4
+msgid "If you do not contribute or develop in Odoo, skip this page."
+msgstr "Якщо ви не сплачуєте або не розробляєте Odoo, пропустіть цю сторінку."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "If you wish, you can"
+msgstr "Якщо ви бажаєте, ви можете"
+
+#. module: step
+#: model:step.stage,name:step.stage_in_progress
+msgid "In progress"
+msgstr "В процесі"
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:72
+#, python-format
+msgid "Incorrect Email Address: %s"
+msgstr "Неправильна електронна адреса: %s"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__parent_id
+msgid "Initial thread message."
+msgstr "Початковий ланцюжок повідомлення."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_email
+msgid "Input must be an email"
+msgstr "Вхід повинен бути через електронну пошту"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+msgid "Invitations sent"
+msgstr "Запрошення надіслано"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_is_follower
+msgid "Is Follower"
+msgstr "Стежить"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__is_closed
+msgid "Is closed"
+msgstr "Закрито"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__designed
+msgid "Is designed?"
+msgstr "Розроблено?"
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_2
+msgid "It can be improved"
+msgstr "Це може бути покращено"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_2
+msgid "It helps in the beginning"
+msgstr "Це допомагає на початку"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_5
+msgid "It is clear"
+msgstr "Зрозуміло"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_4
+msgid "It is complete"
+msgstr "Це завершено"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_1
+msgid "It is up-to-date"
+msgstr "Це актуально"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_5
+msgid "It's easy to find the process you need"
+msgstr "Легко знайти потрібний вам процес"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__sequence
+msgid "Label Sequence order"
+msgstr "Порядок послідовності ярликів"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_label_form
+#: model:ir.ui.menu,name:step.menu_step_label_form1
+msgid "Labels"
+msgstr "Мітки"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label____last_update
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message____last_update
+#: model:ir.model.fields,field_description:step.field_step_page____last_update
+#: model:ir.model.fields,field_description:step.field_step_question____last_update
+#: model:ir.model.fields,field_description:step.field_step_stage____last_update
+#: model:ir.model.fields,field_description:step.field_step_step____last_update
+#: model:ir.model.fields,field_description:step.field_step_user_input____last_update
+#: model:ir.model.fields,field_description:step.field_step_user_input_line____last_update
+msgid "Last Modified on"
+msgstr "Остання модифікація"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__write_uid
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__write_uid
+#: model:ir.model.fields,field_description:step.field_step_page__write_uid
+#: model:ir.model.fields,field_description:step.field_step_question__write_uid
+#: model:ir.model.fields,field_description:step.field_step_stage__write_uid
+#: model:ir.model.fields,field_description:step.field_step_step__write_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input__write_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновив"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__write_date
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__write_date
+#: model:ir.model.fields,field_description:step.field_step_page__write_date
+#: model:ir.model.fields,field_description:step.field_step_question__write_date
+#: model:ir.model.fields,field_description:step.field_step_stage__write_date
+#: model:ir.model.fields,field_description:step.field_step_step__write_date
+#: model:ir.model.fields,field_description:step.field_step_user_input__write_date
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__last_displayed_page_id
+msgid "Last displayed page"
+msgstr "Остання показана сторінка"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Late Activities"
+msgstr "Останні дії"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__layout
+msgid "Layout"
+msgstr "Макет"
+
+#. module: step
+#: selection:step.user_input,type:0
+msgid "Link"
+msgstr "Посилання"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__multi_email
+msgid "List of emails"
+msgstr "Список електронних адрес"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__is_log
+msgid "Log an Internal Note"
+msgstr "Введіть внутрішню примітку"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__auth_required
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "Login required"
+msgstr "Необхідний вхід"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Logo"
+msgstr "Логотип"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__mail_activity_type_id
+msgid "Mail Activity Type"
+msgstr "Тип поштової дії"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Основне прикріплення"
+
+#. module: step
+#: model:res.groups,name:step.group_step_manager
+msgid "Manager"
+msgstr "Керівник"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__constr_mandatory
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Mandatory Answer"
+msgstr "Обов'язкова відповідь"
+
+#. module: step
+#: selection:step.user_input,type:0
+msgid "Manually"
+msgstr "Вручну"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Matrix"
+msgstr "Матриця"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__matrix_subtype
+msgid "Matrix Type"
+msgstr "Тип матриці"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Matrix:"
+msgstr "Матриця:"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max date cannot be smaller than min date!"
+msgstr "Максимальна дата не може бути меншою, ніж мінімальна!"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max length cannot be smaller than min length!"
+msgstr "Максимальна довжина не може бути меншою за мінімальну довжину!"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max value cannot be smaller than min value!"
+msgstr "Максимальне значення не може бути меншим за мінімальне значення!"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_max_date
+msgid "Maximum Date"
+msgstr "Максимальна дата"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_length_max
+msgid "Maximum Text Length"
+msgstr "Максимальна довжина тексту"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_max_float_value
+msgid "Maximum value"
+msgstr "Максимальне значення"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "Maybe you were looking for"
+msgstr "Можливо ви шукали"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_has_error
+msgid "Message Delivery error"
+msgstr "Помилка доставлення повідомлення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__record_name
+msgid "Message Record Name"
+msgstr "Назва запису повідомлення"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__description
+msgid "Message description: either the subject, or the beginning of the body"
+msgstr "Опис повідомлення: тема або початок тіла листа"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__message_type
+msgid ""
+"Message type: email for email message, notification for system message, "
+"comment for other messages such as user replies"
+msgstr ""
+"Тип повідомлення: електронна пошта для повідомлення електронної пошти, "
+"сповіщення для системного повідомлення, коментар до інших повідомлень, таких"
+" як відповіді користувачів"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__message_id
+msgid "Message unique identifier"
+msgstr "Унікальний ідентифікатор повідомлення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__message_id
+msgid "Message-Id"
+msgstr "ІD-повідомлення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_ids
+msgid "Messages"
+msgstr "Повідомлення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_min_date
+msgid "Minimum Date"
+msgstr "Мінімальна дата"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_length_min
+msgid "Minimum Text Length"
+msgstr "Мінімальна довжина тексту"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_min_float_value
+msgid "Minimum value"
+msgstr "Мінімальне значення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__moderator_id
+msgid "Moderated By"
+msgstr "Модерував"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__moderation_status
+msgid "Moderation Status"
+msgstr "Статус модерації"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple Lines Text Box"
+msgstr "Текстовий блок кількох рядків"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Multiple choice with multiple answers"
+msgstr "Кілька вибору з кількома відповідями"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Multiple choice with one answer"
+msgstr "Кілька вибору з однією відповіддю"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple choice: multiple answers allowed"
+msgstr "Множинний вибір: дозволено вибір кількох відповідей"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple choice: only one answer"
+msgstr "Кілька варіантів: тільки одна відповідь"
+
+#. module: step
+#: selection:step.question,matrix_subtype:0
+msgid "Multiple choices per row"
+msgstr "Множинний вибір в рядку"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "My Activities"
+msgstr "Мої дії"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__name
+msgid "Name"
+msgstr "Назва"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__record_name
+msgid "Name get of the related document."
+msgstr "Отримайте ім'я відповідного документа."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__needaction
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__needaction
+msgid "Need Action"
+msgstr "Необхідна дія"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__need_moderation
+msgid "Need moderation"
+msgstr "Необхідна модерація"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "New"
+msgstr "Новий"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Дедлайн наступної дії"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_summary
+msgid "Next Activity Summary"
+msgstr "Підсумок наступної дії"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_type_id
+msgid "Next Activity Type"
+msgstr "Тип наступної дії"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Next page"
+msgstr "Наступна сторінка"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_page_form
+msgid "No pages found"
+msgstr "Не знайдено жодної сторінки"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_question_form
+msgid "No questions found"
+msgstr "Не знайдено жодного запитання"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_label_form
+msgid "No step labels found"
+msgstr "Не знайдено жодної мітки опитування"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__no_auto_thread
+msgid "No threading for answers"
+msgstr "Немає ланцюжків для відповіді"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_user_input_line
+msgid "No user input lines found"
+msgstr "Вхідних рядків користувача не знайдено"
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_4
+msgid "No, I just tested it"
+msgstr "Ні, я просто протестував це"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_selected_step_user_input
+#: model_terms:ir.actions.act_window,help:step.action_step_user_input
+msgid "Nobody has replied to your steps yet"
+msgstr "Ще ніхто не відповів на ваші опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.notopen
+msgid "Not open"
+msgstr "Не відкрито"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.nopages
+msgid "Not ready"
+msgstr "Не готово"
+
+#. module: step
+#: selection:step.user_input,state:0
+msgid "Not started yet"
+msgstr "Ще не розпочато"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__notification_ids
+msgid "Notifications"
+msgstr "Сповіщення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__notify
+msgid "Notify followers"
+msgstr "Сповістити підписників"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__notify
+msgid "Notify followers of the document (mass post only)"
+msgstr "Сповістити підписників документа (тільки масові повідомлення)"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Number"
+msgstr "Номер"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Кількість дій"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__column_nb
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Number of columns"
+msgstr "Кількість колонок"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_comp_step
+msgid "Number of completed steps"
+msgstr "Кількість завершених опитувань"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_has_error_counter
+msgid "Number of error"
+msgstr "Кількість помилок"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Кількість повідомлень, які потебують дії"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Кількість повідомлень з помилковою дставкою"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_sent_step
+msgid "Number of sent steps"
+msgstr "Кількість надісланих опитувань"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_start_step
+msgid "Number of started steps"
+msgstr "Кількість розпочатих опитувань"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Кількість непрочитаних повідомлень"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Numerical Value"
+msgstr "Чисельне значення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_number
+msgid "Numerical answer"
+msgstr "Числова відповідь"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "Occurence"
+msgstr "Поява"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: step
+#: selection:step.question,matrix_subtype:0
+msgid "One choice per row"
+msgstr "Один вибір на рядок"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Options"
+msgstr "Опції"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__mail_server_id
+msgid "Outgoing mail server"
+msgstr "Вихідний поштовий сервер"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Overdue"
+msgstr "Протерміновано"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__page_id
+#: model_terms:ir.ui.view,arch_db:step.page
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Page"
+msgstr "Сторінка"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_page__title
+#: model_terms:ir.ui.view,arch_db:step.step_page_form
+msgid "Page Title"
+msgstr "Заголовок сторінки"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_page__sequence
+msgid "Page number"
+msgstr "Номер сторінки"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.act_step_pages
+#: model:ir.actions.act_window,name:step.action_step_page_form
+#: model:ir.model.fields,field_description:step.field_step_step__page_ids
+#: model:ir.ui.menu,name:step.menu_step_page_form1
+msgid "Pages"
+msgstr "Сторінки"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__parent_id
+msgid "Parent Message"
+msgstr "Батьківське повідомленя"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Partially Completed"
+msgstr "Частково завершено"
+
+#. module: step
+#: selection:step.user_input,state:0
+msgid "Partially completed"
+msgstr "Частково завершено"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__partner_id
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Partner"
+msgstr "Партнер"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__needaction_partner_ids
+msgid "Partners with Need Action"
+msgstr "Партнер, що потребує дії"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Pending Moderation"
+msgstr "Очікує модерацію"
+
+#. module: step
+#: model:step.stage,name:step.stage_permanent
+msgid "Permanent"
+msgstr "Постійний"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Planned"
+msgstr "Заплановано"
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:188
+#, python-format
+msgid "Please enter at least one valid recipient."
+msgstr "Будь ласка, введіть хоча б одного дійсного одержувача."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Previous page"
+msgstr "Попередня сторінка"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Print Step"
+msgstr "Друк опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "Print These Answers"
+msgstr "Друкувати ці відповіді"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__print_url
+msgid "Print link"
+msgstr "Надрукуйте посилання"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_5
+msgid "Project Management"
+msgstr "Керування проектами"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public_url_html
+msgid "Public HTML web link"
+msgstr "Публічне веб-посилання HTML"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__public_url
+msgid "Public link"
+msgstr "Публічне посилання"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__public_url_html
+msgid "Public link (html version)"
+msgstr "Публічне посилання (html версія)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__print_url
+msgid "Public link to the empty step"
+msgstr "Публічне посилання на порожнє опитування"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__result_url
+msgid "Public link to the step results"
+msgstr "Публічне посилання на результати опитування"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public_url
+msgid "Public url"
+msgstr "Публічна url-адреса"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__website_published
+msgid "Published"
+msgstr "Опубліковано"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_2
+msgid "Purchases Management"
+msgstr "Керування закупівлями"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__question_id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__question_id
+#: model_terms:ir.ui.view,arch_db:step.step_label_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Question"
+msgstr "Запитання"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__question_id_2
+msgid "Question 2"
+msgstr "Питання 2"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__question
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Question Name"
+msgstr "Назва питання"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Question name"
+msgstr "Назва питання"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.act_step_page_question
+#: model:ir.actions.act_window,name:step.act_step_question
+#: model:ir.actions.act_window,name:step.action_step_question_form
+#: model:ir.model.fields,field_description:step.field_step_page__question_ids
+#: model:ir.ui.menu,name:step.menu_step_question_form1
+msgid "Questions"
+msgstr "Запитання"
+
+#. module: step
+#: model:step.page,title:step.feedback_4
+msgid "Questions for developers"
+msgstr "Питання для розробників"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__quizz_mode
+msgid "Quizz Mode"
+msgstr "Режим вікторини"
+
+#. module: step
+#: selection:step.question,display_mode:0
+msgid "Radio Buttons"
+msgstr "Радіо кнопки"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__rating_value
+msgid "Rating Value"
+msgstr "Значення рейтингу"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Rejected"
+msgstr "Відхилено"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__res_id
+msgid "Related Document ID"
+msgstr "ID відповідного документа"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__model
+msgid "Related Document Model"
+msgstr "Пов'язана модель документа"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__rating_ids
+msgid "Related ratings"
+msgstr "Пов'язані рейтинги"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__reply_to
+msgid ""
+"Reply email address. Setting the reply_to bypasses the automatic thread "
+"creation."
+msgstr ""
+"Адреса для відповіді. Встановлення цієї адреси скасовує автоматичне "
+"створення ланцюжка."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__reply_to
+msgid "Reply-To"
+msgstr "Відповісти"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_user_id
+msgid "Responsible User"
+msgstr "Відповідальний користувач"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__result_url
+msgid "Results link"
+msgstr "Посилання результатів"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_suggested_row
+msgid "Row answer"
+msgstr "Рядок відповідей"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row1"
+msgstr "Рядок1"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row2"
+msgstr "Рядок2"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row3"
+msgstr "Рядок3"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Rows"
+msgstr "Рядки"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__labels_ids_2
+msgid "Rows of the Matrix"
+msgstr "Рядки матриці"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_4
+msgid "Running the configuration wizards is a good way to spare time"
+msgstr "Запуск майстра налаштування - це хороший спосіб звільнити час"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_1
+msgid "Sales Management"
+msgstr "Керування продажами"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Save as a new template"
+msgstr "Зберегти як новий шаблон"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Save as new template"
+msgstr "Зберегти як новий шаблон"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__quizz_score
+msgid "Score for the quiz"
+msgstr "Оцінка для вікторини"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__quizz_mark
+msgid "Score for this choice"
+msgstr "Оцінка для цього вибору"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__quizz_mark
+msgid "Score given for this choice"
+msgstr "Оцінка дана для цього вибору"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_label_search
+msgid "Search Label"
+msgstr "Шукати мітку"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+msgid "Search Page"
+msgstr "Шукати сторінку"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Search Question"
+msgstr "Шукати питання"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Search Step"
+msgstr "Шукати опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+msgid "Search User input lines"
+msgstr "Шукати рядки вводу користувача"
+
+#. module: step
+#: selection:step.question,display_mode:0
+msgid "Selection Box"
+msgstr "Коробка вибору"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Send"
+msgstr "Надіслати"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "Send Invitation Again"
+msgstr "Надіслати запрошення ще раз"
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid "Send by email the public web link to your audience."
+msgstr ""
+"Надішліть електронною поштою загальнодоступне веб-посилання вашій аудиторії."
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid ""
+"Send private invitation to your audience (only one response per recipient "
+"and per invitation)."
+msgstr ""
+"Надішліть особисте запрошення вашій аудиторії (лише одне повідомлення на "
+"одержувача та за запрошенням)."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__sequence
+#: model:ir.model.fields,field_description:step.field_step_stage__sequence
+msgid "Sequence"
+msgstr "Послідовність"
+
+#. module: step
+#: sql_constraint:step.stage:0
+msgid "Sequence number MUST be a natural"
+msgstr "Номер послідовності ПОВИНЕН бути природним"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Share &amp;amp; Invite"
+msgstr "Поділитися та запросити"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Share and invite by email"
+msgstr "Поширити та запросити по е-мейл"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public
+msgid "Share options"
+msgstr "Функції поширення"
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid "Share the public web link to your audience."
+msgstr "Поділіться загальнодоступним веб-посиланням з вашою аудиторією."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comments_allowed
+msgid "Show Comments Field"
+msgstr "Показати поле коментарів"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Show all records which has next action date is before today"
+msgstr "Показати всі записи, які мають дату наступної дії до сьогоднішньої"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Single Line Text Box"
+msgstr "Однорядковий текстовий блок"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__skipped
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Skipped"
+msgstr "Пропущено"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__author_avatar
+msgid ""
+"Small-sized image of this contact. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is"
+" required."
+msgstr ""
+"Маленьке зображення цього контакту. Воно буде автоматично змінене до розміру"
+" 64х64 пікселя зі збереженням співвідношення сторін. Використовуйте це поле "
+"всюди, де потрібне маленьке зображення."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid ""
+"Something went wrong while contacting step server. <strong class=\"text-"
+"danger\">Your answers have probably not been recorded.</strong> Try "
+"refreshing."
+msgstr ""
+"Під час з'єднання із сервером сталася помилка. <strong class=\"text-"
+"danger\">Ваші відповіді, ймовірно, не були записані.</strong> Спробуйте "
+"оновити."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Sorry, No one answered this question."
+msgstr "Вибачте, немає жодної відповіді на це питання"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__stage_id
+#: model_terms:ir.ui.view,arch_db:step.step_stage_form
+msgid "Stage"
+msgstr "Стадія"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__starred
+msgid "Starred"
+msgstr "Позначено зірочкою"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_init
+msgid "Start Step"
+msgstr "Розпочати опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+msgid "Started"
+msgstr "Розпочато"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__state
+msgid "Status"
+msgstr "Статус"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Етап заснований на діях\n"
+"Протермінований: термін виконання вже минув\n"
+"Сьогодні: дата дії сьогодні\n"
+"Заплановано: майбутні дії."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__subject
+msgid "Subject"
+msgstr "Тема"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Subject..."
+msgstr "Тема..."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Submit step"
+msgstr "Додати опитування"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__subtype_id
+msgid "Subtype"
+msgstr "Підтип"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_suggested
+msgid "Suggested answer"
+msgstr "Запропонована відповідь"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__value
+msgid "Suggested value"
+msgstr "Запропоноване значення"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Suggestion"
+msgstr "Пропозиція"
+
+#. module: step
+#: model:ir.model,name:step.model_step_step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__step_id
+#: model:ir.model.fields,field_description:step.field_step_page__step_id
+#: model:ir.model.fields,field_description:step.field_step_question__step_id
+#: model:ir.model.fields,field_description:step.field_step_user_input__step_id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__step_id
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Step"
+msgstr "Опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_tree
+msgid "Step Answer Line"
+msgstr "Рядок відповіді опитування"
+
+#. module: step
+#: model:ir.model,name:step.model_step_label
+#: model_terms:ir.ui.view,arch_db:step.step_label_tree
+msgid "Step Label"
+msgstr "Мітка опитування"
+
+#. module: step
+#: model:ir.model,name:step.model_step_page
+#: model_terms:ir.ui.view,arch_db:step.step_page_form
+#: model_terms:ir.ui.view,arch_db:step.step_page_tree
+msgid "Step Page"
+msgstr "Сторінка опитування"
+
+#. module: step
+#: model:ir.model,name:step.model_step_question
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_tree
+msgid "Step Question"
+msgstr "Питання опитування"
+
+#. module: step
+#: model:ir.model,name:step.model_step_stage
+msgid "Step Stage"
+msgstr "Етап опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Step Title"
+msgstr "Заголовок опитування"
+
+#. module: step
+#: model:ir.model,name:step.model_step_user_input
+msgid "Step User Input"
+msgstr "Обстеження вхідних даних користувача"
+
+#. module: step
+#: model:ir.model,name:step.model_step_user_input_line
+msgid "Step User Input Line"
+msgstr "Рядок вводу користувача опитування"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_user_input_line
+msgid "Step User Input lines"
+msgstr "Рядки вводу користувача опитування"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_selected_step_user_input
+msgid "Step User input"
+msgstr "Введений користувач опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_tree
+msgid "Step User inputs"
+msgstr "Введенні користувачі опитування"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid "Step filter"
+msgstr "Фільтр опитування"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__page_id
+msgid "Step page"
+msgstr "Сторінка опитування"
+
+#. module: step
+#: model:ir.actions.server,name:step.step_action_server_clean_test_answers
+msgid "Step: Clean test answers"
+msgstr "Опитування: очистити тестові питання"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_form
+#: model:ir.ui.menu,name:step.menu_step_form
+#: model:ir.ui.menu,name:step.menu_steps
+msgid "Steps"
+msgstr "Опитування"
+
+#. module: step
+#: selection:step.mail.compose.message,message_type:0
+msgid "System notification"
+msgstr "Сповіщення системи"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Test"
+msgstr "Тест"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Test Entries"
+msgstr "Тестові записи"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__test_entry
+msgid "Test Entry"
+msgstr "Тестовий запис"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Test Step"
+msgstr "Тестове опитування"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Text"
+msgstr "Текст"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_text
+msgid "Text answer"
+msgstr "Текстова відповідь"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "Thank you!"
+msgstr "Дякую!"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__thank_you_message
+msgid "Thanks Message"
+msgstr "Повідомлення подяки"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_3
+msgid "The 'Usability/Extended View' group helps in daily work"
+msgstr ""
+"Група 'Зручний у використанні/Розширений перегяд' допомагає в щоденній "
+"роботі"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_4
+msgid "The 'Usability/Extended View' group hides only optional fields"
+msgstr ""
+"Група 'Зручний у використанні/Розширений перегяд' приховує лише "
+"необов'язкові поля"
+
+#. module: step
+#: code:addons/step/models/step.py:819
+#, python-format
+msgid "The answer must be in the right type"
+msgstr "Відповідь має бути у правильному типі"
+
+#. module: step
+#: code:addons/step/models/step.py:485
+#: model:step.question,validation_error_msg:step.feedback_1_1
+#: model:step.question,validation_error_msg:step.feedback_1_2
+#: model:step.question,validation_error_msg:step.feedback_2_1
+#: model:step.question,validation_error_msg:step.feedback_2_2
+#: model:step.question,validation_error_msg:step.feedback_2_3
+#: model:step.question,validation_error_msg:step.feedback_2_4
+#: model:step.question,validation_error_msg:step.feedback_2_5
+#: model:step.question,validation_error_msg:step.feedback_2_6
+#: model:step.question,validation_error_msg:step.feedback_2_7
+#: model:step.question,validation_error_msg:step.feedback_3_1
+#: model:step.question,validation_error_msg:step.feedback_3_2
+#: model:step.question,validation_error_msg:step.feedback_3_3
+#: model:step.question,validation_error_msg:step.feedback_4_1
+#, python-format
+msgid "The answer you entered has an invalid format."
+msgstr "Введена вами відповідь має неправильний формат."
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:163
+#, python-format
+msgid ""
+"The content of the text don't contain '__URL__'.                     __URL__"
+" is automaticaly converted into the special url of the step."
+msgstr ""
+"Вміст тексту не містить \"__URL__\". __URL__ автоматично перетворюється у "
+"спеціальну URL-адресу опитування."
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_1
+msgid "The current menu structure is good"
+msgstr "Поточна структура меню хороша"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_5
+msgid "The groups set on menu items are relevant"
+msgstr "Групи, встановлені в пунктах меню, є релевантними"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_3
+msgid "The number of groups is good"
+msgstr "Кількість груп - хороші"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "The page you were looking for could not be authorized."
+msgstr "Не вдалося авторизувати сторінку, яку ви шукали."
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_1
+msgid "The security rules defined on groups are useful"
+msgstr "Правила безпеки, визначені в групах, є корисними"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_2
+msgid "There are too few groups defined, security isn't accurate enough"
+msgstr "Визначено забагато груп, безпека недостатньо точна"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_1
+msgid "There are too many groups defined, security is too complex to set"
+msgstr "Визначено забагато груп, безпека занадто складна для встановлення"
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_3
+msgid "There are too much menus, it's complex to understand"
+msgstr "Дуже багато пунктів меню, важко зрозуміти"
+
+#. module: step
+#: model_terms:step.page,description:step.feedback_2
+msgid ""
+"These questions relate to the ergonomy and ease of use of Odoo. Try to remind your firsts days on Odoo and\n"
+"what have been your difficulties."
+msgstr ""
+"Ці питання стосуються ергономіки та простоти використання Odoo. Спробуйте нагадати свої перші дні в Odoo і \n"
+"ваші труднощі."
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_2
+msgid "They are clean and correct"
+msgstr "Вони є зрозумілі і правильні"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_3
+msgid "They are useful on a daily usage"
+msgstr "Вони корисні для повсякденного використання"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_1
+msgid "They help new users to understand Odoo"
+msgstr "Вони допомагають новим користувачам зрозуміти Odoo"
+
+#. module: step
+#: code:addons/step/models/step.py:544
+#: code:addons/step/tests/test_step.py:86
+#, python-format
+msgid "This answer must be an email address"
+msgstr "Ця відповідь має бути е-мейл адресою"
+
+#. module: step
+#: code:addons/step/models/step.py:588
+#: code:addons/step/tests/test_step.py:107
+#, python-format
+msgid "This is not a date"
+msgstr "Це не дата"
+
+#. module: step
+#: code:addons/step/models/step.py:565
+#: code:addons/step/tests/test_step.py:97
+#, python-format
+msgid "This is not a number"
+msgstr "Це не кількість"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__multi_email
+msgid ""
+"This list of emails of recipients will not be converted in contacts.        "
+"Emails must be separated by commas, semicolons or newline."
+msgstr ""
+"Цей список електронних листів одержувачів не буде перетворений в контакти. "
+"Електронні листи повинні бути розділені комами, комами-крапками або новою "
+"лінією."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__thank_you_message
+msgid "This message will be displayed when step is completed"
+msgstr "Це повідомлення відображатиметься після завершення опитування"
+
+#. module: step
+#: code:addons/step/models/step.py:806
+#, python-format
+msgid "This question cannot be unanswered or skipped."
+msgstr "Це питання не може бути без відповіді або пропущено."
+
+#. module: step
+#: code:addons/step/models/step.py:489
+#: model:step.question,constr_error_msg:step.feedback_1_1
+#: model:step.question,constr_error_msg:step.feedback_1_2
+#: model:step.question,constr_error_msg:step.feedback_2_1
+#: model:step.question,constr_error_msg:step.feedback_2_2
+#: model:step.question,constr_error_msg:step.feedback_2_3
+#: model:step.question,constr_error_msg:step.feedback_2_4
+#: model:step.question,constr_error_msg:step.feedback_2_5
+#: model:step.question,constr_error_msg:step.feedback_2_6
+#: model:step.question,constr_error_msg:step.feedback_2_7
+#: model:step.question,constr_error_msg:step.feedback_3_1
+#: model:step.question,constr_error_msg:step.feedback_3_2
+#: model:step.question,constr_error_msg:step.feedback_3_3
+#: model:step.question,constr_error_msg:step.feedback_4_1
+#, python-format
+msgid "This question requires an answer."
+msgstr "Це питання потребує відповіді."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.nopages
+msgid "This step has no pages by now!"
+msgstr "Це опитування поки немає сторінок!"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.notopen
+msgid "This step is not open. Thank you for your interest!"
+msgstr "Це опитування не відкрите. Дякуємо за ваш інтерес!"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "This step is open only to registered people. Please"
+msgstr "Це дослідження доступне тільки зареєстрованим особам. Будь ласка,"
+
+#. module: step
+#: model_terms:step.step,description:step.feedback_form
+msgid "This step should take less than five minutes."
+msgstr "Це опитування займе менше п'яти хвилин."
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_2
+msgid ""
+"Those security rules are standard and can be used out-of-the-box in most "
+"cases"
+msgstr ""
+"Ці правила безпеки є стандартними, і в більшості випадків вони можуть бути "
+"використані нестандартно"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__title
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Title"
+msgstr "Заголовок"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Today"
+msgstr "Сьогодні"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Today Activities"
+msgstr "Сьогоднішні дії"
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_4
+#: model:step.label,value:step.fcol_2_2_4
+#: model:step.label,value:step.fcol_2_5_4
+#: model:step.label,value:step.fcol_2_7_4
+msgid "Totally agree"
+msgstr "Повністю погоджуюсь"
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_1
+#: model:step.label,value:step.fcol_2_2_1
+#: model:step.label,value:step.fcol_2_5_1
+#: model:step.label,value:step.fcol_2_7_1
+msgid "Totally disagree"
+msgstr "Повністю не погоджуюсь"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__tracking_value_ids
+msgid ""
+"Tracked values are stored in a separate model. This field allow to "
+"reconstruct the tracking and to generate statistics on the model."
+msgstr ""
+"Відстежувані значення зберігаються в окремій моделі. Це поле дозволяє "
+"реконструювати відстеження та генерувати статистику по моделі."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__tracking_value_ids
+msgid "Tracking values"
+msgstr "Значення відстеження"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__message_type
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Type"
+msgstr "Тип"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__type
+msgid "Type of Question"
+msgstr "Тип запитання"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Type of answers"
+msgstr "Тип відповідей"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__labels_ids
+msgid "Types of answers"
+msgstr "Типи відповідей"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_unread
+msgid "Unread Messages"
+msgstr "Непрочитані повідомлення"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Кількість непрочитаних повідомлень"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Upcoming Activities"
+msgstr "Майбутні види діяльності"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__use_active_domain
+msgid "Use active domain"
+msgstr "Використовувати активний домкен"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__template_id
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Use template"
+msgstr "Використовувати шаблон"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_question__description
+msgid ""
+"Use this field to add         additional explanations about your question"
+msgstr ""
+"Використовуйте це поле, щоб додати додаткові пояснення щодо вашого запитання"
+
+#. module: step
+#: model:res.groups,name:step.group_step_user
+msgid "User"
+msgstr "Користувач"
+
+#. module: step
+#: model:step.step,title:step.feedback_form
+msgid "User Feedback Form"
+msgstr "Форма відгуку користувача"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__user_input_id
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+msgid "User Input"
+msgstr "Введення користувача"
+
+#. module: step
+#: model:ir.ui.menu,name:step.menu_step_response_line_form
+msgid "User Input Lines"
+msgstr "Рядки введення користувача"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+#: model_terms:ir.ui.view,arch_db:step.result_number
+#: model_terms:ir.ui.view,arch_db:step.result_text
+msgid "User Responses"
+msgstr "Користувацькі відповіді"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "User can come back in the previous page"
+msgstr "Користувач може повернутися на попередню сторінку"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_line_form
+msgid "User input line details"
+msgstr "Деталі рядка вхідних даних користувача"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__user_input_ids
+msgid "User responses"
+msgstr "Користувацькі відповіді"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__users_can_go_back
+msgid "Users can go back"
+msgstr "Користувачі можуть повертатись"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__auth_required
+msgid ""
+"Users with a public link will be requested to login before taking part to "
+"the step"
+msgstr ""
+"Користувачам із загальнодоступною посиланням буде запропоновано взяти участь"
+" в опитуванні"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_required
+msgid "Validate entry"
+msgstr "Підтвердіть запис"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_error_msg
+msgid "Validation Error message"
+msgstr "Повідомлення про помилку підтвердження"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "View Results"
+msgstr "Перегляньте результати"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "View results"
+msgstr "Перегляньте результати"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__website_published
+msgid "Visible on the website as a comment"
+msgstr "Показано на сайті як коментар"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Vote"
+msgstr "Голос"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__website_message_ids
+msgid "Website Messages"
+msgstr "Повідомлення з веб-сайту"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__website_message_ids
+msgid "Website communication history"
+msgstr "Історія бесіди на сайті"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_7
+msgid "What do you think about configuration wizards?"
+msgstr "Що ви думаєте про майстрів налаштування?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_1
+msgid "What do you think about the documentation available on doc.odoo.com?"
+msgstr "Що ви думаєте про документацію, доступну на doc.odoo.com?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_5
+msgid "What do you think about the groups of users?"
+msgstr "Що ви думаєте про групи користувачів?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_2
+msgid ""
+"What do you think about the process views of Odoo, available in the web "
+"client ?"
+msgstr "Що ви думаєте про процесні перегляди Odoo, доступні у веб-клієнті?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_4
+#: model:step.question,question:step.feedback_2_6
+msgid "What do you think about the structure of the menus?"
+msgstr "Що ви думаєте про структуру меню?"
+
+#. module: step
+#: model:step.question,question:step.feedback_4_1
+msgid "Where do you develop your new features?"
+msgstr "Де ви розробляєте свої нові функції?"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__is_log
+msgid "Whether the message is an internal note (comment mode only)"
+msgstr "Чи повідомлення є внутрішньою нотаткою (лише для режиму коментарів)"
+
+#. module: step
+#: model:step.question,question:step.feedback_1_2
+msgid "Which modules are you using/testing?"
+msgstr "Які модулі ви використовуєте/тестуєте?"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"YYYY-MM-DD\n"
+"                                            <i class=\"fa fa-calendar fa-2x\" role=\"img\" aria-label=\"Calendar\" title=\"Calendar\"/>"
+msgstr ""
+"Р-М-Д\n"
+"                                            <i class=\"fa fa-calendar fa-2x\" role=\"img\" aria-label=\"Calendar\" title=\"Calendar\"/>"
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_1
+msgid "Yes, I use a version < 7.0"
+msgstr "Так, я використовую версію < 7.0"
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_2
+msgid "Yes, I use the 7.0 version, installed locally"
+msgstr "Так, я використовую версію 7.0, що встановлена локально"
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_3
+msgid "Yes, I use the online version of Odoo"
+msgstr "Так, я використовую онлайн-версію Odoo"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid ""
+"You can create steps for different purposes: customer opinion, services "
+"feedback, recruitment interviews, employee's periodical evaluations, "
+"marketing campaigns, etc."
+msgstr ""
+"Ви можете створювати опитування для різних цілей: думку споживачів, відгуки "
+"про послуги, підбір персоналу, періодичні оцінки працівників, маркетингові "
+"кампанії тощо."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"You can share your step web public link and/or send private invitations to"
+" your audience. People can answer once per invitation, and whenever they "
+"want with the public web link (in this case, the \"Login Required\" setting "
+"must be disabled)."
+msgstr ""
+"Ви можете поділитися своїм оглядовим веб публічним посиланням та/або "
+"надіслати приватні запрошення своїй аудиторії. Люди можуть одразу відповісти"
+" на запрошення і кожного разу, коли вони хочуть, за допомогою "
+"загальнодоступного веб-посилання (у цьому випадку параметр \"Потрібен вхід\""
+" повинен бути відключений)."
+
+#. module: step
+#: code:addons/step/models/step.py:315
+#, python-format
+msgid "You cannot send an invitation for a step that has no questions."
+msgstr "Ви не можете надіслати запрошення на опитування, що не має питань."
+
+#. module: step
+#: code:addons/step/models/step.py:318
+#, python-format
+msgid "You cannot send invitations for closed steps."
+msgstr "Ви не можете надсилати запрошення на закриті опитування."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "You scored"
+msgstr "Ви отримали оцінку"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "ans"
+msgstr "відп"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "free website"
+msgstr "безкоштовний веб-сайт"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "log in"
+msgstr "вхід"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "of"
+msgstr "від"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "points."
+msgstr "бали."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "review your answers"
+msgstr "перегляньте свої відповіді"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "this page"
+msgstr "ця сторінка"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "with"
+msgstr "з"

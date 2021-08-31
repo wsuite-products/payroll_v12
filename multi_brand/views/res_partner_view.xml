@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Partner Form view inherited-->
+    <record id="res_partner_view_form_inherit_multi_brand" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.multi.brand</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="res_partner_extended.res_partner_view_form_inherit_wadmin_partner"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='wpartner_id']" position="after">
+                <field name="multi_brand_ids" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- User Form view inherited-->
+    <record id="res_user_view_form_inherit_multi_brand" model="ir.ui.view">
+        <field name="name">res.user.form.inherit.multi.brand</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//div[hasclass('oe_title')]/group" position="inside">
+                <field name="job_profile_id" options="{'no_create': True, 'no_create_edit': True}"/>
+                <field name="operation_zone"/>
+                <field name="redirect_to"/>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Groups/Brand">
+                    <group string="Groups/Brands/Products">
+                        <field name="group_brand_ids" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="partner_id"/>
+                                <field name="group_id"/>
+                                <field name="multi_id"/>
+                                <field name="product_id"/>
+                            </tree>
+                        </field>
+                    </group>
+                </page>
+                <page name="w_admin_permission" string="W-Admin Permission">
+                    <group>
+                        <field name="group_id"/>
+                    </group>
+                    <group string="Clients">
+                        <field name="client_ids" nolabel="1"/>
+                    </group>
+                    <group string="Brands">
+                        <field name="brand_ids" nolabel="1"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

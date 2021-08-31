@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- CRM Lead Product Quotes tree view-->
+    <record id="crm_lead_product_quotes_tree" model="ir.ui.view">
+        <field name="name">CRM Lead Product Quotes Tree</field>
+        <field name="model">crm.lead.product.quotes</field>
+        <field name="arch" type="xml">
+            <tree string="CRM Lead Product Quotes">
+                <field name="product_tmp_id"/>
+                <field name="quotation_number"/>
+                <field name="request_type"/>
+                <field name="quote_type"/>
+                <field name="main_cate_id"/>
+                <field name="is_billable"/>
+                <field name="crm_lead_id" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- CRM Lead Product Quotes from view-->
+    <record id="crm_lead_product_quotes_form" model="ir.ui.view">
+        <field name="name">CRM Lead Product Quotes Form</field>
+        <field name="model">crm.lead.product.quotes</field>
+        <field name="arch" type="xml">
+            <form string="CRM Lead Product Quotes">
+                <sheet>
+                    <group col="4">
+                        <field name="product_tmp_id"/>
+                        <field name="quotation_number"/>
+                        <field name="request_type"/>
+                        <field name="quote_type"/>
+                        <field name="main_cate_id"/>
+                        <field name="is_billable"/>
+                        <field name="crm_lead_id" invisible="1"/>
+                    </group>
+                    <group>
+                        <field name="asset_config"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- CRM Lead Product Quotes Action-->
+    <record model="ir.actions.act_window" id="crm_lead_product_quotes_action">
+        <field name="name">CRM Lead Product Quotes</field>
+        <field name="res_model">crm.lead.product.quotes</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- CRM Lead Product Quotes Menu-->
+    <menuitem
+        id="crm_lead_product_quotes_menu"
+        action="crm_lead_product_quotes_action"
+        parent="crm.menu_crm_config_lead"/>
+
+</odoo>

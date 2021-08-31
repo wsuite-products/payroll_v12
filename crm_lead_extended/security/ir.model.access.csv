@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_lead_lines,access_crm_lead_lines,model_crm_lead_lines,base.group_user,1,1,1,1
+access_crm_lead_type,access_crm_lead_type,model_crm_lead_type,base.group_user,1,1,1,1
+access_crm_lead_stage,access_crm_lead_stage,model_crm_lead_stage,base.group_user,1,1,1,1
+access_crm_lead_product_quotes,access_crm_lead_product_quotes,model_crm_lead_product_quotes,base.group_user,1,1,1,1
+access_new_member_history,access_new_member_history,model_new_member_history,base.group_user,1,1,1,1
+access_notification_history,access_notification_history,model_notification_history,base.group_user,1,1,1,1
+access_job,access_job,model_job,base.group_user,1,1,1,1
+access_lead_cancel_history,access_lead_cancel_history,model_lead_cancel_history,base.group_user,1,1,1,1

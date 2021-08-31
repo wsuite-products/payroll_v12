@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="crm_lead_view_form_inherit_wmedia" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.wmedia</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="W-Media">
+                    <group col="4">
+                        <field name="reference_media"/>
+                        <field name="process_type_id"/>
+                        <field name="share_accumulate"/>
+                    </group>
+                    <group string="Percentage Category Lines">
+                        <field name="percentage_categ_ids" context="{'default_lead_id': active_id, 'lead': True}" nolabel="1"/>
+                    </group>
+                    <group string="Channel Fringe Lines">
+                        <field name="channel_fringe_ids" context="{'default_lead_id': active_id, 'lead': True}" nolabel="1"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="crm_lead_view_form_currency_inherit_wmedia" model="ir.ui.view">
+        <field name="name">crm.lead.form.currency.inherit.wmedia</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm_lead_extended.crm_lead_view_form_inherit_wadmin_campaign"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='currency_id']" position="replace">
+                <field name="currency_id" required="1"/>
+                <field name="trm_date"/>
+                <field name="trm_value"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

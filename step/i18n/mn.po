@@ -1,0 +1,2792 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * step
+# 
+# Translators:
+# Martin Trigaux, 2018
+# Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2019
+# Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 10:10+0000\n"
+"PO-Revision-Date: 2018-08-24 09:25+0000\n"
+"Last-Translator: Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_tree
+msgid "#Questions"
+msgstr "#Асуултууд"
+
+#. module: step
+#: model:mail.template,subject:step.email_template_step
+msgid "${object.title}: Step"
+msgstr ""
+
+#. module: step
+#: code:addons/step/models/step.py:122
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (хуулбар)"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "&amp;times;"
+msgstr "&amp;times;"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "403: Forbidden"
+msgstr "403: Хориотой"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<b>Question </b>"
+msgstr "<b>Асуулт </b>"
+
+#. module: step
+#: model:mail.template,body_html:step.email_template_step
+msgid ""
+"<div style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Hello<br/><br/>\n"
+"        We are conducting a step, and your response would be appreciated.\n"
+"        <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"            <a href=\"__URL__\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                Start Step\n"
+"            </a>\n"
+"        </div>\n"
+"        Thanks for your participation!\n"
+"    </p>\n"
+"</div>\n"
+"            "
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-2x\" role=\"img\" aria-label=\"Numeric\" title=\"Numeric\">123..</i>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-align-justify fa-4x\" role=\"img\" aria-label=\"Multiple "
+"lines\" title=\"Multiple Lines\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid ""
+"<i class=\"fa fa-bar-chart\"/>\n"
+"                    Graph"
+msgstr ""
+"<i class=\"fa fa-bar-chart\"/>\n"
+"                    Хүснэгт"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-bar-chart-o\"/> Graph"
+msgstr "<i class=\"fa fa-bar-chart-o\"/> Хүснэгт"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-bar-chart-o\"/> Pie Chart"
+msgstr "<i class=\"fa fa-bar-chart-o\"/> Бүдүүвч Зураг"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-check-square-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-check-square-o fa-lg\"/> хариулах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-circle-o  fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-circle-o  fa-lg\"/> хариулах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-circle-o fa-lg\" role=\"img\" aria-label=\"Not checked\" "
+"title=\"Not checked\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-dot-circle-o fa-lg\" role=\"img\" aria-label=\"Checked\" "
+"title=\"Checked\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-dot-circle-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-dot-circle-o fa-lg\"/> хариулах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    All Data"
+msgstr ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    Бүх Мэдээлэл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    Data"
+msgstr ""
+"<i class=\"fa fa-list-alt\"/>\n"
+"                    Мэдээлэл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "<i class=\"fa fa-list-alt\"/> Data"
+msgstr "<i class=\"fa fa-list-alt\"/> Мэдээлэл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid ""
+"<i class=\"fa fa-list-ol\"/>\n"
+"                    Most Common"
+msgstr ""
+"<i class=\"fa fa-list-ol\"/>\n"
+"                    Хамгийн нийтлэг"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"<i class=\"fa fa-minus fa-4x\" role=\"img\" aria-label=\"Single Line\" "
+"title=\"Single Line\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "<i class=\"fa fa-square-o fa-lg\"/> answer"
+msgstr "<i class=\"fa fa-square-o fa-lg\"/> хариулах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<i class=\"fa fa-times\"/> Clear All Filters"
+msgstr "<i class=\"fa fa-times\"/> Бүх шүүлтүүрийг арилгах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-primary only_left_radius filter-all\">All "
+"steps</span><span class=\"badge badge-secondary only_right_radius filter-"
+"finished\">Finished steps</span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-primary only_left_radius\"><i class=\"fa fa-"
+"filter\" role=\"img\" aria-label=\"Filter\" title=\"Filter\"/></span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span class=\"badge badge-secondary only_left_radius filter-all\">All "
+"steps</span><span class=\"badge badge-primary only_right_radius filter-"
+"finished\">Finished steps</span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Average </span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Maximum </span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Minimum </span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "<span class=\"badge badge-secondary only_left_radius\">Sum </span>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "<span class=\"fa fa-filter\"/>  Filters"
+msgstr "<span class=\"fa fa-filter\"/>  Шүүлтүүрүүд"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid ""
+"<span style=\"font-size:1.5em;\" class=\"fa fa-bar-chart-o float-right \" "
+"role=\"img\" aria-label=\"Chart\" title=\"Chart\"/>"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.no_result
+msgid ""
+"<span>\n"
+"                            <i style=\"font-size:1.8em\" class=\"fa fa-users float-right\" role=\"img\" aria-label=\"No answer\" title=\"No answer\"/>\n"
+"                        </span>\n"
+"                        Sorry, No one answered this step yet"
+msgstr ""
+
+#. module: step
+#: code:addons/step/models/step.py:688
+#, python-format
+msgid "A label must be attached to only one question."
+msgstr ""
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "A length must be positive!"
+msgstr "Урт нь эерэг байх ёстой!"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__description
+msgid "A long description of the purpose of the step"
+msgstr "Асуулгын зорилгын дэлгэрэнгүй тайлбар"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_label__quizz_mark
+msgid ""
+"A positive score indicates a correct choice; a negative or null score "
+"indicates a wrong answer"
+msgstr ""
+"Эерэг оноо нь зөв сонголтыг илтгэнэ; сөрөг эсвэл хоосон оноо нь буруу "
+"хариултыг илтгэнэ"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "A problem has occured"
+msgstr "Асуудал гарлаа"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_4
+msgid "A process is defined for all enterprise flows"
+msgstr "Бүх байгууллагын урсгалд үйл явцыг тодорхойлно"
+
+#. module: step
+#: sql_constraint:step.user_input:0
+msgid "A token must be unique!"
+msgstr "Тасалбар нь давтагдаагүй байх ёстой!"
+
+#. module: step
+#: model:step.page,title:step.feedback_1
+msgid "About your Odoo usage"
+msgstr "Таны Odoo хэрэглээний тухай"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Accepted"
+msgstr "Зөвшөөрсөн"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_needaction
+msgid "Action Needed"
+msgstr "Үйлдэл Шаардлагатай"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__active
+msgid "Active"
+msgstr "Идэвхитэй"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__active_domain
+msgid "Active domain"
+msgstr "Идэвхтэй дөмэйн"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_ids
+msgid "Activities"
+msgstr "Ажилбар"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_state
+msgid "Activity State"
+msgstr "Ажилбарын Төлөв"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__add_sign
+msgid "Add Sign"
+msgstr "Гарын үсэг нэмэх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"Add a list of email of recipients (will not be converted into contacts). "
+"Separated by commas, semicolons or newline..."
+msgstr ""
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid "Add a new step"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Add existing contacts..."
+msgstr ""
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_3
+#: model:step.label,value:step.fcol_2_2_3
+#: model:step.label,value:step.fcol_2_5_3
+#: model:step.label,value:step.fcol_2_7_3
+msgid "Agree"
+msgstr "Зөвшөөрөх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Allow Comments"
+msgstr "Сэтгэгдэл бичихийг зөвшөөрөх"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_page__description
+msgid "An introductory text to your page"
+msgstr "Хуудсын танилцуулга текст"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Analyze Answers"
+msgstr "Хариултуудыг шинжлэх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Answer Choices"
+msgstr "Хариултын сонголтууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__type
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__answer_type
+msgid "Answer Type"
+msgstr "Хариултын төрөл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Answered"
+msgstr "Хариулсан"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_user_input
+#: model:ir.model.fields,field_description:step.field_step_question__user_input_line_ids
+#: model:ir.model.fields,field_description:step.field_step_user_input__user_input_line_ids
+#: model:ir.ui.menu,name:step.menu_step_type_form1
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Answers"
+msgstr "Хариултууд"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__no_auto_thread
+msgid ""
+"Answers do not go in the original document discussion thread. This has an "
+"impact on the generated message-id."
+msgstr ""
+"Хариу нь эх баримтын хэлэлцүүлэгийн мөчирт орохгүй. Энэ нь үүсгэгдсэн "
+"message-id-д нөлөөлнө."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Archived"
+msgstr "Архивласан"
+
+#. module: step
+#: model:step.question,question:step.feedback_1_1
+msgid "Are you using Odoo on a daily basis?"
+msgstr "Та Odoo - г өдөр болгон ашиглаж байгаа юу?"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_attachment_count
+msgid "Attachment Count"
+msgstr "Хавсралтын тоо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__attachment_ids
+msgid "Attachments"
+msgstr "Хавсралтууд"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__attachment_ids
+msgid ""
+"Attachments are linked to a document through model / res_id and to the "
+"message through this field."
+msgstr ""
+"Хавсралтууд нь баримттайгаа модел / res_id-р дамжиж холбогддог бөгөөд энэ "
+"талбараар зурвастай холбогддог."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__author_id
+msgid "Author"
+msgstr "Зохиогч"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__author_id
+msgid ""
+"Author of the message. If not set, email_from may hold an email address that"
+" did not match any partner."
+msgstr ""
+"Зурвасын зохиогч. Хэрэв хоосон бол, email_from мэйл хаягтай тохирох "
+"харилцагч байхгүй гэсэн үг."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__author_avatar
+msgid "Author's avatar"
+msgstr "Зохиогчийн аватар"
+
+#. module: step
+#: model:ir.model,name:step.model_ir_autovacuum
+msgid "Automatic Vacuum"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.back
+msgid "Back to Step"
+msgstr "Асуулга руу буцах"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_4
+msgid "CRM"
+msgstr "CRM"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Cancel"
+msgstr "Цуцлах"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__channel_ids
+msgid "Channels"
+msgstr "Сувгууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__child_ids
+msgid "Child Messages"
+msgstr "Дэд зурвасууд"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Choices"
+msgstr "Сонголтууд"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.simple_choice
+msgid "Choose..."
+msgstr "Сонгоно уу..."
+
+#. module: step
+#: code:addons/step/models/step.py:110
+#, python-format
+msgid "Click here to start step"
+msgstr "Асуулгыг эхлэх бол энд дарна уу"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Close"
+msgstr "Хаах"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__closed
+#: model:step.stage,name:step.stage_closed
+msgid "Closed"
+msgstr "Хаагдсан"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Color"
+msgstr "Өнгө"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__color
+msgid "Color Index"
+msgstr "Өнгөний Индекс"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_comments
+#: selection:step.mail.compose.message,message_type:0
+msgid "Comment"
+msgstr "Сэтгэгдэл"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comment_count_as_answer
+msgid "Comment Field is an Answer Choice"
+msgstr "Сэтгэгдлийн Талбар нь Хариултын Сонголт"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comments_message
+msgid "Comment Message"
+msgstr "Сэтгэгдлийн зурвас"
+
+#. module: step
+#: model:step.page,title:step.feedback_3
+msgid "Community and contributors"
+msgstr "Бүлэг ба оролцогчид"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Company name"
+msgstr "Компанийн нэр"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+#: selection:step.user_input,state:0
+msgid "Completed"
+msgstr "Дууссан"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Compose Email"
+msgstr "Имэйл Үүсгэх"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__composition_mode
+msgid "Composition mode"
+msgstr "Үүсгэх горим"
+
+#. module: step
+#: model:ir.ui.menu,name:step.menu_steps_configuration
+msgid "Configuration"
+msgstr "Тохиргоо"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_2
+msgid "Configuration wizard exists for each important setting"
+msgstr "Чухал тохиргоо бүрт тохиргооны цонх байна"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Constraints"
+msgstr "Хязгаарлалт"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__body
+msgid "Contents"
+msgstr "Агуулга"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"Copy and paste the HTML code below to add this web link to any webpage."
+msgstr ""
+"Доорх HTML кодыг хуулж энэ вэб холбоосыг аль ч вэб хуудас дээр нэмээрэй"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Copy, paste and share the web link below to your audience."
+msgstr "Доорх вэб холбоосыг хуулж уншигчдад хуваалцаарай"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Copyright &amp;copy;"
+msgstr "Зохиогчийн эрх &amp;copy;"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__date_create
+msgid "Create Date"
+msgstr "Үүсгэсэн огноо"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Create a"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__create_uid
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__create_uid
+#: model:ir.model.fields,field_description:step.field_step_page__create_uid
+#: model:ir.model.fields,field_description:step.field_step_question__create_uid
+#: model:ir.model.fields,field_description:step.field_step_stage__create_uid
+#: model:ir.model.fields,field_description:step.field_step_step__create_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input__create_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__create_uid
+msgid "Created by"
+msgstr "Үүсгэгч"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__create_date
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__create_date
+#: model:ir.model.fields,field_description:step.field_step_page__create_date
+#: model:ir.model.fields,field_description:step.field_step_question__create_date
+#: model:ir.model.fields,field_description:step.field_step_stage__create_date
+#: model:ir.model.fields,field_description:step.field_step_step__create_date
+#: model:ir.model.fields,field_description:step.field_step_user_input__create_date
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__create_date
+msgid "Created on"
+msgstr "Үүсгэсэн"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__date_create
+msgid "Creation Date"
+msgstr "Үүсгэсэн Огноо"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__starred
+msgid "Current user has a starred notification linked to this message"
+msgstr ""
+"Идэвхтэй хэрэглэгч нь энэ зурвас холбогдсон мэдэгдлийг одоор тэмдэглэсэн "
+"байна"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__date
+#: selection:step.question,type:0
+#: selection:step.user_input_line,answer_type:0
+msgid "Date"
+msgstr "Огноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_date
+msgid "Date answer"
+msgstr "Хариултын огноо"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_user_input__deadline
+msgid "Date by which the person can open the step and submit answers"
+msgstr "Асуулгыг нээж хариулах боломжтой болох огноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__deadline
+msgid "Deadline"
+msgstr "Эцсийн хугацаа"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__date_deadline
+msgid ""
+"Deadline to which the invitation to respond for this step is valid. If the"
+" field is empty,        the invitation is still valid."
+msgstr ""
+"Энэ асуулгад хариулах урилгын идэвхитэй байх эцсийн хугацаа. Хэрэв талбар нь"
+" хоосон байвал урилга нь идэвхитэй хэвээр байна."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__date_deadline
+msgid "Deadline to which the invitation to respond is valid"
+msgstr "Хариулах урилгын идэвхитэй байх эцсийн хугацаа"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Delete"
+msgstr "Устгах"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__auto_delete
+msgid "Delete Emails"
+msgstr "Имэйлүүдийг устгах"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__auto_delete_message
+msgid "Delete Message Copy"
+msgstr "Зурвасын Хуулбарыг Устгах"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__auto_delete
+msgid "Delete sent emails (mass mailing only)"
+msgstr "Илгээсэн имэйлүүдийг устгах (зөвхөн масс мэйлд)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__description
+#: model:ir.model.fields,field_description:step.field_step_page__description
+#: model:ir.model.fields,field_description:step.field_step_question__description
+#: model:ir.model.fields,field_description:step.field_step_step__description
+msgid "Description"
+msgstr "Тодорхойлолт"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_1
+msgid "Descriptions and help tooltips are clear enough"
+msgstr ""
+"Тайлбар болон тусламжийн багажийн зөвлөгөөнүүд нь хангалттай тодорхой байна"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid ""
+"Design easily your step, send invitations to answer by email and analyse "
+"answers."
+msgstr ""
+"Асуулгыг хялбархан загварчлаж, хариулах урилгыг имэйлээр илгээж, "
+"хариултуудыг шинжилнэ үү."
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_2
+#: model:step.label,value:step.fcol_2_2_2
+#: model:step.label,value:step.fcol_2_5_2
+#: model:step.label,value:step.fcol_2_7_2
+msgid "Disagree"
+msgstr "Зөвшөөрөхгүй"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__display_mode
+msgid "Display Mode"
+msgstr "Харуулах горим"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__display_name
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__display_name
+#: model:ir.model.fields,field_description:step.field_step_page__display_name
+#: model:ir.model.fields,field_description:step.field_step_question__display_name
+#: model:ir.model.fields,field_description:step.field_step_stage__display_name
+#: model:ir.model.fields,field_description:step.field_step_step__display_name
+#: model:ir.model.fields,field_description:step.field_step_user_input__display_name
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__display_name
+msgid "Display Name"
+msgstr "Дэлгэцийн Нэр"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Display mode"
+msgstr "Харуулах горим"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__auto_delete_message
+msgid ""
+"Do not keep a copy of the email in the document communication history (mass "
+"mailing only)"
+msgstr ""
+"Баримтын харилцсан түүхэн имэйлийн хуулбарыг хадгалахгүй (зөвхөн масс мэйлд)"
+
+#. module: step
+#: model:step.question,question:step.feedback_3_3
+msgid "Do you have a proposition to attract new contributors?"
+msgstr "Танд шинэ хувь оруулагчдыг татах төлөвлөгөө байна уу?"
+
+#. module: step
+#: model:step.question,question:step.feedback_3_2
+msgid "Do you have a proposition to help people to contribute?"
+msgstr "Танд хувь оруулагчдад туслах төлөвлөгөө байна уу?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_3
+msgid "Do you have suggestions on how to improve the process view ?"
+msgstr ""
+"Танд явцын харагдацыг хэрхэн сайжруулах талаар өгөх зөвлөгөө байна уу ?"
+
+#. module: step
+#: model:step.stage,name:step.stage_draft
+msgid "Draft"
+msgstr "Ноорог"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Dropdown menu"
+msgstr "Эвхэгддэг цэс"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__email
+msgid "E-mail"
+msgstr "Э-мэйл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Edit Pages and Questions"
+msgstr "Хуудас ба Асуултуудыг засах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Edit Step"
+msgstr "Асуулга засах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+#: selection:step.mail.compose.message,message_type:0
+msgid "Email"
+msgstr "Имэйл"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__email_template_id
+msgid "Email Template"
+msgstr "Э-мэйл үлгэр"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__email_from
+msgid ""
+"Email address of the sender. This field is set when no matching partner is "
+"found and replaces the author_id field in the chatter."
+msgstr ""
+"Илгээгчийн имэйл хаяг. Энэ талбар нь тохирох харилцагч олдоогүй тохиолдолд "
+"утга олгогдож чаатын author_id-г солино."
+
+#. module: step
+#: model:ir.model,name:step.model_step_mail_compose_message
+msgid "Email composition wizard for Step"
+msgstr "Судалгаанд зориулсан эмэйл үүсгэх харилцах цонх"
+
+#. module: step
+#: model:step.page,title:step.feedback_2
+msgid "Ergonomy and ease of use"
+msgstr "Ажиллахад тухтай ба хэрэглэхэд хялбар"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__constr_error_msg
+msgid "Error message"
+msgstr "Алдааны мэссэж"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__partner_ids
+msgid "Existing contacts"
+msgstr "Одоо байгаа холбогдох хаягууд"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_3
+msgid "Extra modules proposed are relevant"
+msgstr "Санал болгосон нэмэлт модулиуд нь чухал"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__starred_partner_ids
+msgid "Favorited By"
+msgstr "Эрхэмлэгч"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Filter question"
+msgstr ""
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_3
+msgid "Financial Management"
+msgstr "Санхүүгийн Менежмент"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__fold
+msgid "Folded in kanban view"
+msgstr "Канбан харагдацад эвхэгдсэн"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_follower_ids
+msgid "Followers"
+msgstr "Дагагчид"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Дагагчид (Сувагууд)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Дагагчид (Харилцагчид)"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Format"
+msgstr "Формат"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Free Text"
+msgstr "Чөлөөт Текст"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_free_text
+msgid "Free Text answer"
+msgstr "Чөлөөт Текстийн хариу"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__email_from
+msgid "From"
+msgstr "Хаанаас"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Group By"
+msgstr "Бүлэглэх"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__has_error
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__has_error
+msgid "Has error"
+msgstr "Алдаатай"
+
+#. module: step
+#: model:step.question,question:step.feedback_3_1
+msgid "How do you contribute or plan to contribute to Odoo?"
+msgstr ""
+"Та Odoo - д хэрхэн хувь оруулдаг эсвэл хувь оруулахаар төлөвлөж байна вэ?"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_6
+msgid "Human Resources"
+msgstr "Хүний Нөөц"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_3
+msgid "I develop new features"
+msgstr "Би шинэ боломжуудыг хөгжүүлдэг"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_4
+msgid "I do not publish my developments"
+msgstr "Би хөгжүүлэлтүүдээ нийтлэдэггүй"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_4
+msgid "I help to translate"
+msgstr "Би орчуулахад тусладаг"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_3
+msgid "I host them on my own website"
+msgstr "Би эдгээрийг өөрийн вэбсайт дээр зохион байгуулдаг"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_1
+msgid "I participate to discussion and forums"
+msgstr "Би хэлэлцүүлэг болон форумд оролцдог"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_1
+msgid "I use Github, like all official Odoo projects"
+msgstr "Бүх албан ёсны Odoo төслүүд шиг би Github - г ашигладаг"
+
+#. module: step
+#: model:step.label,value:step.choice_4_1_2
+msgid "I use another repository system (SourceForge...)"
+msgstr "Би өөр агуулах систем ашигладаг (SourceForge...)"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_3
+msgid "I use the contextual help in Odoo"
+msgstr "Би Odoo - н хам сэдвийн тусламжийг ашигладаг"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_5
+msgid "I write documentations"
+msgstr "Би баримтжлуулалтуудыг бичдэг"
+
+#. module: step
+#: model:step.label,value:step.choice_3_1_2
+msgid "I'd like to contribute but I don't know how?"
+msgstr "Би хувь нэмрээ оруулмаар байгаа ч яаж гэдгээ мэдэхгүй байна?"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__id
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__id
+#: model:ir.model.fields,field_description:step.field_step_page__id
+#: model:ir.model.fields,field_description:step.field_step_question__id
+#: model:ir.model.fields,field_description:step.field_step_stage__id
+#: model:ir.model.fields,field_description:step.field_step_step__id
+#: model:ir.model.fields,field_description:step.field_step_user_input__id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__token
+msgid "Identification token"
+msgstr "Ялгах тасалбар"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_unread
+msgid "If checked new messages require your attention."
+msgstr ""
+"Хэрэв тэмдэглэгдсэн бол таныг шинэ зурвасуудад анхаарал хандуулахыг "
+"шаардана."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Хэрэв сонгосон бол, шинэ зурвасуудад анхаарал хандуулахыг шаардана."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Үүнийг сонговол алдаа үүсэх үед зурвасууд ирнэ."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__users_can_go_back
+msgid "If checked, users can go back to previous pages."
+msgstr ""
+"Үүнийг чагталвал хэрэглэгчид өмнөх хуудсууд руу буцах боломжтой болно."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_stage__closed
+#: model:ir.model.fields,help:step.field_step_step__is_closed
+msgid "If closed, people won't be able to answer to steps in this column."
+msgstr ""
+"Үүнийг хаавал хүмүүс энэ багана дахь асуулгуудад хариулах боломжгүй болно."
+
+#. module: step
+#: code:addons/step/models/step.py:471
+#: model:step.question,comments_message:step.feedback_1_1
+#: model:step.question,comments_message:step.feedback_1_2
+#: model:step.question,comments_message:step.feedback_2_1
+#: model:step.question,comments_message:step.feedback_2_2
+#: model:step.question,comments_message:step.feedback_2_3
+#: model:step.question,comments_message:step.feedback_2_4
+#: model:step.question,comments_message:step.feedback_2_5
+#: model:step.question,comments_message:step.feedback_2_6
+#: model:step.question,comments_message:step.feedback_2_7
+#: model:step.question,comments_message:step.feedback_3_1
+#: model:step.question,comments_message:step.feedback_3_2
+#: model:step.question,comments_message:step.feedback_3_3
+#: model:step.question,comments_message:step.feedback_4_1
+#, python-format
+msgid "If other, please specify:"
+msgstr "Бусад, дэлгэрэнгүй:"
+
+#. module: step
+#: model_terms:step.page,description:step.feedback_4
+msgid "If you do not contribute or develop in Odoo, skip this page."
+msgstr ""
+"Хэрэв та Odoo - д хувь нэмрээ оруулдаггүй эсвэл хөгжүүлдэггүй бол энэ "
+"хуудсыг алгасна уу."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "If you wish, you can"
+msgstr "Хэрэв та хүсвэл "
+
+#. module: step
+#: model:step.stage,name:step.stage_in_progress
+msgid "In progress"
+msgstr "Боловсруулагдаж буй"
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:72
+#, python-format
+msgid "Incorrect Email Address: %s"
+msgstr "Буруу имэйл хаяг: %s"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__parent_id
+msgid "Initial thread message."
+msgstr "Мөчирийн эхлэлийн зурвас."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_email
+msgid "Input must be an email"
+msgstr "Оролт нь имэйл байх ёстой"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+msgid "Invitations sent"
+msgstr "Илгээгдсэн урилгууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_is_follower
+msgid "Is Follower"
+msgstr "Дагагч эсэх"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__is_closed
+msgid "Is closed"
+msgstr "Хаагдсан"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__designed
+msgid "Is designed?"
+msgstr "Загварчлагдсан?"
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_2
+msgid "It can be improved"
+msgstr "Үүнийг сайжруулах боломжтой"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_2
+msgid "It helps in the beginning"
+msgstr "Эхлэлд тус болдог"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_5
+msgid "It is clear"
+msgstr "Ойлгомжтой"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_4
+msgid "It is complete"
+msgstr "Дууссан"
+
+#. module: step
+#: model:step.label,value:step.frow_2_1_1
+msgid "It is up-to-date"
+msgstr "Шинэчлэх шаардлагагүй"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_5
+msgid "It's easy to find the process you need"
+msgstr "Таны хэрэгтэй явцыг олоход хялбар"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__sequence
+msgid "Label Sequence order"
+msgstr "Шошгын Дараалал"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_label_form
+#: model:ir.ui.menu,name:step.menu_step_label_form1
+msgid "Labels"
+msgstr "Шошго"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label____last_update
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message____last_update
+#: model:ir.model.fields,field_description:step.field_step_page____last_update
+#: model:ir.model.fields,field_description:step.field_step_question____last_update
+#: model:ir.model.fields,field_description:step.field_step_stage____last_update
+#: model:ir.model.fields,field_description:step.field_step_step____last_update
+#: model:ir.model.fields,field_description:step.field_step_user_input____last_update
+#: model:ir.model.fields,field_description:step.field_step_user_input_line____last_update
+msgid "Last Modified on"
+msgstr "Сүүлийн засвар хийсэн огноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__write_uid
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__write_uid
+#: model:ir.model.fields,field_description:step.field_step_page__write_uid
+#: model:ir.model.fields,field_description:step.field_step_question__write_uid
+#: model:ir.model.fields,field_description:step.field_step_stage__write_uid
+#: model:ir.model.fields,field_description:step.field_step_step__write_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input__write_uid
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__write_uid
+msgid "Last Updated by"
+msgstr "Сүүлийн засвар хийсэн"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__write_date
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__write_date
+#: model:ir.model.fields,field_description:step.field_step_page__write_date
+#: model:ir.model.fields,field_description:step.field_step_question__write_date
+#: model:ir.model.fields,field_description:step.field_step_stage__write_date
+#: model:ir.model.fields,field_description:step.field_step_step__write_date
+#: model:ir.model.fields,field_description:step.field_step_user_input__write_date
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__write_date
+msgid "Last Updated on"
+msgstr "Сүүлийн засвар хийсэн огноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__last_displayed_page_id
+msgid "Last displayed page"
+msgstr "Хамгийн сүүлд харуулсан хуудас"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Late Activities"
+msgstr "Хожимдсон Үйл ажиллагаанууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__layout
+msgid "Layout"
+msgstr "Хэв загвар"
+
+#. module: step
+#: selection:step.user_input,type:0
+msgid "Link"
+msgstr "Линк"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__multi_email
+msgid "List of emails"
+msgstr "Имэйлийн жагсаалт"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__is_log
+msgid "Log an Internal Note"
+msgstr "Дотоод тэмдэглэл хөтлөх"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__auth_required
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "Login required"
+msgstr "Нэвтрэх шаардлагатай"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Logo"
+msgstr "Лого"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__mail_activity_type_id
+msgid "Mail Activity Type"
+msgstr "Имэйл ажилбарын төрөл"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Үндсэн хавсралт"
+
+#. module: step
+#: model:res.groups,name:step.group_step_manager
+msgid "Manager"
+msgstr "Менежер"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__constr_mandatory
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Mandatory Answer"
+msgstr "Шаардлагатай Хариулт"
+
+#. module: step
+#: selection:step.user_input,type:0
+msgid "Manually"
+msgstr "Гараар"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Matrix"
+msgstr "Матриц"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__matrix_subtype
+msgid "Matrix Type"
+msgstr "Матрицын Төрөл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Matrix:"
+msgstr "Матриц:"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max date cannot be smaller than min date!"
+msgstr "Дээд огноо нь доод огноогоос бага байх боломжгүй!"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max length cannot be smaller than min length!"
+msgstr "Дээд урт нь доод уртаас бага байх боломжгүй!"
+
+#. module: step
+#: sql_constraint:step.question:0
+msgid "Max value cannot be smaller than min value!"
+msgstr "Дээд утга нь доод утгаас бага байх боломжгүй!"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_max_date
+msgid "Maximum Date"
+msgstr "Дээд Огноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_length_max
+msgid "Maximum Text Length"
+msgstr "Текстийн Дээд Урт"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_max_float_value
+msgid "Maximum value"
+msgstr "Дээд утга"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "Maybe you were looking for"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_has_error
+msgid "Message Delivery error"
+msgstr "Алдаа үүссэн талаарх мессеж"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__record_name
+msgid "Message Record Name"
+msgstr "Зурвасын Бичлэгийн Нэр"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__description
+msgid "Message description: either the subject, or the beginning of the body"
+msgstr "Зурвасын тодорхойлолт: гарчиг эсвэл биеийн эхлэлийн аль нэг"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__message_type
+msgid ""
+"Message type: email for email message, notification for system message, "
+"comment for other messages such as user replies"
+msgstr ""
+"Зурвасын төрөл: имэйл зурваст зориулсан имэйл, системийн зурвасын мэдэгдэл, "
+"бусад зурвас дахь сэтгэгдэл буюу хариулт гэх мэт"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__message_id
+msgid "Message unique identifier"
+msgstr "Мессежийн цор ганц хувийн дугаар"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__message_id
+msgid "Message-Id"
+msgstr "Зурвас-Id"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_ids
+msgid "Messages"
+msgstr "Зурвасууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_min_date
+msgid "Minimum Date"
+msgstr "Доод Огноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_length_min
+msgid "Minimum Text Length"
+msgstr "Текстийн Доод Урт"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_min_float_value
+msgid "Minimum value"
+msgstr "Доод утга"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__moderator_id
+msgid "Moderated By"
+msgstr "Зохицуулагч"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__moderation_status
+msgid "Moderation Status"
+msgstr "Зохицуулалтын төлөв"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple Lines Text Box"
+msgstr "Олон мөртэй Текст хайрцаг"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Multiple choice with multiple answers"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Multiple choice with one answer"
+msgstr ""
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple choice: multiple answers allowed"
+msgstr "Олон сонголт: олон хариулт зөвшөөрөгдсөн"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Multiple choice: only one answer"
+msgstr "Олон сонголт: зөвхөн нэг хариулт"
+
+#. module: step
+#: selection:step.question,matrix_subtype:0
+msgid "Multiple choices per row"
+msgstr "Мөр бүрт олон сонголт"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "My Activities"
+msgstr "Миний Үйл ажиллагаанууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_stage__name
+msgid "Name"
+msgstr "Нэр"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__record_name
+msgid "Name get of the related document."
+msgstr "Холбогдох баримтын нэр"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__needaction
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__needaction
+msgid "Need Action"
+msgstr "Үйлдэл Шаардлагатай"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__need_moderation
+msgid "Need moderation"
+msgstr "Зохицуулалт шаардлагатай"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "New"
+msgstr "Шинэ"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Дараагийн ажилбарын эцсийн огноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_summary
+msgid "Next Activity Summary"
+msgstr "Дараагийн Ажилбарын Хураангуй"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_type_id
+msgid "Next Activity Type"
+msgstr "Дараагийн ажилбарын төрөл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Next page"
+msgstr "Дараагийн хуудас"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_page_form
+msgid "No pages found"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_question_form
+msgid "No questions found"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_label_form
+msgid "No step labels found"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__no_auto_thread
+msgid "No threading for answers"
+msgstr "Хариултыг салбарлуулахгүй"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_user_input_line
+msgid "No user input lines found"
+msgstr ""
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_4
+msgid "No, I just tested it"
+msgstr "Үгүй, би дөнгөж сая үүнийг шалгасан"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_selected_step_user_input
+#: model_terms:ir.actions.act_window,help:step.action_step_user_input
+msgid "Nobody has replied to your steps yet"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.notopen
+msgid "Not open"
+msgstr "Нээлттэй биш"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.nopages
+msgid "Not ready"
+msgstr "Бэлэн биш"
+
+#. module: step
+#: selection:step.user_input,state:0
+msgid "Not started yet"
+msgstr "Одоохондоо эхлээгүй"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__notification_ids
+msgid "Notifications"
+msgstr "Мэдэгдлүүд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__notify
+msgid "Notify followers"
+msgstr "Дагагчидад мэдэгдэх"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__notify
+msgid "Notify followers of the document (mass post only)"
+msgstr "Баримтын дагагчидад мэдэгдэх (зөвхөн массаар илгээхэд)"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Number"
+msgstr "Дугаар"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Үйлдлийн тоо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__column_nb
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Number of columns"
+msgstr "Баганы тоо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_comp_step
+msgid "Number of completed steps"
+msgstr "Дууссан асуулгын тоо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_has_error_counter
+msgid "Number of error"
+msgstr "Алдааны тоо"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Үйлдэл шаардлагатай зурвасын тоо"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Алдааны мэдэгдэл бүхий зурвасын тоо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_sent_step
+msgid "Number of sent steps"
+msgstr "Илгээгдсэн асуулгын тоо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__tot_start_step
+msgid "Number of started steps"
+msgstr "Эхэлсэн асуулгын тоо"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Уншаагүй зурвасын тоо"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Numerical Value"
+msgstr "Тоон Утга"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_number
+msgid "Numerical answer"
+msgstr "Тоон хариулт"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_number
+msgid "Occurence"
+msgstr "Тохиолдол"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: step
+#: selection:step.question,matrix_subtype:0
+msgid "One choice per row"
+msgstr "Мөр бүрт нэг сонголт"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Options"
+msgstr "Сонголтууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__mail_server_id
+msgid "Outgoing mail server"
+msgstr "Мэйл серверийн гаралт"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Overdue"
+msgstr "Хугацаа хэтэрсэн"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__page_id
+#: model_terms:ir.ui.view,arch_db:step.page
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Page"
+msgstr "Хуудас"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_page__title
+#: model_terms:ir.ui.view,arch_db:step.step_page_form
+msgid "Page Title"
+msgstr "Хуудасны гарчиг"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_page__sequence
+msgid "Page number"
+msgstr "Хуудсын дугаар"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.act_step_pages
+#: model:ir.actions.act_window,name:step.action_step_page_form
+#: model:ir.model.fields,field_description:step.field_step_step__page_ids
+#: model:ir.ui.menu,name:step.menu_step_page_form1
+msgid "Pages"
+msgstr "Хуудсууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__parent_id
+msgid "Parent Message"
+msgstr "Эцэг зурвас"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Partially Completed"
+msgstr ""
+
+#. module: step
+#: selection:step.user_input,state:0
+msgid "Partially completed"
+msgstr "Хэсэгчлэн дууссан"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__partner_id
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Partner"
+msgstr "Харилцагч"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__needaction_partner_ids
+msgid "Partners with Need Action"
+msgstr "Үйлдэл шаардлагатай харилцагчид"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Pending Moderation"
+msgstr ""
+
+#. module: step
+#: model:step.stage,name:step.stage_permanent
+msgid "Permanent"
+msgstr "Байнгын"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Planned"
+msgstr "Төлөвлөсөн"
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:188
+#, python-format
+msgid "Please enter at least one valid recipient."
+msgstr "Ядаж нэг зөв хүлээн авагч оруулна уу."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Previous page"
+msgstr "Өмнөх хуудас"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Print Step"
+msgstr "Асуулга хэвлэх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "Print These Answers"
+msgstr "Энэ хариултуудыг хэвлэх"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__print_url
+msgid "Print link"
+msgstr "Холбоосыг хэвлэх"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_5
+msgid "Project Management"
+msgstr "Төслийн менежмент"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public_url_html
+msgid "Public HTML web link"
+msgstr "Нийтийн HTML вэб холбоос"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__public_url
+msgid "Public link"
+msgstr "Нийтийн холбоос"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__public_url_html
+msgid "Public link (html version)"
+msgstr "Нийтийн холбоос (html хувилбар)"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__print_url
+msgid "Public link to the empty step"
+msgstr "Хоосон асуулгын нийтийн холбоос"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__result_url
+msgid "Public link to the step results"
+msgstr "Асуулгын үр дүнгүүдийн нийтийн холбоос"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public_url
+msgid "Public url"
+msgstr "Нийтийн холбоос"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__website_published
+msgid "Published"
+msgstr "Нийтлэгдсэн"
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_2
+msgid "Purchases Management"
+msgstr "Худалдан авалтын Менежмент"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__question_id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__question_id
+#: model_terms:ir.ui.view,arch_db:step.step_label_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Question"
+msgstr "Асуулт"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__question_id_2
+msgid "Question 2"
+msgstr "Асуулт 2"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__question
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Question Name"
+msgstr "Асуултын Нэр"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Question name"
+msgstr "Асуултын нэр"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.act_step_page_question
+#: model:ir.actions.act_window,name:step.act_step_question
+#: model:ir.actions.act_window,name:step.action_step_question_form
+#: model:ir.model.fields,field_description:step.field_step_page__question_ids
+#: model:ir.ui.menu,name:step.menu_step_question_form1
+msgid "Questions"
+msgstr "Асуултууд"
+
+#. module: step
+#: model:step.page,title:step.feedback_4
+msgid "Questions for developers"
+msgstr "Хөгжүүлэгчдээс асуух асуултууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__quizz_mode
+msgid "Quizz Mode"
+msgstr "Асуултын Горим"
+
+#. module: step
+#: selection:step.question,display_mode:0
+msgid "Radio Buttons"
+msgstr "Радио Товчнууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__rating_value
+msgid "Rating Value"
+msgstr "Үнэлсэн утга"
+
+#. module: step
+#: selection:step.mail.compose.message,moderation_status:0
+msgid "Rejected"
+msgstr "Буцаасан"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__res_id
+msgid "Related Document ID"
+msgstr "Холбогдох Баримтын ID"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__model
+msgid "Related Document Model"
+msgstr "Холбогдох Баримтын Модель"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__rating_ids
+msgid "Related ratings"
+msgstr "Холбоотой үнэлгээ"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__reply_to
+msgid ""
+"Reply email address. Setting the reply_to bypasses the automatic thread "
+"creation."
+msgstr ""
+"Хариулах эмэйл хаяг. reply_to хаягийг тохируулснаар автомат салбар "
+"хэлэлцүүлэг үүснэ."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__reply_to
+msgid "Reply-To"
+msgstr "Хариулах-Хаяг"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__activity_user_id
+msgid "Responsible User"
+msgstr "Хариуцагч хэрэглэгч"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__result_url
+msgid "Results link"
+msgstr "Үр дүнгийн холбоос"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_suggested_row
+msgid "Row answer"
+msgstr "Мөрийн хариулт"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row1"
+msgstr "Мөр1"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row2"
+msgstr "Мөр2"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Row3"
+msgstr "Мөр3"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Rows"
+msgstr "Мөрүүд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__labels_ids_2
+msgid "Rows of the Matrix"
+msgstr "Матрицын Мөрүүд"
+
+#. module: step
+#: model:step.label,value:step.frow_2_7_4
+msgid "Running the configuration wizards is a good way to spare time"
+msgstr "Тохиргооны визардыг уншуулах нь цагийг ашиглах сайхан арга "
+
+#. module: step
+#: model:step.label,value:step.choice_1_2_1
+msgid "Sales Management"
+msgstr "Борлуулалтын менежмент"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Save as a new template"
+msgstr "Шинэ үлгэрээр хадгалах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Save as new template"
+msgstr "Шинэ үлгэр болгож хадгалах"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__quizz_score
+msgid "Score for the quiz"
+msgstr "Асуултын оноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__quizz_mark
+msgid "Score for this choice"
+msgstr "Энэ сонголтын оноо"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__quizz_mark
+msgid "Score given for this choice"
+msgstr "Энэ сонголтонд өгсөн оноо"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_label_search
+msgid "Search Label"
+msgstr "Шошго Хайх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+msgid "Search Page"
+msgstr "Хуудас Хайх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Search Question"
+msgstr "Асуулт хайх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Search Step"
+msgstr "Асуулга хайх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+msgid "Search User input lines"
+msgstr "Хэрэглэгчийн оруулсан мөрүүдийг хайх"
+
+#. module: step
+#: selection:step.question,display_mode:0
+msgid "Selection Box"
+msgstr "Сонголтын Хайрцаг"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Send"
+msgstr "Илгээх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "Send Invitation Again"
+msgstr "Урилгыг дахин илгээх"
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid "Send by email the public web link to your audience."
+msgstr "Уншигчдад нийтийн вэб холбоосыг имэйлээр илгээх"
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid ""
+"Send private invitation to your audience (only one response per recipient "
+"and per invitation)."
+msgstr ""
+"Уншигчдад хувийн урилга илгээх (хүлээн авагч ба урилга бүрт зөвхөн нэг "
+"хариу)."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__sequence
+#: model:ir.model.fields,field_description:step.field_step_stage__sequence
+msgid "Sequence"
+msgstr "Дараалал"
+
+#. module: step
+#: sql_constraint:step.stage:0
+msgid "Sequence number MUST be a natural"
+msgstr "Дарааллын тоо нь натурал байх ЁСТОЙ"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Share &amp;amp; Invite"
+msgstr "Хуваалцах &amp;amp; Урих"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Share and invite by email"
+msgstr "Имэйлээр хуваалцах мөн урих"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__public
+msgid "Share options"
+msgstr "Хуваалцах сонголтууд"
+
+#. module: step
+#: selection:step.mail.compose.message,public:0
+msgid "Share the public web link to your audience."
+msgstr "Нийтийн вэб холбоосыг уншигчидтайгаа хуваалцана уу."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__comments_allowed
+msgid "Show Comments Field"
+msgstr "Сэтгэгдэлийн Талбарыг харуулах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Show all records which has next action date is before today"
+msgstr "Өнөөдрөөс өмнө дараагийн арга хэмжээг товлосон бүх рекордыг харуулах"
+
+#. module: step
+#: selection:step.question,type:0
+msgid "Single Line Text Box"
+msgstr "Нэг мөртэй Текст хайрцаг"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__skipped
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Skipped"
+msgstr "Алгассан"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__author_avatar
+msgid ""
+"Small-sized image of this contact. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is"
+" required."
+msgstr ""
+"Холбогчийн жижиг хэмжээтэй зураг. Энэ нь автоматаар харьцаа нь хадгалагдан "
+"64x64px хэмжээтэй болдог. Энэ талбарыг жижиг зураг хэрэг болсон газар бүрт "
+"хэрэглэж болно."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid ""
+"Something went wrong while contacting step server. <strong class=\"text-"
+"danger\">Your answers have probably not been recorded.</strong> Try "
+"refreshing."
+msgstr ""
+"Асуулгын сервертэй холбогдох үед алдаа гарлаа. <strong class=\"text-"
+"danger\">Таны хариултууд хадгалагдаагүй байх магадлалтай.</strong> Дахин "
+"ачааллана уу."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result
+msgid "Sorry, No one answered this question."
+msgstr "Уучлаарай, Энэ асуултанд хариулсан хүн алга."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__stage_id
+#: model_terms:ir.ui.view,arch_db:step.step_stage_form
+msgid "Stage"
+msgstr "Үе шат"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__starred
+msgid "Starred"
+msgstr "Одоор тэмдэглэсэн"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_init
+msgid "Start Step"
+msgstr "Асуулгыг Эхлүүлэх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+msgid "Started"
+msgstr "Эхлэсэн"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__state
+msgid "Status"
+msgstr "Төлөв"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Ажилбаруудын төлөв байдал\n"
+"Хоцорсон: Гүйцэтгэх огноо нь аль хэдий нь өнгөрсөн\n"
+"Өнөөдөр: Өнөөдөр гүйцэтгэх ёстой\n"
+"Төлөвлөгдсөн: Ирээдүйд гүйцэтгэх ажилбарууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__subject
+msgid "Subject"
+msgstr "Гарчиг"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Subject..."
+msgstr "Гарчиг..."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "Submit step"
+msgstr "Асуулгыг илгээх"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__subtype_id
+msgid "Subtype"
+msgstr "Дэд төрөл"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_suggested
+msgid "Suggested answer"
+msgstr "Санал болгох хариулт"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_label__value
+msgid "Suggested value"
+msgstr "Санал болгох утга"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Suggestion"
+msgstr "Санал болгох"
+
+#. module: step
+#: model:ir.model,name:step.model_step_step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__step_id
+#: model:ir.model.fields,field_description:step.field_step_page__step_id
+#: model:ir.model.fields,field_description:step.field_step_question__step_id
+#: model:ir.model.fields,field_description:step.field_step_user_input__step_id
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__step_id
+#: model_terms:ir.ui.view,arch_db:step.step_form
+#: model_terms:ir.ui.view,arch_db:step.step_page_search
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+#: model_terms:ir.ui.view,arch_db:step.step_tree
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Step"
+msgstr "Судалгаа"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_tree
+msgid "Step Answer Line"
+msgstr "Асуулгын Хариултын мөр"
+
+#. module: step
+#: model:ir.model,name:step.model_step_label
+#: model_terms:ir.ui.view,arch_db:step.step_label_tree
+msgid "Step Label"
+msgstr "Асуулгын Шошго"
+
+#. module: step
+#: model:ir.model,name:step.model_step_page
+#: model_terms:ir.ui.view,arch_db:step.step_page_form
+#: model_terms:ir.ui.view,arch_db:step.step_page_tree
+msgid "Step Page"
+msgstr "Асуулгын хуудас"
+
+#. module: step
+#: model:ir.model,name:step.model_step_question
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+#: model_terms:ir.ui.view,arch_db:step.step_question_tree
+msgid "Step Question"
+msgstr "Асуулгын асуулт"
+
+#. module: step
+#: model:ir.model,name:step.model_step_stage
+msgid "Step Stage"
+msgstr "Асуулгын Шат"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Step Title"
+msgstr "Асуулгын гарчиг"
+
+#. module: step
+#: model:ir.model,name:step.model_step_user_input
+msgid "Step User Input"
+msgstr "Асуулгын Хэрэглэгчийн Оролт"
+
+#. module: step
+#: model:ir.model,name:step.model_step_user_input_line
+msgid "Step User Input Line"
+msgstr "Асуулгын Хэрэглэгчийн Оролтын Мөр"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_user_input_line
+msgid "Step User Input lines"
+msgstr "Асуулгын Хэрэглэгчийн Оролтын мөрүүд"
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_selected_step_user_input
+msgid "Step User input"
+msgstr "Асуулгын Хэрэглэгчийн оролт"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_tree
+msgid "Step User inputs"
+msgstr "Асуулгын Хэрэглэгчийн оролтууд"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_matrix
+msgid "Step filter"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__page_id
+msgid "Step page"
+msgstr "Асуулгын хуудас"
+
+#. module: step
+#: model:ir.actions.server,name:step.step_action_server_clean_test_answers
+msgid "Step: Clean test answers"
+msgstr ""
+
+#. module: step
+#: model:ir.actions.act_window,name:step.action_step_form
+#: model:ir.ui.menu,name:step.menu_step_form
+#: model:ir.ui.menu,name:step.menu_steps
+msgid "Steps"
+msgstr "Асуулгууд"
+
+#. module: step
+#: selection:step.mail.compose.message,message_type:0
+msgid "System notification"
+msgstr "Системийн мэдэгдэл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_kanban
+msgid "Test"
+msgstr "Тест"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_search
+msgid "Test Entries"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input__test_entry
+msgid "Test Entry"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "Test Step"
+msgstr "Тест Асуулга"
+
+#. module: step
+#: selection:step.user_input_line,answer_type:0
+msgid "Text"
+msgstr "Текст"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__value_text
+msgid "Text answer"
+msgstr "Текст хариу"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "Thank you!"
+msgstr "Танд баярлалаа!"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__thank_you_message
+msgid "Thanks Message"
+msgstr "Талархлын Зурвас"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_3
+msgid "The 'Usability/Extended View' group helps in daily work"
+msgstr ""
+"'Хэрэглэх боломж/Дэлгэрэнгүй Харагдац' групп нь өдөр тутмын ажилд тусладаг"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_4
+msgid "The 'Usability/Extended View' group hides only optional fields"
+msgstr ""
+"'Хэрэглэх боломж/Дэлгэрэнгүй Харагдац' групп нь зөвхөн нэмэлт талбаруудыг "
+"нуудаг"
+
+#. module: step
+#: code:addons/step/models/step.py:819
+#, python-format
+msgid "The answer must be in the right type"
+msgstr "Хариулт нь зөв төрөлтэй байх ёстой"
+
+#. module: step
+#: code:addons/step/models/step.py:485
+#: model:step.question,validation_error_msg:step.feedback_1_1
+#: model:step.question,validation_error_msg:step.feedback_1_2
+#: model:step.question,validation_error_msg:step.feedback_2_1
+#: model:step.question,validation_error_msg:step.feedback_2_2
+#: model:step.question,validation_error_msg:step.feedback_2_3
+#: model:step.question,validation_error_msg:step.feedback_2_4
+#: model:step.question,validation_error_msg:step.feedback_2_5
+#: model:step.question,validation_error_msg:step.feedback_2_6
+#: model:step.question,validation_error_msg:step.feedback_2_7
+#: model:step.question,validation_error_msg:step.feedback_3_1
+#: model:step.question,validation_error_msg:step.feedback_3_2
+#: model:step.question,validation_error_msg:step.feedback_3_3
+#: model:step.question,validation_error_msg:step.feedback_4_1
+#, python-format
+msgid "The answer you entered has an invalid format."
+msgstr "Таны оруулсан хариулт буруу форматтай байна."
+
+#. module: step
+#: code:addons/step/wizard/step_email_compose_message.py:163
+#, python-format
+msgid ""
+"The content of the text don't contain '__URL__'.                     __URL__"
+" is automaticaly converted into the special url of the step."
+msgstr ""
+"Текстийн агуулгад '__URL__' алга.  __URL__ нь асуулгын тусгай холбоос руу "
+"автоматаар хувиргагддаг."
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_1
+msgid "The current menu structure is good"
+msgstr "Одоогийн цэсийн бүтэц нь сайн байна"
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_5
+msgid "The groups set on menu items are relevant"
+msgstr "Цэсийн зүйлс дээр тохируулагдсан бүлгүүд нь чухал"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_3
+msgid "The number of groups is good"
+msgstr "Бүлгүүдийн тоо сайн байна"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "The page you were looking for could not be authorized."
+msgstr "Таны хайсан хуудас хандалт зөвшөөрөгдөх боломжгүй."
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_1
+msgid "The security rules defined on groups are useful"
+msgstr "Бүлгүүд дээр тодорхойлсон аюулгүй байдлын дүрмүүд нь хэрэгтэй"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_2
+msgid "There are too few groups defined, security isn't accurate enough"
+msgstr ""
+"Хэт цөөн бүлэг тодорхойлогдсон байна, аюулгүй байдал нь хангалттай нарийн "
+"биш байна"
+
+#. module: step
+#: model:step.label,value:step.choice_2_6_1
+msgid "There are too many groups defined, security is too complex to set"
+msgstr ""
+"Хэт олон бүлэг тодорхойлогдсон байна, аюулгүй байдлыг тохируулахад хэт "
+"түвэгтэй байна"
+
+#. module: step
+#: model:step.label,value:step.choice_2_4_3
+msgid "There are too much menus, it's complex to understand"
+msgstr "Хэт олон цэс байна, ойлгоход түвэгтэй байна"
+
+#. module: step
+#: model_terms:step.page,description:step.feedback_2
+msgid ""
+"These questions relate to the ergonomy and ease of use of Odoo. Try to remind your firsts days on Odoo and\n"
+"what have been your difficulties."
+msgstr ""
+"Эдгээр нь Odoo - н хэрэглэхэд тухтай ба хялбар байхтай холбоотой асуултууд. Та өөрийн Odoo - г хэрэглэж байсан анхны өдрүүдэд\n"
+" тулгарч байсан бэрхшээлүүдийг санаарай."
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_2
+msgid "They are clean and correct"
+msgstr "Эдгээр нь цэвэр ба зөв байна"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_3
+msgid "They are useful on a daily usage"
+msgstr "Эдгээр нь өдөр тутмын хэрэглээнд ашигтай"
+
+#. module: step
+#: model:step.label,value:step.frow_2_2_1
+msgid "They help new users to understand Odoo"
+msgstr "Тэд шинэ хэрэглэгчдэд Odoo - г ойлгоход тусладаг"
+
+#. module: step
+#: code:addons/step/models/step.py:544
+#: code:addons/step/tests/test_step.py:86
+#, python-format
+msgid "This answer must be an email address"
+msgstr "Энэ хариулт нь имэйл хаяг байх ёстой"
+
+#. module: step
+#: code:addons/step/models/step.py:588
+#: code:addons/step/tests/test_step.py:107
+#, python-format
+msgid "This is not a date"
+msgstr ""
+
+#. module: step
+#: code:addons/step/models/step.py:565
+#: code:addons/step/tests/test_step.py:97
+#, python-format
+msgid "This is not a number"
+msgstr "Энэ тоо биш байна"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__multi_email
+msgid ""
+"This list of emails of recipients will not be converted in contacts.        "
+"Emails must be separated by commas, semicolons or newline."
+msgstr ""
+"Энэ хүлээн авагчдын имэйлийн жагсаалт нь харилцах хаяг болохгүй. Имэйлүүдийг"
+" таслал, цэгтэй таслал эсвэл шинэ мөрөөр тусгаарлах ёстой."
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__thank_you_message
+msgid "This message will be displayed when step is completed"
+msgstr "Асуулгыг дуусах үед энэ зурвасыг харуулах болно"
+
+#. module: step
+#: code:addons/step/models/step.py:806
+#, python-format
+msgid "This question cannot be unanswered or skipped."
+msgstr ""
+
+#. module: step
+#: code:addons/step/models/step.py:489
+#: model:step.question,constr_error_msg:step.feedback_1_1
+#: model:step.question,constr_error_msg:step.feedback_1_2
+#: model:step.question,constr_error_msg:step.feedback_2_1
+#: model:step.question,constr_error_msg:step.feedback_2_2
+#: model:step.question,constr_error_msg:step.feedback_2_3
+#: model:step.question,constr_error_msg:step.feedback_2_4
+#: model:step.question,constr_error_msg:step.feedback_2_5
+#: model:step.question,constr_error_msg:step.feedback_2_6
+#: model:step.question,constr_error_msg:step.feedback_2_7
+#: model:step.question,constr_error_msg:step.feedback_3_1
+#: model:step.question,constr_error_msg:step.feedback_3_2
+#: model:step.question,constr_error_msg:step.feedback_3_3
+#: model:step.question,constr_error_msg:step.feedback_4_1
+#, python-format
+msgid "This question requires an answer."
+msgstr "Энэ асуултанд хариулт заавал шаардлагатай."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.nopages
+msgid "This step has no pages by now!"
+msgstr "Одоогоор энэ асуулгад хуудас алга!"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.notopen
+msgid "This step is not open. Thank you for your interest!"
+msgstr "Энэ асуулга нээлттэй биш байна. Сонирхсонд тань баярлалаа!"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "This step is open only to registered people. Please"
+msgstr "Энэ асуулга нь зөвхөн бүртгэлтэй хүмүүст нээлттэй. "
+
+#. module: step
+#: model_terms:step.step,description:step.feedback_form
+msgid "This step should take less than five minutes."
+msgstr "Энэ асуулга таван минутаас хэтрэхгүй."
+
+#. module: step
+#: model:step.label,value:step.frow_2_5_2
+msgid ""
+"Those security rules are standard and can be used out-of-the-box in most "
+"cases"
+msgstr ""
+"Тэдгээр аюулгүй байдлын дүрмүүд нь стандарт бөгөөд ихэнх тохиолдолд шууд "
+"ашиглах боломжтой"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__title
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Title"
+msgstr "Гарчиг"
+
+#. module: step
+#: selection:step.step,activity_state:0
+msgid "Today"
+msgstr "Өнөөдөр"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Today Activities"
+msgstr "Өнөөдрийн Ажилбарууд"
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_4
+#: model:step.label,value:step.fcol_2_2_4
+#: model:step.label,value:step.fcol_2_5_4
+#: model:step.label,value:step.fcol_2_7_4
+msgid "Totally agree"
+msgstr "Бүрэн зөвшөөрч байна"
+
+#. module: step
+#: model:step.label,value:step.fcol_2_1_1
+#: model:step.label,value:step.fcol_2_2_1
+#: model:step.label,value:step.fcol_2_5_1
+#: model:step.label,value:step.fcol_2_7_1
+msgid "Totally disagree"
+msgstr "Огт зөвшөөрөхгүй"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__tracking_value_ids
+msgid ""
+"Tracked values are stored in a separate model. This field allow to "
+"reconstruct the tracking and to generate statistics on the model."
+msgstr ""
+"Хөтлөгдсөн утга нь тусдаа моделд хадгалагдана. Энэ талбар нь хөтлөлтийн "
+"бүтцийг өөрчилж модель дээр статистикийг үүсгэх боломжийг олгодог."
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__tracking_value_ids
+msgid "Tracking values"
+msgstr "Хөтлөгч утгууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__message_type
+#: model_terms:ir.ui.view,arch_db:step.step_question_search
+msgid "Type"
+msgstr "Төрөл"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__type
+msgid "Type of Question"
+msgstr "Асуултын Төрөл"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "Type of answers"
+msgstr "Хариултуудын төрөл"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__labels_ids
+msgid "Types of answers"
+msgstr "Хариултуудын төрлүүд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_unread
+msgid "Unread Messages"
+msgstr "Уншаагүй Зурвасууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Уншаагүй зурвасын тоолуур"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_step_view_search
+msgid "Upcoming Activities"
+msgstr ""
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__use_active_domain
+msgid "Use active domain"
+msgstr "Идэвхтэй домэйн хэрэглэ"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_mail_compose_message__template_id
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid "Use template"
+msgstr "Үлгэрийг хэрэглэх"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_question__description
+msgid ""
+"Use this field to add         additional explanations about your question"
+msgstr "Асуултын талаар нэмэлт тайлбар оруулах бол энэ талбарыг ашиглана уу"
+
+#. module: step
+#: model:res.groups,name:step.group_step_user
+msgid "User"
+msgstr "Хэрэглэгч"
+
+#. module: step
+#: model:step.step,title:step.feedback_form
+msgid "User Feedback Form"
+msgstr "Хэрэглэгчийн Санал хүсэлтийн Форм"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_user_input_line__user_input_id
+#: model_terms:ir.ui.view,arch_db:step.step_response_line_search
+msgid "User Input"
+msgstr "Хэрэглэгчийн Оролт"
+
+#. module: step
+#: model:ir.ui.menu,name:step.menu_step_response_line_form
+msgid "User Input Lines"
+msgstr "Хэрэглэгчийн Оролтын Мөрүүд"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+#: model_terms:ir.ui.view,arch_db:step.result_number
+#: model_terms:ir.ui.view,arch_db:step.result_text
+msgid "User Responses"
+msgstr "Хэрэглэгчийн Хариултууд"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "User can come back in the previous page"
+msgstr "Хэрэглэгч өмнөх хуудас руу буцаж болно"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_line_form
+msgid "User input line details"
+msgstr "Хэрэглэгчийн оролтын мөрийн дэлгэрэнгүй"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__user_input_ids
+msgid "User responses"
+msgstr "Хэрэглэгчийн хариултууд"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__users_can_go_back
+msgid "Users can go back"
+msgstr "Хэрэглэгчид буцаж болно"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__auth_required
+msgid ""
+"Users with a public link will be requested to login before taking part to "
+"the step"
+msgstr ""
+"Нийтийн холбоостой хэрэглэгчдийг асуулгад оролцохоос өмнө нэвтрэхийг "
+"шаардана"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_required
+msgid "Validate entry"
+msgstr "Оролтыг батлах"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_question__validation_error_msg
+msgid "Validation Error message"
+msgstr "Хяналтын Алдааны зурвас"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_user_input_form
+msgid "View Results"
+msgstr "Үр дүнг Харах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_form
+msgid "View results"
+msgstr "Үр дүнг харах"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__website_published
+msgid "Visible on the website as a comment"
+msgstr "Вебсайт дээр сэтгэгдэл болж үзэгдэх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.result_choice
+msgid "Vote"
+msgstr "Санал өгөх"
+
+#. module: step
+#: model:ir.model.fields,field_description:step.field_step_step__website_message_ids
+msgid "Website Messages"
+msgstr "Вебсайтын зурвасууд"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_step__website_message_ids
+msgid "Website communication history"
+msgstr "Вебсайтын харилцааны түүх"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_7
+msgid "What do you think about configuration wizards?"
+msgstr "Та тохиргооны визардын талаар юу гэж боддог вэ?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_1
+msgid "What do you think about the documentation available on doc.odoo.com?"
+msgstr "Та doc.odoo.com дээр байдаг баримтжуулалтын талаар юу гэж боддог вэ?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_5
+msgid "What do you think about the groups of users?"
+msgstr "Та хэрэглэгчдийн бүлгийн талаар юу гэж боддог вэ?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_2
+msgid ""
+"What do you think about the process views of Odoo, available in the web "
+"client ?"
+msgstr ""
+"Та вэб клиент дээр байдаг Odoo - н явцын харагдцуудын талаар юу гэж боддог "
+"вэ?"
+
+#. module: step
+#: model:step.question,question:step.feedback_2_4
+#: model:step.question,question:step.feedback_2_6
+msgid "What do you think about the structure of the menus?"
+msgstr "Та цэсүүдийн бүтцийн талаар юу гэж боддог вэ?"
+
+#. module: step
+#: model:step.question,question:step.feedback_4_1
+msgid "Where do you develop your new features?"
+msgstr "Та шинэ боломжуудаа хаана хөгжүүлдэг вэ?"
+
+#. module: step
+#: model:ir.model.fields,help:step.field_step_mail_compose_message__is_log
+msgid "Whether the message is an internal note (comment mode only)"
+msgstr "Зурвас нь дотоод тэмдэглэл байх нь хамаагүй (зөвхөн сэтгэгдэл горим)"
+
+#. module: step
+#: model:step.question,question:step.feedback_1_2
+msgid "Which modules are you using/testing?"
+msgstr "Та аль модулиудыг хэрэглэж/шалгаж байгаа вэ?"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid ""
+"YYYY-MM-DD\n"
+"                                            <i class=\"fa fa-calendar fa-2x\" role=\"img\" aria-label=\"Calendar\" title=\"Calendar\"/>"
+msgstr ""
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_1
+msgid "Yes, I use a version < 7.0"
+msgstr "Тийм, би 7.0 - с өмнөх хувилбарыг ашигладаг"
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_2
+msgid "Yes, I use the 7.0 version, installed locally"
+msgstr "Тийм, би дотооддоо суулгасан 7.0 хувилбарыг ашигладаг"
+
+#. module: step
+#: model:step.label,value:step.choice_1_1_3
+msgid "Yes, I use the online version of Odoo"
+msgstr "Тийм, би Odoo - н онлайн хувилбарыг ашигладаг"
+
+#. module: step
+#: model_terms:ir.actions.act_window,help:step.action_step_form
+msgid ""
+"You can create steps for different purposes: customer opinion, services "
+"feedback, recruitment interviews, employee's periodical evaluations, "
+"marketing campaigns, etc."
+msgstr ""
+"Янз бүрийн зорилгоор санал асуулга үүсгэх боломжтой: захиалагчийн бодол, "
+"үйлчилгээний санал хүсэлт, ажилд авах ярилцлага, ажилтны тогтмол үнэлгээ, "
+"маркетингийн компанит ажил, г.м."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_email_compose_message
+msgid ""
+"You can share your step web public link and/or send private invitations to"
+" your audience. People can answer once per invitation, and whenever they "
+"want with the public web link (in this case, the \"Login Required\" setting "
+"must be disabled)."
+msgstr ""
+"Та санал асуулгын вэб нийтийн холбоосыг хуваалцах мөн/эсвэл уншигчдад хувийн"
+" урилга илгээх боломжтой. Хүмүүс нийтийн вэб холбоосын дагуу хэдийд ч урилга"
+" бүрт нэг хариулах боломжтой (энэ тохиолдолд \"Нэвтрэх Шаардлагатай\" "
+"тохиргоог идэвхижүүлэхгүй байх ёстой)."
+
+#. module: step
+#: code:addons/step/models/step.py:315
+#, python-format
+msgid "You cannot send an invitation for a step that has no questions."
+msgstr "Та асуултгүй санал асуулгын урилга илгээх боломжгүй."
+
+#. module: step
+#: code:addons/step/models/step.py:318
+#, python-format
+msgid "You cannot send invitations for closed steps."
+msgstr "Та хаагдсан санал асуулгын урилга илгээх боломжгүй."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "You scored"
+msgstr "Та"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.step_question_form
+msgid "ans"
+msgstr "хар"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "free website"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.auth_required
+msgid "log in"
+msgstr "нэвтрэх"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.page
+msgid "of"
+msgstr "ын"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "points."
+msgstr "оноо авлаа."
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.sfinished
+msgid "review your answers"
+msgstr "хариултуудаа шалгах"
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.403
+msgid "this page"
+msgstr ""
+
+#. module: step
+#: model_terms:ir.ui.view,arch_db:step.layout
+msgid "with"
+msgstr ""

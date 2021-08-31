@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- HR Module YOU Form View -->
+   <record id="hr_module_you_view_form" model="ir.ui.view">
+        <field name="name">hr.module.you.form</field>
+        <field name="model">hr.module.you</field>
+        <field name="arch" type="xml">
+            <form string="HR Module YOU">
+                <sheet>
+                    <group colspan="4" col="4">
+                        <field name="image" widget="image"
+                               filename="support_name" class="oe_avatar"/>
+                        <field name="name"/>
+                        <field name="tag"/>
+                        <field name="reference_module"/>
+                        <field name="group_id"/>
+                        <field name="show"/>
+                        <field name="parent_id"/>
+                        <field name="event_id"/>
+                        <field name="support_name" invisible="1"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                    <group>
+                        <field name="support_attachment_url"
+                               readonly="1" force_save="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Configuration Template Add fields"
+                              name="configuration_template_add_fields">
+                            <group colspan="4" col="4">
+                                <field name="type"
+                                       options="{'no_open':'False', 'no_create': True, 'no_create_edit': True, 'no_quick_create': True}"/>
+                                <field name="function"/>
+                            </group>
+                        </page>
+                        <page string="Group Fields"
+                              name="group_fields">
+                              <field name="field_ids" nolabel="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+   </record>
+
+    <!-- HR Module YOU Tree View -->
+    <record id="hr_module_you_view_tree" model="ir.ui.view">
+        <field name="name">hr.module.you.list</field>
+        <field name="model">hr.module.you</field>
+        <field name="arch" type="xml">
+            <tree string="HR Module YOU">
+                <field name="name"/>
+                <field name="tag"/>
+                <field name="reference_module"/>
+                <field name="group_id"/>
+                <field name="event_id"/>
+                <field name="show"/>
+                <field name="parent_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_module_you_search" model="ir.ui.view">
+        <field name="name">hr.module.you.search</field>
+        <field name="model">hr.module.you</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" filter_domain="[('name', 'ilike', self)]"
+                       string="Name.."/>
+                <field name="tag" filter_domain="[('tag', 'ilike', self)]"
+                       string="Tag.."/>
+                <field name="reference_module"
+                       filter_domain="[('reference_module', 'ilike', self)]"
+                       string="Reference Module.."/>
+                <field name="parent_id"
+                       filter_domain="[('parent_id', 'ilike', self)]"
+                       string="Parent"/>
+                <field name="group_id"
+                       filter_domain="[('group_id', 'ilike', self)]"
+                       string="Group.."/>
+                <filter string="Show is True"
+                        name="show_set"
+                        domain="[('show','=',True)]"/>
+                <filter string="Show is False" name="show_set"
+                        domain="[('show','=',False)]"/>
+                <group string="Group By">
+                    <filter string="Group" name="group_id"
+                            context="{'group_by':'group_id'}"/>
+                    <filter string="Group Name" name="group_name"
+                            context="{'group_by':'name'}"/>
+                    <filter string="Group Type" name="group_type"
+                            context="{'group_by':'type'}"/>
+                    <filter string="Group Function" name="group_function"
+                            context="{'group_by':'function'}"/>
+                    <filter string="Group Parent" name="group_parent_id"
+                            context="{'group_by':'parent_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- HR Module YOU Action -->
+    <record id="hr_module_you_action" model="ir.actions.act_window">
+        <field name="name">HR Module YOU</field>
+        <field name="res_model">hr.module.you</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- HR Module YOU Menu Item -->
+    <menuitem
+        id="hr_module_you_menu_action"
+        name="HR Module YOU"
+        groups="hr.group_hr_user"
+        action="hr_module_you_action"
+        parent="menu_hr_config_novelty"
+        sequence="11"/>
+
+</odoo>

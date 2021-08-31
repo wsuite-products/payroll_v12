@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Sale Work Group Form View -->
+    <record id="sale_work_group_view_form" model="ir.ui.view">
+        <field name="name">sale.work.group.form</field>
+        <field name="model">sale.work.group</field>
+        <field name="arch" type="xml">
+            <form string="Sale Work Group">
+                <sheet>
+                    <group>
+                        <field name="name" required="1" class="oe_inline"/>
+                    </group>
+                    <group>
+                        <field name="partner_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Sale Work Group Tree View -->
+    <record id="sale_work_group_view_tree" model="ir.ui.view">
+        <field name="name">sale.work.group.list</field>
+        <field name="model">sale.work.group</field>
+        <field name="arch" type="xml">
+            <tree string="Sale Work Group">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Sale Work Group Action -->
+    <record id="sale_work_group_action" model="ir.actions.act_window">
+        <field name="name">Sale Work Group</field>
+        <field name="res_model">sale.work.group</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Sale Work Group Menuitem -->
+    <menuitem
+        id="sale_work_group_menu_action"
+        name="Sale Work Group"
+        action="sale_work_group_action"
+        parent="contacts.menu_contacts"
+        sequence="3"
+    />
+
+    <menuitem id="contacts.res_partner_menu_contacts"
+        name="Contacts"
+        action="contacts.action_contacts"
+        parent="contacts.menu_contacts"
+        sequence="2"/>
+
+    <menuitem id="contacts.res_partner_menu_config"
+        name="Configuration"
+        parent="contacts.menu_contacts"
+        groups="base.group_system"
+        sequence="10"/>
+</odoo>

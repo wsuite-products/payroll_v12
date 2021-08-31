@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020-TODAY Anand Kansagra <anandkansagra@qdata.io>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<odoo>
+
+    <record id="hr_salary_rule_category_BASIC"
+            model="hr.salary.rule.category">
+        <field name="name">Básico</field>
+        <field name="code">BASIC</field>
+    </record>
+    <record id="hr_salary_rule_category_PRIMA"
+            model="hr.salary.rule.category">
+        <field name="name">Prima</field>
+        <field name="code">PRIMA</field>
+    </record>
+    <record id="hr_salary_rule_category_GROSS_one"
+            model="hr.salary.rule.category">
+        <field name="name">Bruto</field>
+        <field name="code">GROSS</field>
+    </record>
+    <record id="hr_salary_rule_category_DED_one"
+            model="hr.salary.rule.category">
+        <field name="name">Deducción</field>
+        <field name="code">DED</field>
+    </record>
+    <record id="hr_salary_rule_category_NET_one"
+            model="hr.salary.rule.category">
+        <field name="name">Neto</field>
+        <field name="code">NET</field>
+    </record>
+    <record id="hr_salary_rule_category_COMP_one"
+            model="hr.salary.rule.category">
+        <field name="name">Contribución compañía</field>
+        <field name="code">COMP</field>
+    </record>
+    <record id="hr_salary_rule_category_AUX"
+            model="hr.salary.rule.category">
+        <field name="name">Aux</field>
+        <field name="code">AUX</field>
+    </record>
+    <record id="hr_salary_rule_category_OTROS"
+            model="hr.salary.rule.category">
+        <field name="name">Otros</field>
+        <field name="code">OTROS</field>
+    </record>
+    <record id="hr_salary_rule_category_BONIF"
+            model="hr.salary.rule.category">
+        <field name="name">BONIFICACION</field>
+        <field name="code">BONIF</field>
+    </record>
+    <record id="hr_salary_rule_category_TOTALDED"
+            model="hr.salary.rule.category">
+        <field name="name">TOTALDED</field>
+        <field name="code">TOTALDED</field>
+    </record>
+    <record id="hr_salary_rule_category_AUXTRANS"
+            model="hr.salary.rule.category">
+        <field name="name">AuxTrans</field>
+        <field name="code">AUXTRANS</field>
+    </record>
+    <record id="hr_salary_rule_category_AUS"
+            model="hr.salary.rule.category">
+        <field name="name">Ausencias</field>
+        <field name="code">AUS</field>
+    </record>
+    <record id="hr_salary_rule_category_BASESEGU"
+            model="hr.salary.rule.category">
+        <field name="name">Base Seguridad</field>
+        <field name="code">BASESEGU</field>
+    </record>
+    <record id="hr_salary_rule_category_AUXADI"
+            model="hr.salary.rule.category">
+        <field name="name">Auxadicional</field>
+        <field name="code">AUXADI</field>
+    </record>
+    <record id="hr_salary_rule_category_PRESTAC"
+            model="hr.salary.rule.category">
+        <field name="name">Prestaciones</field>
+        <field name="code">PRESTAC</field>
+    </record>
+    <record id="hr_salary_rule_category_PRESTAMOS"
+            model="hr.salary.rule.category">
+        <field name="name">Prestamos</field>
+        <field name="code">PRESTAMOS</field>
+    </record>
+    <record id="hr_salary_rule_category_AUSINC"
+            model="hr.salary.rule.category">
+        <field name="name">AusenciasInc</field>
+        <field name="code">AUSINC</field>
+    </record>
+    <record id="hr_salary_rule_category_INDEM"
+            model="hr.salary.rule.category">
+        <field name="name">Indemnizacion</field>
+        <field name="code">INDEM</field>
+    </record>
+    <record id="hr_salary_rule_category_MIGSARA"
+            model="hr.salary.rule.category">
+        <field name="name">Migración Sara</field>
+        <field name="code">MIGSARA</field>
+    </record>
+    <record id="hr_salary_rule_category_RETROAC"
+            model="hr.salary.rule.category">
+        <field name="name">Retroactivos</field>
+        <field name="code">RETROAC</field>
+    </record>
+    <record id="hr_salary_rule_category_SUMACONC"
+            model="hr.salary.rule.category">
+        <field name="name">Sumaconciliatoria</field>
+        <field name="code">SUMACONC</field>
+    </record>
+    <record id="hr_salary_rule_category_VACACIONES"
+            model="hr.salary.rule.category">
+        <field name="name">Vac_ret_desc_remu</field>
+        <field name="code">VACACIONES</field>
+    </record>
+    <record id="hr_salary_rule_category_AUSAJUS"
+            model="hr.salary.rule.category">
+        <field name="name">Ausencias_ajus</field>
+        <field name="code">AUSAJUS</field>
+    </record>
+    <record id="hr_salary_rule_category_AJUSSAL"
+            model="hr.salary.rule.category">
+        <field name="name">Ajuste_salario</field>
+        <field name="code">AJUSSAL</field>
+    </record>
+
+    <record id="hr_salary_rule_category_APORTINS"
+            model="hr.salary.rule.category">
+        <field name="name">Aporteinst</field>
+        <field name="code">APORTINS</field>
+    </record>
+
+    <record id="hr_salary_rule_category_BASEADIC"
+            model="hr.salary.rule.category">
+        <field name="name">Base Adicional</field>
+        <field name="code">BASEADIC</field>
+    </record>
+
+    <record id="hr_salary_rule_category_Prima_ALW"
+            model="hr.salary.rule.category">
+        <field name="name">Prima</field>
+        <field name="code">ALW</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- CRM Lead Type tree view-->
+    <record id="crm_lead_type_add_brand_tree" model="ir.ui.view">
+        <field name="name">crm.lead.type.tree.inherit</field>
+        <field name="model">crm.lead.type</field>
+        <field name="inherit_id" ref="crm_lead_extended.crm_lead_type_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="replace">
+                <field name="brand_id" options="{'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="crm_lead_type_add_brand_form" model="ir.ui.view">
+        <field name="name">crm.lead.type.brand.form.inherit</field>
+        <field name="model">crm.lead.type</field>
+        <field name="inherit_id" ref="crm_lead_extended.crm_lead_type_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="replace">
+                <field name="brand_id" options="{'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="crm_stage_form_view_inherit_brand" model="ir.ui.view">
+        <field name="name">crm.stage.form.view.inherit.brand</field>
+        <field name="model">crm.stage</field>
+        <field name="inherit_id" ref="crm.crm_stage_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="after">
+                <group>
+                    <field name="brand_id" class="oe_inline"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
