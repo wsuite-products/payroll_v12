@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-# Copyright 2019-TODAY Darshan Patel <darshan.barcelona@gmail.com>
+# Copyright 2019-TODAY WSuite Products <wsuite-products@destiny.ws>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
     'name': 'HR Contract Termination Report',
     'version': '12.0.1.0',
-    'author': 'Quadi',
-    'website': 'https://www.quadi.co',
+    'author': 'Destiny',
+    'website': 'https://www.destiny.ws',
     'category': 'Human Resources',
     'summary': "Module to print Report of employee's Contract Termination.",
     'depends': ['hr_contract_completion',

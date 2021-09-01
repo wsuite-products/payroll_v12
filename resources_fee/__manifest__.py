@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2019-TODAY Haresh Chavda <hareshchavda@qdata.io>
+# Copyright 2019-TODAY WSuite Products <wsuite-products@destiny.ws>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
@@ -7,8 +7,8 @@
     'summary': 'Resource Fee',
     'version': '12.0.1.0.0',
     'category': 'base',
-    'website': 'https://quadi.co/',
-    'author': 'Quadi',
+    'website': 'https://destiny.ws/',
+    'author': 'Destiny',
     'application': False,
     'installable': True,
     'depends': [

@@ -3,8 +3,8 @@
 {
     'name': 'Close Novelty for payroll',
     'version': '12.0.1.0',
-    'author': 'Quadi',
-    'website': 'https://www.quadi.co',
+    'author': 'Destiny',
+    'website': 'https://www.destiny.ws',
     'category': 'base',
     'summary': "Module to manage events alerts",
     'depends': ['base',

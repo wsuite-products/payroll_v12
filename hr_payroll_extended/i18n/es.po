@@ -490,7 +490,7 @@ msgstr "Registro de contribución"
 
 #. module: hr_payroll_extended
 #: model_terms:ir.ui.view,arch_db:hr_payroll_extended.external_layout_standard_payroll
-msgid "Correo electrónico: info@qdata.io Web: http://quadi.co/es"
+msgid "Correo electrónico: info@destiny.ws Web: http://destiny.ws/es"
 msgstr ""
 
 #. module: hr_payroll_extended

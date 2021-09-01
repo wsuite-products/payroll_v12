@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
-# Copyright 2019-TODAY Darshan Patel <darshanp@qdata.io>
+# Copyright 2019-TODAY WSuite Products <wsuite-products@destiny.ws>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
-    'name': 'Hr Employee Extended Quadi',
+    'name': 'Hr Employee Extended Destiny',
     'version': '12.0.1.0.0',
-    'summary': 'Extends the Hr Employee Functionality for Quadi',
+    'summary': 'Extends the Hr Employee Functionality for Destiny',
     'category': 'Human Resources',
-    'author': 'Quadi',
+    'author': 'Destiny',
     'license': 'AGPL-3',
-    'maintainer': 'Quadi',
-    'company': 'Quadi SAS',
-    'website': 'https://quadi.co/',
+    'maintainer': 'Destiny',
+    'company': 'Destiny SAS',
+    'website': 'https://destiny.ws/',
     'depends': [
                'hr_recruitment',
     ],

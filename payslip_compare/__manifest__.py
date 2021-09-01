@@ -7,11 +7,11 @@
     """ multiple employees at a time.""",
     'sequence': 15,
     'category': 'Human Resources',
-    'author': 'Quadi',
+    'author': 'Destiny',
     'license': 'AGPL-3',
-    'maintainer': 'Quadi',
-    'company': 'Quadi SAS',
-    'website': 'https://quadi.co/',
+    'maintainer': 'Destiny',
+    'company': 'Destiny SAS',
+    'website': 'https://destiny.ws/',
     'description': """
     Provides the ability to compare payslips of two different month of"""
     """multiple employees at a time.

@@ -2,24 +2,24 @@
 <odoo>
     <data>
         <record id="jd_demo_1" model="jca.details">
-            <field name="name">Quadi Talent Base</field>
-            <field name="code">BtQuadi</field>
+            <field name="name">Destiny Talent Base</field>
+            <field name="code">BtDestiny</field>
             <field name="type_of_level">Base</field>
-            <field name="description">Quadi Talent Base</field>
+            <field name="description">Destiny Talent Base</field>
         </record>
 
         <record id="jd_demo_2" model="jca.details">
-            <field name="name">Strategic Quadi</field>
-            <field name="code">EsQuadi</field>
+            <field name="name">Strategic Destiny</field>
+            <field name="code">EsDestiny</field>
             <field name="type_of_level">Strategic</field>
-            <field name="description">Strategic Quadi</field>
+            <field name="description">Strategic Destiny</field>
         </record>
 
         <record id="jd_demo_3" model="jca.details">
-            <field name="name">Tactical Quadi</field>
-            <field name="code">TaQuadi</field>
+            <field name="name">Tactical Destiny</field>
+            <field name="code">TaDestiny</field>
             <field name="type_of_level">Tactical</field>
-            <field name="description">Tactical Quadi</field>
+            <field name="description">Tactical Destiny</field>
         </record>
     </data>
 </odoo>

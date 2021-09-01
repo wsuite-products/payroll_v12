@@ -3,8 +3,8 @@
 {
     'name': 'hr_novelty',
     'version': '12.0.1.0',
-    'author': 'Quadi',
-    'website': 'https://www.quadi.co',
+    'author': 'Destiny',
+    'website': 'https://www.destiny.ws',
     'category': 'Human Resources',
     'summary': "Module to manage employee's novelties. i.e: ",
     'depends': ['base',
